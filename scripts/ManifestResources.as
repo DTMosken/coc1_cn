@@ -1,0 +1,53 @@
+package
+{
+   import lime.utils.AssetLibrary;
+   import lime.utils.AssetManifest;
+   import lime.utils.Assets;
+   
+   public class ManifestResources
+   {
+      
+      public static var preloadLibraries:Array;
+      
+      public static var preloadLibraryNames:Array;
+      
+      public static var rootPath:String;
+      
+      public function ManifestResources()
+      {
+      }
+      
+      public static function init(param1:*) : void
+      {
+         ManifestResources.preloadLibraries = [];
+         ManifestResources.preloadLibraryNames = [];
+         ManifestResources.rootPath = null;
+         if(param1 != null && Reflect.hasField(param1,"rootPath"))
+         {
+            ManifestResources.rootPath = Reflect.field(param1,"rootPath");
+            if(!StringTools.endsWith(ManifestResources.rootPath,"/"))
+            {
+               _temp_1.rootPath += "/";
+            }
+         }
+         if(ManifestResources.rootPath == null)
+         {
+            ManifestResources.rootPath = "./";
+         }
+         var _loc3_:String = "{\"name\":null,\"assets\":\"aoy4:sizei69552y4:typey4:FONTy9:classNamey42:__ASSET__res_fonts_georgia_bold_italic_ttfy2:idy41:res%2Ffonts%2Fgeorgia%20bold%20italic.ttfgoR0i60268R1R2R3y35:__ASSET__res_fonts_georgia_bold_ttfR5y32:res%2Ffonts%2Fgeorgia%20bold.ttfgoR0i68172R1R2R3y37:__ASSET__res_fonts_georgia_italic_ttfR5y34:res%2Ffonts%2Fgeorgia%20italic.ttfgoR0i149628R1R2R3y30:__ASSET__res_fonts_georgia_ttfR5y25:res%2Ffonts%2Fgeorgia.ttfgoR0i50232R1R2R3y45:__ASSET__res_fonts_lucida_sans_typewriter_ttfR5y44:res%2Ffonts%2Flucida%20sans%20typewriter.ttfgoR0i395916R1R2R3y37:__ASSET__res_fonts_notoserif_bold_ttfR5y32:res%2Ffonts%2FNotoSerif-Bold.ttfgoR0i360440R1R2R3y43:__ASSET__res_fonts_notoserif_bolditalic_ttfR5y38:res%2Ffonts%2FNotoSerif-BoldItalic.ttfgoR0i350192R1R2R3y39:__ASSET__res_fonts_notoserif_italic_ttfR5y34:res%2Ffonts%2FNotoSerif-Italic.ttfgoR0i375804R1R2R3y40:__ASSET__res_fonts_notoserif_regular_ttfR5y35:res%2Ffonts%2FNotoSerif-Regular.ttfgoR0i472664R1R2R3y27:__ASSET__res_fonts_pala_ttfR5y22:res%2Ffonts%2Fpala.ttfgoR0i420052R1R2R3y28:__ASSET__res_fonts_palab_ttfR5y23:res%2Ffonts%2Fpalab.ttfgoR0i336476R1R2R3y29:__ASSET__res_fonts_palabi_ttfR5y24:res%2Ffonts%2Fpalabi.ttfgoR0i413824R1R2R3y28:__ASSET__res_fonts_palai_ttfR5y23:res%2Ffonts%2Fpalai.ttfgoR0i80264R1R2R3y37:__ASSET__res_fonts_pf_ronda_seven_ttfR5y32:res%2Ffonts%2Fpf_ronda_seven.ttfgoR0i72864R1R2R3y42:__ASSET__res_fonts_pf_ronda_seven_bold_ttfR5y37:res%2Ffonts%2Fpf_ronda_seven_bold.ttfgoR0i8203580R1R2R3y46:__ASSET__res_fonts_shrewsbury_titling_bold_ttfR5y43:res%2Ffonts%2FShrewsbury-Titling%20Bold.ttfgoR0i146808R1R2R3y45:__ASSET__res_fonts_sourcecodepro_semibold_otfR5y40:res%2Ffonts%2FSourceCodePro-Semibold.otfgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+         var _loc4_:AssetManifest = AssetManifest.parse(_loc3_,ManifestResources.rootPath);
+         var _loc5_:AssetLibrary = AssetLibrary.fromManifest(_loc4_);
+         Assets.registerLibrary("default",_loc5_);
+         _loc5_ = Assets.getLibrary("default");
+         if(_loc5_ != null)
+         {
+            ManifestResources.preloadLibraries.push(_loc5_);
+         }
+         else
+         {
+            ManifestResources.preloadLibraryNames.push("default");
+         }
+      }
+   }
+}
+
