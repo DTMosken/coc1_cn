@@ -3827,8 +3827,8 @@ package classes.scenes.npcs
          if(_loc3_ == "驱散法术")
          {
             _loc2_ = 1;
-            get_player().consumeItem(get_consumables().W__BOOK,2);
-            get_player().consumeItem(get_consumables().B__BOOK,2);
+            get_player().consumeItem(get_consumables().W__BOOK,1);
+            get_player().consumeItem(get_consumables().B__BOOK,1);
          }
          else if(_loc3_ == "治疗法术")
          {
