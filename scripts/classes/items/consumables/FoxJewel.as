@@ -80,7 +80,7 @@ package classes.items.consumables
          }
          if(get_player().get_inte100() < 100 && get_changes() < get_changeLimit() && (mystic && Utils.rand(2) == 0 || !mystic && Utils.rand(4) == 0))
          {
-            outputText("[pg]你闭上眼睛，狡黠地暗自坏笑，因为你突然想到了几个可以在对手身上尝试的新把戏；你感觉自己变得更加狡猾了。脑海中浮现出他们在你的聪明才智面前无助的画面，这让你微微颤抖，你舔了舔嘴唇，抚摸着自己，感觉到皮肤因不由自主的性唤起而微微发麻。");
+            outputText("[pg]你闭上眼睛，狡黠地暗自坏笑，因为你突然想到了几个可以在对手身上尝试的新把戏；你感觉自己变得更加狡猾了。脑海中浮现出他们在你的聪明才智面前无助的画面，这让你微微颤抖，你舔了舔嘴唇，抚摸着自己，感觉到皮肤因不由自主的兴奋而微微发麻。");
             dynStats(DynStat.Inte(2),DynStat.Lib(1),DynStat.Sens(2),DynStat.Lust(10));
          }
          if(get_player().get_str100() > 15 && get_changes() < get_changeLimit() && (mystic && Utils.rand(2) == 0 || !mystic && Utils.rand(3) == 0))

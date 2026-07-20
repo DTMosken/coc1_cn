@@ -90,7 +90,7 @@ package coc.view.mobile
             _loc11_ = _loc8_;
             Reflect.setProperty(param1,_loc10_,Reflect.getProperty(_loc3_,_loc11_));
          }
-         param1.visible = !_onlyUpdates || (param1.get_isUp() || param1.get_isDown()) && Boolean(["HP:","Lust:","Fatigue:"].contains(param1.get_statName()));
+         param1.visible = !_onlyUpdates || (param1.get_isUp() || param1.get_isDown());
          if(!param1.visible)
          {
             param1.x = 0;

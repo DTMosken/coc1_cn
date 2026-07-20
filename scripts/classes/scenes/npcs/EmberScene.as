@@ -2914,7 +2914,7 @@ package classes.scenes.npcs
          }
          else
          {
-            outputText("[pg]嗯，你觉得[Ember ey]还没有得到[Ember ey]应得的操弄。此外，你确实有备而来。你拿起你的药水瓶。烬温柔地对你微笑。[say:你知道吗，你不需要为我做到这种地步？不过，我很高兴你这么喜欢操我。]你回以微笑，拔掉软木塞，一大口喝下了药水。烬惊讶地看着[eachCock]恢复了狂暴的勃起。当巨龙看着时，" + emberGroinDesc("[ember eir]的肉棒开始再次勃起","她的小穴开始滴下水滴") + "，惊讶变成了性唤起。" + emberMF("他","她") + "用[Ember eir]非人的舌头舔了舔[Ember eir]嘴唇，显然渴望再次开始。");
+            outputText("[pg]嗯，你觉得[Ember ey]还没有得到[Ember ey]应得的操弄。此外，你确实有备而来。你拿起你的药水瓶。烬温柔地对你微笑。[say:你知道吗，你不需要为我做到这种地步？不过，我很高兴你这么喜欢操我。]你回以微笑，拔掉软木塞，一大口喝下了药水。烬惊讶地看着[eachCock]恢复了狂暴的勃起。当巨龙看着时，" + emberGroinDesc("[ember eir]的肉棒开始再次勃起","她的小穴开始滴下水滴") + "，惊讶变成了兴奋。" + emberMF("他","她") + "用[Ember eir]非人的舌头舔了舔[Ember eir]嘴唇，显然渴望再次开始。");
          }
          outputText("[pg]烬爬向你，握住你肉棒的根部");
          if(get_player().cockTotal() > 1 && emberHasVagina())
@@ -4767,7 +4767,7 @@ package classes.scenes.npcs
          clearOutput();
          registerTag("kid.he",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("he") : TagFun_Impl_.fromString("she"));
          registerTag("kid.him",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("him") : TagFun_Impl_.fromString("her"));
-         registerTag("kid.his",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("his") : TagFun_Impl_.fromString("her"));
+         registerTag("kid.his",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("他的") : TagFun_Impl_.fromString("她的"));
          registerTag("dragonkid",saveContent.newbornGender == 1 ? (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,531) > 0 ? TagFun_Impl_.fromString("dragon-boy") : TagFun_Impl_.fromString("dragon")) : (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,531) > 0 ? TagFun_Impl_.fromString("dragon-girl") : TagFun_Impl_.fromString("dragoness")));
          outputText("[if (issleeping) {有人轻声呼唤你名字的声音在你的意识边缘掠过，你睡眼惺忪地环顾你的[if (builtcabin) {卧室|帐篷}]寻找原因。虽然你怀疑袭击者是否会如此礼貌地叫醒你，但银色鳞片的闪光和四只橙色、像蜥蜴一样的眼睛注视着你，足以让你停顿下来，尽管你小[dragonkid]那明确无误的哭声很快就让一切变得清晰。|一阵[if (littleember) {疯狂的|雷鸣般的}]敲击声从你身后传来，你转过身，正好看到烬走到你身边，你的小[dragonkid]在[ember eir]怀里。[Kid.his]眼睛在看到[kid.his][father]时亮了起来，但短暂的兴奋很快被饥饿的哭声所取代。}]");
          if(littleEmber() && !saveContent.learnedFeeding)
@@ -5824,7 +5824,7 @@ package classes.scenes.npcs
          clearOutput();
          registerTag("kid.he",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("he") : TagFun_Impl_.fromString("she"));
          registerTag("kid.him",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("him") : TagFun_Impl_.fromString("her"));
-         registerTag("kid.his",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("his") : TagFun_Impl_.fromString("her"));
+         registerTag("kid.his",saveContent.newbornGender == 1 ? TagFun_Impl_.fromString("他的") : TagFun_Impl_.fromString("她的"));
          registerTag("dragonkid",saveContent.newbornGender == 1 ? (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,531) > 0 ? TagFun_Impl_.fromString("dragon-boy") : TagFun_Impl_.fromString("dragon")) : (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,531) > 0 ? TagFun_Impl_.fromString("dragon-girl") : TagFun_Impl_.fromString("dragoness")));
          var _loc1_:Boolean = littleEmber() || emberIsMasculine();
          var _loc2_:String = FlagDict_Impl_.arrayReadInt(KFLAGS.flags,557) + FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2789) > 0 ? "，在[ember eir]最新的蛋旁边，" : "";

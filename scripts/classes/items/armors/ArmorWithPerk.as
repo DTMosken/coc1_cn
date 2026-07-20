@@ -3,6 +3,7 @@ package classes.items.armors
    import classes.PerkLib;
    import classes.PerkType;
    import classes.Player;
+   import classes.internals.Utils;
    import classes.items.Armor;
    import classes.items.Equippable;
    import flash.Boot;
@@ -88,7 +89,7 @@ package classes.items.armors
       override public function get_description() : String
       {
          var _loc1_:String = super.get_description();
-         _loc1_ += "\n特殊：" + playerPerk.get_name();
+         _loc1_ += "\n特殊：" + Utils.cnName(playerPerk.get_name());
          if(playerPerk == PerkLib.WizardsEndurance)
          {
             _loc1_ += " (-" + playerPerkV1 + "% 法术消耗)";

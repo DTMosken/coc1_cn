@@ -2,6 +2,7 @@ package classes.masteries
 {
    import classes.MasteryType;
    import classes.PerkLib;
+   import classes.Player;
    import flash.Boot;
    
    public class TerrestrialFireMastery extends MasteryType

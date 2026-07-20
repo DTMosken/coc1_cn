@@ -42,7 +42,7 @@ package classes.statusEffects.combat
             _loc2_++;
             if(Utils.rand(4) < 2)
             {
-               StatusEffect.get_game().outputText("[pg-]" + _loc4_.get_capitalA() + _loc4_.get_short() + "被治愈了！");
+               StatusEffect.get_game().outputText("[pg-]" + _loc4_.get_capitalA() + Utils.cnName(_loc4_.get_short()) + "被治愈了！");
                _loc4_.HPChange(_loc1_,true);
                StatusEffect.get_game().outputText("[pg-]");
             }

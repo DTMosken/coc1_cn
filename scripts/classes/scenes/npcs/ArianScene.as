@@ -251,10 +251,10 @@ package classes.scenes.npcs
             outputText("[pg]你告诉[Arian em]你睡得很好，又问[Arian ey]是否也喜欢让你睡在[Arian eir]床上。[say: 喜欢！我真的很高兴你能陪我过夜。][Arian Ey]咧嘴一笑，灵活的尾巴在身后懒懒地摆动着。");
             outputText("[pg]你回答说，既然如此，你说不定会考虑更常和[Arian em]一起睡。说这话时你冲[Arian em]眨了眨眼，有点希望[Arian ey]会脸红——那模样看起来实在很有意思。阿瑞安没有让你失望，[Arian eir]脸颊微微泛起玫瑰色，身体也有些坐立不安。[say: 我希望你能常来，][Arian ey]回答道，脸上依旧带着笑。[say: 也许我们该准备开始今天了？]");
             outputText("[pg]你告诉[Arian em]这是个好主意，然后开始摸索着找自己的东西。然而，和[Arian eir]刚才的提议完全相反，你忽然感觉到一双手搭上了你的腰，温热的呼吸拂在你的腰背下方。你有些惊讶，但并不抗拒，于是把臀部向后送进[Arian em]怀里，随即听见[Arian em]感激地呻吟了一声。");
-            outputText("[pg]看来，在处理掉这个问题之前，你这一天是没法开始了。于是[if (hasvagina) {，你转过身，用[arms]环住|你的[hands]向后伸向}[Arian eir]的头，把这个蜥蜴人拉近。阿瑞安发出一声小小的惊叫，但很快就适应过来，把[Arian eir]的[if (nofur){鼻子|吻部}]贴上你的胯间。你倒吸一口气，不过也很快适应了那[if (nofur){皮肤|鳞片}]贴着你[if (nofur){[if (hasplainskin) {自己的|[skindesc]}]|[if (hasscales) {自己的|[skindesc]}]}]的感觉。");
+            outputText("[pg]看来，在处理掉这个问题之前，你这一天是没法开始了。于是[if (hasvagina) {，你转过身，用[arms]环住|你的[hands]向后伸向}] [Arian eir]的头，把这个蜥蜴人拉近。阿瑞安发出一声小小的惊叫，但很快就适应过来，把[Arian eir]的[if (nofur){鼻子|吻部}]贴上你的胯间。你倒吸一口气，不过也很快适应了那[if (nofur){皮肤|鳞片}]贴着你[if (nofur){[if (hasplainskin) {自己的|[skindesc]}]|[if (hasscales) {自己的|[skindesc]}]}]的感觉。");
             outputText("[pg]然而，就在你刚掌握住局面时，你感觉到某个湿滑的东西蹭过你的[if (hasvagina){小缝|褶口}]，你几乎只能勉强保持[if (singleleg){直立|站稳}]。幸好阿瑞安体贴又温柔，所以[Arian ey]一开始只是沿着你的入口缓慢而长久地舔舐。当[Arian eir]灵巧的舌头终于分开你的肉唇滑入其中时，你已经觉得自己被充分挑逗开了。");
             outputText("[pg]这位欲火中烧的法师兴致勃勃地投入其中，急切地吮吸着你的[if (hasvagina){淫液|后穴}]，脸上露出陶醉的神情。每隔一会儿，[Arian eir]的舌头就会抽出来，爱抚你的[if (hasvagina){[clit]|会阴}]，而每一次都让你颤抖得厉害，几乎让[Arian ey]抓不稳你。但[Arian ey]的本事可不止如此，你意识到，[Arian eir]娴熟的服侍正慢慢将你哄入一阵欣快的恍惚之中。");
-            outputText("[pg]高潮来得太快，可你没有任何理由忍耐，于是彻底放开[if (hasvagina) {，任由你的阴液[if (issquirter){喷涌|流淌}]进[Arian eir]口中|把你的[hips]向后顶向[Arian eir]的脸}。快感冲刷全身，你几乎要弯下腰去，而阿瑞安光溜溜的头抵在你的腹部，让这份感觉变得更加强烈。整个过程中，蜥蜴人的舌头从未停下，仍从内侧不断抚弄着你抽搐的褶皱。");
+            outputText("[pg]高潮来得太快，可你没有任何理由忍耐，于是彻底放开[if (hasvagina) {，任由你的阴液[if (issquirter){喷涌|流淌}]进[Arian eir]口中|把你的[hips]向后顶向[Arian eir]的脸}]。快感冲刷全身，你几乎要弯下腰去，而阿瑞安光溜溜的头抵在你的腹部，让这份感觉变得更加强烈。整个过程中，蜥蜴人的舌头从未停下，仍从内侧不断抚弄着你抽搐的褶皱。");
             outputText("[pg][Arian Eir]稳稳的双臂支撑着你，让你在[Arian em]上方摇晃呻吟时不至于倒下，这场高潮在无法衡量的极乐中持续着。终于，最后一波余韵掠过你绷到发麻的神经，你几乎当场瘫倒。不过，阿瑞安尽力帮你撑过这一切，温柔地抚摸你的四肢，直到你的呼吸平稳下来。直到这时，你才得以重新收拾自己的东西，为接下来的一天做好准备。");
             outputText("[pg]等你们都穿戴整齐后，阿瑞安对你微微一笑。[say: [name]，祝你今天过得愉快……也请尽快来看我。]你答应[Arian em]一定会来，然后开始往外走。");
             outputText("[pg][say: 等等！在你走之前，你能不能……算了……]蜥蜴人有些坐立不安地转过身，朝[Arian eir]的工作桌走去。你脸上带着会心的坏笑，走回去抓住[Arian em]的肩膀，强硬地把[Arian em]转过来，吻得[Arian em]晕头转向。你停顿片刻，欣赏着爱人脸上那副幸福得发怔、呆乎乎的表情，然后转身离开，开始又一天的生活。");
@@ -1815,7 +1815,7 @@ package classes.scenes.npcs
          outputText("[pg]你开始查看这张羊皮纸，斟酌着该怎么选。那么，你要让[Arian em]把哪种法术放进护符里呢？");
          outputText("[pg]<b>驱散法术：</b>1x 白之书和1x 黑之书 - 解除当前影响玩家角色的所有魔法和炼金效果，无论有益与否。（不会解除恶魔欲望光环的效果。）");
          outputText("\n<b>治疗法术：</b>2x 黏液布和2x 活力茶 - 治疗使用者，不会失败。比标准治疗法术更强效。");
-         outputText("\n<b>焚烧法术：</b>2x 地精麦酒和1x 甜蜜薄纱 - 点燃你的对手，持续造成伤害。");
+         outputText("\n<b>焚烧法术：</b>2x 地精麦酒和1x 粉色蛛丝 - 点燃你的对手，持续造成伤害。");
          outputText("\n<b>减欲法术：</b>2x 催情剂和1x 强效催情剂 - 降低玩家角色当前的欲望，不会失败。");
          outputText("\n<b>护盾法术：</b>2x 黑色甲壳和1x 坚韧丝绸 - 在战斗持续期间提高防御。");
          menu();
@@ -1979,7 +1979,7 @@ package classes.scenes.npcs
          arianSprite();
          clearOutput();
          get_player().consumeItem(get_consumables().P_DRAFT);
-         outputText("你在口袋里摸索，手碰到了那瓶纯化男魅魔药剂。你把它递给阿瑞安，问");
+         outputText("你在口袋里摸索，手碰到了那瓶纯化梦魇药剂。你把它递给阿瑞安，问");
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,938) > 0)
          {
             outputText("[Arian ey]是否想让[Arian eir]的鸡巴变大些");
@@ -2134,14 +2134,14 @@ package classes.scenes.npcs
          arianSprite();
          clearOutput();
          get_player().consumeItem(get_consumables().REPTLUM);
-         outputText("你把玩着那瓶雷普提鲁姆，暗自一笑。你迅速把脸上的东西擦掉，然后吩咐阿瑞安闭上[Arian eir]眼睛、张开[Arian eir]嘴，因为你给[Arian em]准备了一个特别惊喜。");
+         outputText("你把玩着那瓶鳞族药水，暗自一笑。你迅速把脸上的东西擦掉，然后吩咐阿瑞安闭上[Arian eir]眼睛、张开[Arian eir]嘴，因为你给[Arian em]准备了一个特别惊喜。");
          outputText("[pg]阿瑞安立刻照做。[say: 好吧，不过你至少能告诉我这是要做什么吗？][Arian ey]好奇地问。");
          outputText("[pg]你用失望的语气啧了一声，指出如果告诉[Arian em]那是什么，惊喜就不算惊喜了。");
          outputText("[pg][say: 噢，好吧，那希望这不是什么恶作剧……不是说我不信任你，[name]。][Arian Ey]紧张地笑了笑。");
          outputText("[pg]你向[Arian em]保证[Arian ey]会喜欢的，不过首先，为了确保[Arian ey]不会偷看……你抓起手边一条布带，绕在[Arian eir]脸上，遮住[Arian eirs]眼睛，临时做成一条眼罩。");
          outputText("[pg][say: 噢，拜托，你可以相信我的。我保证不偷看！]");
-         outputText("[pg]你告诉[Arian em]这样更有趣，同时拔开雷普提鲁姆的瓶塞，说完便把它倒进蜥蜴人毫无防备地张着的嘴里。");
-         outputText("[pg][say: 我发四咕噜噗——]蜥蜴人的抗议被灌入[Arian eir]喉咙的清凉雷普提鲁姆打断。[Arian Ey]呛了一下，但很快就适应过来，急切地喝了下去。等你把瓶子倒空并从[Arian eir]唇边拿开后，阿瑞安咳了几声，舔了舔[Arian eir]嘴唇。[say: 嗯……味道挺不错的，那是什么？]");
+         outputText("[pg]你告诉[Arian em]这样更有趣，同时拔开鳞族药水的瓶塞，说完便把它倒进蜥蜴人毫无防备地张着的嘴里。");
+         outputText("[pg][say: 我发四咕噜噗——]蜥蜴人的抗议被灌入[Arian eir]喉咙的清凉鳞族药水打断。[Arian Ey]呛了一下，但很快就适应过来，急切地喝了下去。等你把瓶子倒空并从[Arian eir]唇边拿开后，阿瑞安咳了几声，舔了舔[Arian eir]嘴唇。[say: 嗯……味道挺不错的，那是什么？]");
          outputText("[pg]你告诉[Arian em]，[Arian ey]只能等着自己发现了；你摘下[Arian eir]的眼罩，对[Arian em]坏笑了一下。[say: 呃……好吧……]");
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,948) == 0)
          {

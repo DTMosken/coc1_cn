@@ -1316,7 +1316,7 @@ package classes.scenes.areas.forest
       public function postTamaniRemoval() : void
       {
          get_images().showImage("tamani-satchel");
-         outputText("塔玛尼死后，你拿走她的挎包，回到了你的营地。");
+         outputText("塔玛尼已经不在了，你拿走她的挎包，回到了你的营地。");
          var _temp_1:* = get_monster();
          _temp_1.XP = _temp_1.XP + 100;
          get_player().createKeyItem("Tamani\'s Satchel",2,1,1,100);

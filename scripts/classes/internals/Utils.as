@@ -28,20 +28,33 @@ package classes.internals
       
       public static function formatStringArray(param1:Array) : String
       {
-         var _loc2_:* = null as Array;
-         var _loc3_:* = null as String;
+         var _loc2_:* = null as Function;
+         var _loc3_:* = null as Array;
+         var _loc4_:int = 0;
+         var _loc5_:* = null as Array;
+         var _loc6_:* = null as String;
          switch(int(param1.length))
          {
             case 0:
                return "";
             case 1:
-               return param1[0];
+               return Utils.cnName(param1[0]);
             case 2:
-               return param1[0] + "和" + param1[1];
+               return Utils.cnName(param1[0]) + "和" + Utils.cnName(param1[1]);
             default:
-               _loc2_ = param1.slice(0,int(param1.length) - 1);
-               _loc3_ = param1[int(param1.length) - 1];
-               return _loc2_.join("，") + "，以及" + _loc3_;
+               _loc2_ = Utils.cnName;
+               _loc3_ = [];
+               _loc4_ = 0;
+               _loc5_ = param1.slice(0,int(param1.length) - 1);
+               while(_loc4_ < int(_loc5_.length))
+               {
+                  _loc6_ = _loc5_[_loc4_];
+                  _loc4_++;
+                  _loc3_.push(_loc2_(_loc6_));
+               }
+               _loc5_ = _loc3_;
+               _loc6_ = Utils.cnName(param1[int(param1.length) - 1]);
+               return _loc5_.join("，") + "，以及" + _loc6_;
          }
       }
       
@@ -718,6 +731,33 @@ package classes.internals
           * 错误类型: ExecutionException (java.lang.StackOverflowError)
           */
          throw new flash.errors.IllegalOperationError("由于错误未进行反编译");
+      }
+      
+      public static function cnName2(param1:String) : String
+      {
+         var _loc2_:String = param1.toLowerCase();
+         var _loc3_:String = _loc2_;
+         if(_loc3_ == "default")
+         {
+            return "默认";
+         }
+         if(_loc3_ == "marble")
+         {
+            return "大理石";
+         }
+         if(_loc3_ == "obsidian")
+         {
+            return "黑曜石";
+         }
+         if(_loc3_ == "parchment")
+         {
+            return "羊皮纸";
+         }
+         if(_loc3_ == "stone")
+         {
+            return "石头";
+         }
+         return param1;
       }
       
       public static function equals(param1:Object, param2:Object) : Boolean

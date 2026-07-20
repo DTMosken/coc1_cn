@@ -546,7 +546,7 @@ package classes
          _masteryLib = new MasteryLib();
          _statusEffects = new StatusEffects();
          _perkLib = new PerkLib();
-         version = "/hgg/模组 " + "v1.1汉化测试版" + "（空洞之心，空洞之颅，万圣节）";
+         version = "/hgg/模组 " + "v1.2-zh" + "（空洞之心，空洞之颅，万圣节）";
          super();
          saves = new Saves(gameStateDirectGet,gameStateDirectSet);
          inventory = new Inventory();

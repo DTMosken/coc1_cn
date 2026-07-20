@@ -42,6 +42,8 @@ package classes.scenes.places.bazaar._Telly
       
       public var tellyComD:Boolean;
       
+      public var tellyComCC:Boolean;
+      
       public var tellyComB:Boolean;
       
       public var tellyComA:Boolean;
@@ -56,7 +58,7 @@ package classes.scenes.places.bazaar._Telly
       
       public var experimenTelly:int;
       
-      public function SaveContent(param1:Object = undefined, param2:Object = undefined, param3:Object = undefined, param4:String = undefined, param5:String = undefined, param6:Object = undefined, param7:Object = undefined, param8:Object = undefined, param9:Object = undefined, param10:Object = undefined, param11:Object = undefined, param12:Object = undefined, param13:Object = undefined, param14:Object = undefined, param15:Object = undefined, param16:Object = undefined, param17:Object = undefined, param18:Object = undefined, param19:Object = undefined, param20:Object = undefined, param21:Object = undefined, param22:* = undefined)
+      public function SaveContent(param1:Object = undefined, param2:Object = undefined, param3:Object = undefined, param4:String = undefined, param5:String = undefined, param6:Object = undefined, param7:Object = undefined, param8:Object = undefined, param9:Object = undefined, param10:Object = undefined, param11:Object = undefined, param12:Object = undefined, param13:Object = undefined, param14:Object = undefined, param15:Object = undefined, param16:Object = undefined, param17:Object = undefined, param18:Object = undefined, param19:Object = undefined, param20:Object = undefined, param21:Object = undefined, param22:Object = undefined, param23:* = undefined)
       {
          if(Boot.skip_constructor)
          {
@@ -87,6 +89,7 @@ package classes.scenes.places.bazaar._Telly
             "22":false,
             "23":false
          };
+         tellyComCC = false;
          tellyComD = false;
          tellyComH = false;
          tellyComA = false;
@@ -194,7 +197,11 @@ package classes.scenes.places.bazaar._Telly
          }
          if(param22 != null)
          {
-            tellyOphile = param22;
+            tellyComCC = param22;
+         }
+         if(param23 != null)
+         {
+            tellyOphile = param23;
          }
       }
       
@@ -264,6 +271,9 @@ package classes.scenes.places.bazaar._Telly
          })),new DebugComp("tellyComD","给过龙心花",new BoolComponent(tellyComD,function(param1:Boolean):Boolean
          {
             return _gthis.tellyComD = param1;
+         })),new DebugComp("tellyComCC","给过巨型纸杯蛋糕",new BoolComponent(tellyComCC,function(param1:Boolean):Boolean
+         {
+            return _gthis.tellyComCC = param1;
          })),new DebugComp("tellyOphile[\"1\"]","记录你看过的聊天",new BoolComponent(Boolean(Reflect.field(tellyOphile,"1")),function(param1:Object):Object
          {
             _gthis.tellyOphile["1"] = param1;

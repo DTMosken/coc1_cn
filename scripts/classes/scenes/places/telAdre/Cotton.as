@@ -671,7 +671,7 @@ package classes.scenes.places.telAdre
          }
          else if(get_player().get_pregnancyIncubation() == 225)
          {
-            outputText("[pg]<b>你腹部已经能看出 unmistakable 的孕肚隆起。你抚摸着那圆鼓鼓的肚子，半带笑意地想着，自己会不会生下一个像她“爸爸”一样的女儿。</b>[pg]");
+            outputText("[pg]<b>你腹部已经能看出明显的孕肚隆起。你抚摸着那圆鼓鼓的肚子，半带笑意地想着，自己会不会生下一个像她“爸爸”一样的女儿。</b>[pg]");
             _loc1_ = true;
          }
          else if(get_player().get_pregnancyIncubation() == 165)

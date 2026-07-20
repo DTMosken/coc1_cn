@@ -171,7 +171,7 @@ package classes.scenes.monsters
          var _loc10_:IMap = _loc9_;
          set_a("");
          set_short("Alice");
-         set_long("这个身体尚未发育成熟的魅魔有着一张温柔的脸，长着" + param3 + "的眼睛和" + (param1 in StringMap.reserved ? _loc6_.getReserved(param1) : _loc6_.h[param1]) + "的头发。她的皮肤是" + (param2 in StringMap.reserved ? _loc8_.getReserved(param2) : _loc8_.h[param2]) + "的，身材娇小却柔软得惹人怜爱。她的额头顶端装饰着两只短角，只有在你摆脱了她的影响后才能看到。她穿着一件相当优雅的连衣裙，配有白色衬衫、海军蓝和红色相间的格子裙，衬衫领口系着一个红色蝴蝶结。她的腿上穿着白色长袜" + (param4 in StringMap.reserved ? _loc10_.getReserved(param4) : _loc10_.h[param4]) + "。脚上穿着平底玛丽珍鞋。她的身后是两只小小的蝙蝠状翅膀和一条铲状尾巴。");
+         set_long("这个身体尚未发育成熟的魅魔有着一张温柔的脸，长着" + Utils.cnName(param3) + "的眼睛和" + (param1 in StringMap.reserved ? _loc6_.getReserved(param1) : _loc6_.h[param1]) + "的头发。她的皮肤是" + (param2 in StringMap.reserved ? _loc8_.getReserved(param2) : _loc8_.h[param2]) + "的，身材娇小却柔软得惹人怜爱。她的额头顶端装饰着两只短角，只有在你摆脱了她的影响后才能看到。她穿着一件相当优雅的连衣裙，配有白色衬衫、海军蓝和红色相间的格子裙，衬衫领口系着一个红色蝴蝶结。她的腿上穿着白色长袜" + (param4 in StringMap.reserved ? _loc10_.getReserved(param4) : _loc10_.h[param4]) + "。脚上穿着平底玛丽珍鞋。她的身后是两只小小的蝙蝠状翅膀和一条铲状尾巴。");
          set_race("Demon");
          createVagina(false,3,1);
          createBreastRow(Appearance.breastCupInverse("A"));

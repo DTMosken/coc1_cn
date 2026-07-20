@@ -36,7 +36,7 @@ package classes.scenes.areas.lake
          set_a("");
          set_short("goo-girl");
          imageName = "googirl";
-         set_long("这个黏液女孩年轻且闪闪发光的脸上带着好奇的表情。她的身体很苗条，黏液块经常从她的四肢滴落，溅入她臀部下方汇聚的黏液坑中。一个心形的小核心在她的胸口跳动，散发着红光。" + (_loc2_ ? " 显然，她让自己变得有点像你，因为她的胸部看起来完全复制了你的" + get_player().chestDesc() + "。" : ""));
+         set_long("这个史莱姆娘年轻且闪闪发光的脸上带着好奇的表情。她的身体很苗条，黏液块经常从她的四肢滴落，溅入她臀部下方汇聚的黏液坑中。一个心形的小核心在她的胸口跳动，散发着红光。" + (_loc2_ ? " 显然，她让自己变得有点像你，因为她的胸部看起来完全复制了你的" + get_player().chestDesc() + "。" : ""));
          set_race("Goo-Girl");
          createVagina(false,5,1);
          createStatusEffect(StatusEffects.BonusVCapacity,9001,0,0,0);
@@ -76,7 +76,7 @@ package classes.scenes.areas.lake
       {
          if(param2)
          {
-            outputText("[pg]黏液女孩似乎有些困惑，但并不介意。");
+            outputText("[pg]史莱姆娘似乎有些困惑，但并不介意。");
             doNext(get_game().combat.endLustLoss);
          }
          else
@@ -91,11 +91,11 @@ package classes.scenes.areas.lake
          {
             if(param1 <= 0)
             {
-               outputText("\n黏液女孩对你的举动感到困惑，似乎在努力理解你在做什么。");
+               outputText("\n史莱姆娘对你的举动感到困惑，似乎在努力理解你在做什么。");
             }
             else if(param1 < 13)
             {
-               outputText("\n好奇的黏液女孩开始公然抚摸自己，试图通过模仿你来理解你行为的意义。");
+               outputText("\n好奇的史莱姆娘开始公然抚摸自己，试图通过模仿你来理解你行为的意义。");
             }
             else
             {
@@ -104,7 +104,7 @@ package classes.scenes.areas.lake
          }
          else
          {
-            outputText("\n看来黏液女孩已经沉迷于她的模仿中，揉捏着她的乳房，抚弄着她闪亮的" + skin.tone + "阴蒂，完全忘记了要调查你的初衷。");
+            outputText("\n看来史莱姆娘已经沉迷于她的模仿中，揉捏着她的乳房，抚弄着她闪亮的" + skin.tone + "阴蒂，完全忘记了要调查你的初衷。");
          }
          applyTease(param1);
       }
@@ -121,7 +121,7 @@ package classes.scenes.areas.lake
             }
             else
             {
-               outputText("你徒劳地扭动着，被困在黏液女孩温暖、沸腾的身体里。当你的身体被女孩脉动身体的涟漪振动所哄骗而投降时，黑暗在你的视野边缘蔓延。");
+               outputText("你徒劳地扭动着，被困在史莱姆娘温暖、沸腾的身体里。当你的身体被女孩脉动身体的涟漪振动所哄骗而投降时，黑暗在你的视野边缘蔓延。");
                get_game().combat.takeDamage(Math.min(0.15 * get_player().maxHP(),100 * (1 + get_player().newGamePlusMod() * 0.2)),true);
             }
             tookAction = true;
@@ -137,7 +137,7 @@ package classes.scenes.areas.lake
                if(get_player().hasStatusEffect(StatusEffects.GooBind))
                {
                   clearOutput();
-                  outputText("你徒劳地扭动着，被困在黏液女孩温暖、沸腾的身体里。当你的身体被女孩脉动身体的涟漪振动所哄骗而投降时，黑暗在你的视野边缘蔓延。");
+                  outputText("你徒劳地扭动着，被困在史莱姆娘温暖、沸腾的身体里。当你的身体被女孩脉动身体的涟漪振动所哄骗而投降时，黑暗在你的视野边缘蔓延。");
                   _loc2_ = get_game().combat.takeDamage(0.35 * get_player().maxHP(),true);
                   tookAction = true;
                   return false;
@@ -173,7 +173,7 @@ package classes.scenes.areas.lake
       
       public function gooPlay() : void
       {
-         outputText("黏液女孩扑了过来，用她黏滑的手臂环住你的腰，给了你一个开心的拥抱，滚烫的黏液在你身上兴奋地颤抖着。她抬起头，空洞的眼神对你的冷淡感到困惑，撅起嘴巴赌气地松开了手。你在冷空气中打了个寒颤，有些后悔失去了她的拥抱。");
+         outputText("史莱姆娘扑了过来，用她黏滑的手臂环住你的腰，给了你一个开心的拥抱，滚烫的黏液在你身上兴奋地颤抖着。她抬起头，空洞的眼神对你的冷淡感到困惑，撅起嘴巴赌气地松开了手。你在冷空气中打了个寒颤，有些后悔失去了她的拥抱。");
          get_player().takeLustDamage(3 + Utils.rand(3) + get_player().sens / 10,true);
       }
       
@@ -184,7 +184,7 @@ package classes.scenes.areas.lake
          var _loc2_:* = combatAvoidDamage(new AvoidDamageParameters(null,null,null,null,true,null,null,null));
          if(hasPerk(PerkLib.Acid))
          {
-            outputText("她的身体在你的火焰中颤抖，黏液女孩");
+            outputText("她的身体在你的火焰中颤抖，史莱姆娘");
          }
          else
          {
@@ -342,7 +342,7 @@ package classes.scenes.areas.lake
       
       public function gooEngulph() : void
       {
-         outputText("黏液女孩兴高采烈地把整个身体扑向你，还没等你躲开，她就已经用她渗出的身体吞没了你！" + skin.tone + "的黏液触手滑进你的鼻孔，穿过你的嘴唇，让女孩的黏液填满你的肺部。你开始窒息了！");
+         outputText("史莱姆娘兴高采烈地把整个身体扑向你，还没等你躲开，她就已经用她渗出的身体吞没了你！" + skin.tone + "的黏液触手滑进你的鼻孔，穿过你的嘴唇，让女孩的黏液填满你的肺部。你开始窒息了！");
          if(!get_player().hasStatusEffect(StatusEffects.GooBind))
          {
             get_player().createStatusEffect(StatusEffects.GooBind,0,0,0,0);

@@ -68,7 +68,7 @@ package classes.bodyParts
          var _loc1_:String = "";
          if(adj != "")
          {
-            _loc1_ += Utils.cnName(adj) + "，";
+            _loc1_ += Utils.cnName(adj) + "且";
          }
          _loc1_ += isFluffy() ? furColor : Utils.cnName(tone);
          return _loc1_ + "" + Utils.cnName(desc);
@@ -152,7 +152,7 @@ package classes.bodyParts
          var _loc3_:String = "";
          if(!param1 && adj != "" && !param2 && tone != "rough gray")
          {
-            _loc3_ += Utils.cnName(adj) + "，";
+            _loc3_ += Utils.cnName(adj) + "且";
          }
          if(!param2)
          {

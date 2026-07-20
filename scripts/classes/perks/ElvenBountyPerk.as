@@ -21,13 +21,13 @@ package classes.perks
          var _loc2_:Array = [];
          if(!Boolean(Math.isNaN(param1.value1)))
          {
-            _loc2_.push("精液产量增加 " + param1.value1 + " 毫升");
+            _loc2_.push("精液产量增加" + param1.value1 + " 毫升");
          }
          if(!Boolean(Math.isNaN(param1.value2)))
          {
-            _loc2_.push("生育能力增加 " + param1.value2 + "%");
+            _loc2_.push("生育能力增加" + param1.value2 + "%");
          }
-         return "增加 " + _loc2_.join(" 和 ") + "。";
+         return "" + _loc2_.join("、") + "。";
       }
    }
 }

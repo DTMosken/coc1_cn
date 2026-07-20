@@ -1,6 +1,8 @@
 package classes.masteries
 {
    import classes.MasteryType;
+   import classes.Player;
+   import classes.items.Weapon;
    import flash.Boot;
    
    public class ClawMastery extends MasteryType

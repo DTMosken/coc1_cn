@@ -165,7 +165,7 @@ package classes.scenes.seasonal
          outputText("所以这……礼物是你的？[pg]");
          menu();
          addButton(0,"打开礼物",openXmasPresent);
-         addButtonDisabled(1,"拆开精灵");
+         addButtonDisabled(1,"选择精灵");
          addButton(4,"拒绝",declineXmasPresent);
          if(!get_player().isPureEnough(90) || get_game().jojoScene.isJojoCorrupted() || get_player().hasStatusEffect(StatusEffects.Exgartuan) || get_game().amilyScene.amilyCorrupt() || FlagDict_Impl_.arrayReadInt(KFLAGS.flags,283) > 0 || FlagDict_Impl_.arrayReadInt(KFLAGS.flags,282) > 0 || FlagDict_Impl_.arrayReadInt(KFLAGS.flags,450) > 0)
          {
@@ -174,17 +174,17 @@ package classes.scenes.seasonal
             {
                outputText("又来了……[pg]");
             }
-            addButtonDisabled(1,"拆开精灵","这个场景不适用于淘气的孩子。");
+            addButtonDisabled(1,"选择精灵","这个场景不适用于淘气的孩子。");
             return;
          }
          if(get_player().isGenderless())
          {
             outputText("她点点头，兴奋地上下蹦跳着，[say: 是的！打开它吧！你准备好了吗？][pg]");
-            addButtonDisabled(1,"拆开精灵","这个场景需要你有生殖器。");
+            addButtonDisabled(1,"选择精灵","这个场景需要你有生殖器。");
             return;
          }
-         outputText("她点点头，兴奋地上下蹦跳着，[say: 是的！你可以拆开它，或者拆开我。你选哪个？][pg]");
-         addButton(1,"拆开精灵",unwrapElfyPresent);
+         outputText("她点点头，兴奋地上下蹦跳着，[say: 是的！你可以拆开它，或者选择我。你选哪个？][pg]");
+         addButton(1,"选择精灵",unwrapElfyPresent);
       }
       
       public function vagFuckXmasElf() : void

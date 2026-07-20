@@ -291,7 +291,7 @@ package classes.scenes.areas.forest
          }
          else
          {
-            outputText("对这种情况感到恐惧，但在不断被吸吮和取悦时无法抗拒性唤起。");
+            outputText("对这种情况感到恐惧，但在不断被吸吮和取悦时无法抗拒兴奋。");
          }
          outputText("[pg]");
          outputText("一股温暖的液体流入你的体内，你的皮肤立刻感到刺痛，因高温和渴望而燃烧。");

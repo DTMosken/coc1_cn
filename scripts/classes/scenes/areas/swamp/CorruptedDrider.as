@@ -29,9 +29,9 @@ package classes.scenes.areas.swamp
             return;
          }
          super();
-         var _loc1_:Array = ["红色的","橙色的","绿色的"];
+         var _loc1_:Array = ["red","orange","green"];
          var _loc2_:String = _loc1_[Utils.rand(int(_loc1_.length))];
-         var _loc3_:Array = ["黄色的","紫色的","红色的","绿松石色的"];
+         var _loc3_:Array = ["yellow","purple","red","turquoise"];
          var _loc4_:String = _loc3_[Utils.rand(int(_loc3_.length))];
          get_game().registerTag("dridereyes",TagFun_Impl_.fromString(_loc4_));
          var _loc5_:Boolean = Utils.rand(2) == 0;

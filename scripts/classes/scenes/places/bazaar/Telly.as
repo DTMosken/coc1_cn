@@ -68,7 +68,7 @@ package classes.scenes.places.bazaar
          tellyGraphs = ["butterfly","heart","star","flower","cluster of hearts","shooting star","winged-heart","snowflake"];
          tellyTubbies = ["red","blue","pink","purple","yellow","magenta","green"];
          incidenTelly = false;
-         tellyMetry = new SaveContent(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
+         tellyMetry = new SaveContent(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null);
          super();
          SelfSaver.register(this);
          DebugMenu.register(this);
@@ -670,7 +670,7 @@ package classes.scenes.places.bazaar
       
       public function tellyGifted() : Boolean
       {
-         if(tellyCom(TellyCom.TellyComB) || tellyCom(TellyCom.TellyComK) || tellyCom(TellyCom.TellyComP) || tellyCom(TellyCom.TellyComA) || tellyCom(TellyCom.TellyComD))
+         if(tellyCom(TellyCom.TellyComB) || tellyCom(TellyCom.TellyComK) || tellyCom(TellyCom.TellyComP) || tellyCom(TellyCom.TellyComA) || tellyCom(TellyCom.TellyComD) || tellyCom(TellyCom.TellyComCC))
          {
             return true;
          }
@@ -1111,6 +1111,8 @@ package classes.scenes.places.bazaar
                return tellyMetry.tellyComH = tellyMetry.tellyComH || param2;
             case 6:
                return tellyMetry.tellyComD = tellyMetry.tellyComD || param2;
+            case 7:
+               return tellyMetry.tellyComCC = tellyMetry.tellyComCC || param2;
             default:
                return;
          }
@@ -1397,6 +1399,7 @@ package classes.scenes.places.bazaar
          tellyMetry.tellyComA = false;
          tellyMetry.tellyComH = false;
          tellyMetry.tellyComD = false;
+         tellyMetry.tellyComCC = false;
          tellyMetry.tellyOphile = {
             "1":false,
             "2":false,
@@ -1727,6 +1730,63 @@ package classes.scenes.places.bazaar
          });
       }
       
+      public function dirTellyLick() : void
+      {
+         var _g:Bazaar;
+         clearOutput();
+         outputText("[Walking]凑近后，你打量了一下纸杯蛋糕，随即转过注意力，嘴唇覆上她的鼻子，亲了一口，把上面的糖霜舔掉。特莉满脸通红，慌乱地喊了一声[say:嘿！]，然后调皮地冲你吐出舌头，气鼓鼓的样子。她没有责怪你，而是擦掉自己一边脸颊上的糖霜，把手指伸到你面前。[say:你漏了一些。]");
+         outputText("[pg]你吸吮着她指尖的甜奶油，那种感觉让她咯咯笑了起来，特莉继续埋头吃着纸杯蛋糕。她确实在吃，只是短时间内根本吃不完——尽管你很想多陪她一会儿，但最终还是不得不离开。");
+         _g = get_bazaar();
+         doNext(function():void
+         {
+            _g.enterTheBazaarAndMenu();
+         });
+      }
+      
+      public function dirTellyDecline() : void
+      {
+         var _g:Bazaar;
+         clearOutput();
+         outputText("只有供一个人吃的才能叫[i:杯]蛋糕，所以这次就不分享了。这是送给特莉的礼物，得由她自己吃完——就算要吃上一整[day]，那也得由她自己来做。");
+         outputText("[pg][say:我接受挑战！] 她宣布完，又咬了一小口。很小的一口。你在脑子里计算了一下——以她那么小的嘴巴和这么大的蛋糕，吃完需要……太久太久了，你根本不可能一直坐在这儿等她。你已经看到了她的笑容，那才是你真正的收获，没必要看她吃完。");
+         _g = get_bazaar();
+         doNext(function():void
+         {
+            _g.enterTheBazaarAndMenu();
+         });
+      }
+      
+      public function dirTellyBite() : void
+      {
+         var _g:Bazaar;
+         clearOutput();
+         outputText("你把双手撑在柜台上借力，稳住身体向前探去，咬了一大口巧克力纸杯蛋糕，脸颊和鼻尖也沾满了糖霜。特莉伸出手指，把你脸上那些黏糊糊的东西抹掉了一些。");
+         outputText("[pg][say:你脸上沾到东西了，] 她说道。你也伸手把她脸上的糖霜抹掉了一些，惹得小恶魔咯咯笑了起来。即便两个人一起吃，也没法把这个纸杯蛋糕全部解决[if (silly){——，你那宇宙般的时间感提醒你每个整点都得赶回营地之前|——，除非你乐意花费一整天时间}]，于是你留下小恶魔一个人慢慢吃完。");
+         _g = get_bazaar();
+         doNext(function():void
+         {
+            _g.enterTheBazaarAndMenu();
+         });
+      }
+      
+      public function dirTelly() : void
+      {
+         clearOutput();
+         outputText("当特莉开心地坐等着你挑选要买的东西时，你却将一个[i:巨大]的纸杯蛋糕放到桌上，让她惊得[say:哇！]了一声——海绵蛋糕在自身重量下微微下沉，又缓缓弹起。特莉目瞪口呆地看着，惊叹不已。[say:那是生日蛋糕吗？]她问道。你告诉她这是纸杯蛋糕——是你专门带给她的！[say:这叫[cup:纸杯]蛋糕！？也太大了！]");
+         outputText("[pg]这简直就是DD纸杯蛋糕。");
+         outputText("[pg]特莉凑近打量着这个过于庞大的糕点，顶上那根孤零零的蜡烛自己燃了起来，照亮了她的脸庞。一圈软糖在糖晶折射的光芒下闪闪发亮。这位小店主用手比划了一下大小，然后放下手臂，跟自己的肚子对比起来。[say:[Mister], 这也太大了吧，根本塞不进去！纸杯蛋糕应该是单人份的才对！]");
+         outputText("[pg]你指出，事实上这个纸杯蛋糕就是一个人的分量。");
+         outputText("[pg]尽管心里还有些犹豫，这个小恶魔还是先抓起一颗软糖，用它抹掉了一点糖霜，然后整颗丢进嘴里，笑了起来。[say:一口气吃这么多甜的东西……！而且我得用勺子，不能直接咬——] 她突然打住。[say:反正你也不会拦我，那我[b:就]直接咬下去！] 特莉一头扑向纸杯蛋糕，大口啃了起来，她嘴里塞得满满当当，脸颊和鼻尖都沾上了香草糖霜。你本来觉得她没有看上去那么年幼，可这会儿你又开始怀疑她或许也没多大年纪……");
+         outputText("[pg][say:你不来一点吗，[mister]？就算照这个吃法，我一个人也绝对吃不完的！]");
+         get_player().destroyItems(get_consumables().CCUPCAK,1);
+         tellyCom(TellyCom.TellyComCC,true);
+         set_tellyCommand(int(Math.floor(get_time().days)));
+         menu();
+         addNextButton("咬一口",dirTellyBite).hint("当你在罗马的时候……我是说客随主便");
+         addNextButton("舔她",dirTellyLick).hint("你想来点，但只吃糖霜。");
+         addNextButton("拒绝",dirTellyDecline).hint("你更想下次再吃她的蛋糕。");
+      }
+      
       public function delicaTelly() : void
       {
          var _g:Telly;
@@ -1749,7 +1809,7 @@ package classes.scenes.places.bazaar
       
       public function debugMenu(param1:Boolean = true) : void
       {
-         get_game().debugMenu.debugCompEdit(tellyMetry,new SaveContent(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null));
+         get_game().debugMenu.debugCompEdit(tellyMetry,new SaveContent(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null));
       }
       
       public function compassionaTellyHug() : void
@@ -1855,6 +1915,17 @@ package classes.scenes.places.bazaar
             if(param1)
             {
                addNextButton("花",delicaTelly).hint("龙心花是一件充满异国情调的美丽礼物。");
+            }
+            else
+            {
+               _loc2_ = true;
+            }
+         }
+         if(get_player().hasItem(get_consumables().CCUPCAK) && !tellyCom(TellyCom.TellyComCC))
+         {
+            if(param1)
+            {
+               addNextButton("纸杯蛋糕",dirTelly).hint("谁不想把脸埋进一个大蛋糕里呢？");
             }
             else
             {

@@ -2,6 +2,8 @@ package classes.items
 {
    import classes.BaseContent;
    import classes.DynStat;
+   import classes.Monster;
+   import classes.Player;
    import classes.StatusEffects;
    import classes.internals.Utils;
    import flash.Boot;

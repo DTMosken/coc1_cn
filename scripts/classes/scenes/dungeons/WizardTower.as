@@ -146,19 +146,19 @@ package classes.scenes.dungeons
          addButton(0,"阿尔萨诺斯",function():void
          {
             _g.answerPuzzle(answer);
-         }).hint("阿尔萨诺斯是第一位。");
+         }).hint("阿尔萨诺斯是第一人。");
          _g1 = this;
          answer1 = 1;
          addButton(1,"劳伦提斯",function():void
          {
             _g1.answerPuzzle(answer1);
-         }).hint("劳伦提斯是第一位。");
+         }).hint("劳伦提斯是第一人。");
          _g2 = this;
          answer2 = 2;
          addButton(2,"加兰",function():void
          {
             _g2.answerPuzzle(answer2);
-         }).hint("加兰是第一位。");
+         }).hint("加兰是第一人。");
          addButton(14,"离开",leave).hint("离开大门和谜题。");
       }
       

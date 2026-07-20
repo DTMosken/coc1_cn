@@ -2,6 +2,7 @@ package classes.masteries
 {
    import classes.MasteryLib;
    import classes.MasteryType;
+   import classes.Player;
    import classes.internals._ValueFunc.NumberFunc_Impl_;
    import flash.Boot;
    

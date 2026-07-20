@@ -345,7 +345,7 @@ package classes.scenes.areas.highMountains
          outputText("米内瓦引导你来到最舒服的地方。她脱下抹胸，完全露出了她的乳房。[pg]");
          if(get_player().get_armorName() == "goo armor")
          {
-            outputText("你慢慢地脱下金属板甲，直到你一丝不挂，只剩下覆盖着你的黏液女孩。");
+            outputText("你慢慢地脱下金属板甲，直到你一丝不挂，只剩下覆盖着你的史莱姆娘。");
          }
          else
          {
@@ -354,7 +354,7 @@ package classes.scenes.areas.highMountains
          outputText("你躺在米内瓦身边，把头靠在她柔软的乳房上。");
          if(get_player().get_armorName() == "goo armor")
          {
-            outputText("瓦莱丽娅，你的黏液女孩同伴，包裹住你和米内瓦，帮你们保暖。");
+            outputText("瓦莱丽娅，你的史莱姆娘同伴，包裹住你和米内瓦，帮你们保暖。");
          }
          outputText("[say: 做个好梦，]当你终于闭上眼睛时，她说道。");
          doNext(sleepWithMinervaProcess);
@@ -1710,7 +1710,7 @@ package classes.scenes.areas.highMountains
          outputText("，或者从当地的野兽那里得到一些好战利品");
          if(get_player().minotaurAddicted())
          {
-            outputText("。如果运气好的话，你甚至可能会找到一个强壮的牛头怪来缓解你心中的渴望");
+            outputText("。如果运气好的话，你甚至可能会找到一个强壮的牛头人来缓解你心中的渴望");
          }
          outputText("。你步履蹒跚地在山上越走越高，在攀登和穿越山路时，偶尔会经过鹰身女妖的巢穴。就在你看起来要碰到云层的时候，你看到了一条你以前从未真正注意到的路。");
          menu();

@@ -31,7 +31,7 @@ package classes.scenes.places.swim
          set_a("");
          set_short("jelly-girl");
          imageName = "jellygirl";
-         set_long("与陆地上的黏液女孩不同，这种生物半透明的" + param2 + "身体大部分集中在顶部，呈伞帽状，包裹着一个红宝石般的细胞核。伞帽下悬挂着一个娇小可爱的[if (allowChild) {女孩|迷你女人}]，她小巧的体型与周围垂下的众多黏糊糊的危险触手形成了鲜明对比。");
+         set_long("与陆地上的史莱姆娘不同，这种生物半透明的" + param2 + "身体大部分集中在顶部，呈伞帽状，包裹着一个红宝石般的细胞核。伞帽下悬挂着一个娇小可爱的[if (allowChild) {女孩|迷你女人}]，她小巧的体型与周围垂下的众多黏糊糊的危险触手形成了鲜明对比。");
          set_race("Jellyfish-Girl");
          createVagina(false,1,0);
          ass.analLooseness = 0;

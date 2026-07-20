@@ -129,7 +129,7 @@ package classes.items
             }
             else if(_loc2_ == 8)
             {
-               _loc1_ += "随着时间推移，缓慢降低佩戴者的腐化值。最低性欲减少 " + _effectMagnitude + "。";
+               _loc1_ += "随着时间推移，缓慢降低佩戴者的腐化。最低性欲减少 " + _effectMagnitude + "。";
             }
             else if(_loc2_ == 9)
             {

@@ -25,7 +25,7 @@ package classes.perks
       
       override public function desc(param1:Perk = undefined) : String
       {
-         return "欲望成长速率提升 " + int(Math.round(100 * (bonus() - 1))) + "％。";
+         return "性欲成长速率提升" + int(Math.round(100 * (bonus() - 1))) + "％。";
       }
       
       public function bonus() : Number

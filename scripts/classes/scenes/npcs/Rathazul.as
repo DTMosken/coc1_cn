@@ -503,7 +503,7 @@ package classes.scenes.npcs
             saveContent.offeredTrice = true;
             outputText("[pg]他的目光扫过你的物品，没有在任何特定的东西上停留，但当他看到那瓶蓝色液体时，他停顿了一下。");
             outputText("[pg][say:这是什么，[name]？]他问道。你向老鼠描述了你发现它的生物，他点了点头，目光仍然盯着瓶子。当你讲完后，他甚至没有真正听进去，而是陷入了沉思。");
-            outputText("[pg][say:啊哈！]他突然大喊道。[say:如果你碰巧有这个意向，我可以借助一些雷普提鲁姆和一颗金色种子轻松地制作更多这种东西。蜥蜴人和鹰身女妖有着奇妙的兼容性——]他抬头看了你一眼，似乎意识到了什么。[say:好吧，别管细节了。简而言之，我可以做一些东西，把你变成……一只鸡蛇，我相信他们是这么叫的。]他对自己的发现感到很高兴。");
+            outputText("[pg][say:啊哈！]他突然大喊道。[say:如果你碰巧有这个意向，我可以借助一些鳞族药水和一颗金色种子轻松地制作更多这种东西。蜥蜴人和鹰身女妖有着奇妙的兼容性——]他抬头看了你一眼，似乎意识到了什么。[say:好吧，别管细节了。简而言之，我可以做一些东西，把你变成……一只鸡蛇，我相信他们是这么叫的。]他对自己的发现感到很高兴。");
             _loc1_ = true;
          }
          if(get_player().hasItem(get_consumables().S_GOSSR) && !saveContent.offeredOculum)
@@ -661,7 +661,7 @@ package classes.scenes.npcs
          var _loc1_:Player = get_player();
          _loc1_.set_gems(_loc1_.get_gems() - 100);
          statScreenRefresh();
-         outputText("你把两缕甜蜜薄纱、一罐Hummanus和一百颗宝石交给拉萨祖尔，他小心翼翼地接过它们，开始为你制作一种特殊的药剂。");
+         outputText("你把两缕粉色蛛丝、一罐人形剂和一百颗宝石交给拉萨祖尔，他小心翼翼地接过它们，开始为你制作一种特殊的药剂。");
          doNext(takethatOculum);
       }
       
@@ -675,7 +675,7 @@ package classes.scenes.npcs
          _loc1_.set_gems(_loc1_.get_gems() - 100);
          statScreenRefresh();
          get_images().showImage("rathazul-lab");
-         outputText("你把一瓶雷普提鲁姆、一颗金色种子和一百颗宝石交给拉萨祖尔，他小心翼翼地接过它们，开始为你制作一种特殊的药剂。");
+         outputText("你把一瓶鳞族药水、一颗金色种子和一百颗宝石交给拉萨祖尔，他小心翼翼地接过它们，开始为你制作一种特殊的药剂。");
          doNext(takethatTotrice);
       }
       
@@ -823,12 +823,12 @@ package classes.scenes.npcs
          if(get_mixologyXP() >= 50 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,1311) > 0)
          {
             _loc1_ = get_player().hasItemArray([get_consumables().REPTLUM,get_consumables().GLDSEED]);
-            addNextButton("鸡蛇药剂",rathazulMakesCockatricePotion).hint("让他酿造一瓶有助于变成鸡蛇的特殊药水。[pg]花费：100宝石\n需要1份雷普提鲁姆和1颗金色种子。").disableIf(get_player().get_gems() < 100,"你买不起。[pg]花费：100宝石\n需要1份雷普提鲁姆和1颗金色种子。").disableIf(!_loc1_,"你没有必需的材料。[pg]花费：100宝石\n需要1份雷普提鲁姆和1颗金色种子。");
+            addNextButton("鸡蛇药剂",rathazulMakesCockatricePotion).hint("让他酿造一瓶有助于变成鸡蛇的特殊药水。[pg]花费：100宝石\n需要1份鳞族药水和1颗金色种子。").disableIf(get_player().get_gems() < 100,"你买不起。[pg]花费：100宝石\n需要1份鳞族药水和1颗金色种子。").disableIf(!_loc1_,"你没有必需的材料。[pg]花费：100宝石\n需要1份鳞族药水和1颗金色种子。");
          }
          if(get_mixologyXP() >= 50)
          {
             _loc1_ = get_player().hasItemArray([get_consumables().S_GOSSR,get_consumables().HUMMUS_],[2,1]);
-            addNextButton("蜘蛛复眼",rathazulMakesEyePotion).hint("让他酿造一瓶能让你长出第二对眼睛的特殊药水。[pg]花费：100宝石\n需要2份甜蜜薄纱和1份Hummanus。","蜘蛛复眼").disableIf(get_player().get_gems() < 100,"你买不起。[pg]花费：100 宝石\n需要 2 份甜蜜薄纱和 1 份 Hummanus。").disableIf(!_loc1_,"你没有必要的材料。[pg]花费：100 宝石\n需要 2 份甜蜜薄纱和 1 份 Hummanus。");
+            addNextButton("蜘蛛复眼",rathazulMakesEyePotion).hint("让他酿造一瓶能让你长出第二对眼睛的特殊药水。[pg]花费：100宝石\n需要2份粉色蛛丝和1份人形剂。","蜘蛛复眼").disableIf(get_player().get_gems() < 100,"你买不起。[pg]花费：100 宝石\n需要 2 份粉色蛛丝和 1 份人形剂。").disableIf(!_loc1_,"你没有必要的材料。[pg]花费：100 宝石\n需要 2 份粉色蛛丝和 1 份人形剂。");
          }
          if(get_output().menuIsEmpty())
          {

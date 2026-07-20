@@ -1551,12 +1551,12 @@ package
             _loc117_ = ["惠特尼的农场马厩","操母马","给公马口交"];
             _loc118_ = _loc117_.shift();
             _loc119_ = new Credit("Satan","!CoC666dcWI",[Contribution.Standalone("爱丽丝们，萝莉魅魔"),_loc82_ == null ? Contribution.Grouped("",_loc81_) : Contribution.Grouped(_loc82_,_loc81_),Contribution.Standalone("阿玛洛克口交"),Contribution.Standalone("集市守卫口交"),Contribution.Standalone("黑天鹅绒阿鲁拉乌内"),Contribution.Standalone("营地睡眠描述"),_loc84_ == null ? Contribution.Grouped("",_loc83_) : Contribution.Grouped(_loc84_,_loc83_),Contribution.Standalone("异界骇物口交"),Contribution.Standalone("烬的龙心花礼物"),_loc86_ == null ? Contribution.Grouped("",_loc85_) : Contribution.Grouped(_loc86_,_loc85_),Contribution.Standalone("农场夜晚修改"),_loc88_ == null ? Contribution.Grouped("",_loc87_) : Contribution.Grouped(_loc88_,_loc87_),Contribution.Standalone("菲拉重写与阿克巴尔的任务"),Contribution.Standalone("蛙女授课扩展"),Contribution.Standalone("母猪恶魔"),Contribution.Standalone("地精子宫奸"),_loc90_ == null ? Contribution.Grouped("",_loc89_) : Contribution.Grouped(_loc90_,_loc89_),Contribution.Standalone("地狱之口"),Contribution.Standalone("赫莉娅的夜间需求"),_loc92_ == null ? Contribution
-            .Grouped("",_loc91_) : Contribution.Grouped(_loc92_,_loc91_),Contribution.Standalone("伊弗里斯肌肉崇拜"),Contribution.Standalone("梦魇伐木工"),_loc94_ == null ? Contribution.Grouped("",_loc93_) : Contribution.Grouped(_loc94_,_loc93_),Contribution.Standalone("象牙魅魔"),_loc96_ == null ? Contribution.Grouped("",_loc95_) : Contribution.Grouped(_loc96_,_loc95_),_loc98_ == null ? Contribution.Grouped("",_loc97_) : Contribution.Grouped(_loc98_,_loc97_),_loc100_ == null ? Contribution.Grouped("",_loc99_) : Contribution.Grouped(_loc100_,_loc99_),_loc102_ == null ? Contribution.Grouped("",_loc101_) : Contribution.Grouped(_loc102_,_loc101_),Contribution.Standalone("奇哈赠送龙心花"),Contribution.Standalone("狐妖饮酒（搞笑模式）"),Contribution.Standalone("莱西斯编辑"),Contribution.Standalone("利德尔矿（当前已禁用）"),Contribution.Standalone("棒棒糖重写"),Contribution.Standalone("魔法典籍"),Contribution.Standalone("庄园葡萄酒重制"),Contribution.Standalone("玛莱击杀修改"),_loc104_ == null ? Contribution.Grouped("",_loc103_) : Contribution.Grouped(_loc104_,_loc103_),Contribution
-            .Standalone("密涅瓦禁欲选项"),Contribution.Standalone("莫拉斯"),_loc106_ == null ? Contribution.Grouped("",_loc105_) : Contribution.Grouped(_loc106_,_loc105_),Contribution.Standalone("普卡百科与饮酒重写"),Contribution.Standalone("瘟疫鼠"),Contribution.Standalone("拉萨祖尔的熊礼物"),Contribution.Standalone("雷贝克浴室口交"),Contribution.Standalone("罗加强暴"),_loc108_ == null ? Contribution.Grouped("",_loc107_) : Contribution.Grouped(_loc108_,_loc107_),_loc110_ == null ? Contribution.Grouped("",_loc109_) : Contribution.Grouped(_loc110_,_loc109_),_loc112_ == null ? Contribution.Grouped("",_loc111_) : Contribution.Grouped(_loc112_,_loc111_),Contribution.Standalone("索菲拒绝女性求欢"),_loc114_ == null ? Contribution.Grouped("",_loc113_) : Contribution.Grouped(_loc114_,_loc113_),Contribution.Standalone("特尔阿德雷图书馆帮助"),Contribution.Standalone("泰莉的玩具与零食"),Contribution.Standalone("幽会还是款待"),Contribution.Standalone("乌尔塔死后的长戟"),_loc116_ == null ? Contribution.Grouped("",_loc115_) : Contribution.Grouped(_loc116_,_loc115_),_loc118_ == null ? Contribution
-            .Grouped("",_loc117_) : Contribution.Grouped(_loc118_,_loc117_),Contribution.Standalone("惠特尼与豺狼人战斗"),Contribution.Standalone("许多烂梗")],[ContributionType.Contributions],null);
+            .Grouped("",_loc91_) : Contribution.Grouped(_loc92_,_loc91_),Contribution.Standalone("伊弗里斯肌肉崇拜"),Contribution.Standalone("小恶魔多重对战"),Contribution.Standalone("梦魇伐木工"),_loc94_ == null ? Contribution.Grouped("",_loc93_) : Contribution.Grouped(_loc94_,_loc93_),Contribution.Standalone("象牙魅魔"),_loc96_ == null ? Contribution.Grouped("",_loc95_) : Contribution.Grouped(_loc96_,_loc95_),_loc98_ == null ? Contribution.Grouped("",_loc97_) : Contribution.Grouped(_loc98_,_loc97_),_loc100_ == null ? Contribution.Grouped("",_loc99_) : Contribution.Grouped(_loc100_,_loc99_),_loc102_ == null ? Contribution.Grouped("",_loc101_) : Contribution.Grouped(_loc102_,_loc101_),Contribution.Standalone("奇哈赠送龙心花"),Contribution.Standalone("狐妖饮酒（搞笑模式）"),Contribution.Standalone("莱西斯编辑"),Contribution.Standalone("利德尔矿（当前已禁用）"),Contribution.Standalone("棒棒糖重写"),Contribution.Standalone("魔法典籍"),Contribution.Standalone("庄园葡萄酒重制"),Contribution.Standalone("玛莱击杀修改"),_loc104_ == null ? Contribution.Grouped("",_loc103_) : Contribution
+            .Grouped(_loc104_,_loc103_),Contribution.Standalone("密涅瓦禁欲选项"),Contribution.Standalone("莫拉斯"),_loc106_ == null ? Contribution.Grouped("",_loc105_) : Contribution.Grouped(_loc106_,_loc105_),Contribution.Standalone("普卡百科与饮酒重写"),Contribution.Standalone("瘟疫鼠"),Contribution.Standalone("拉萨祖尔的熊礼物"),Contribution.Standalone("雷贝克浴室口交"),Contribution.Standalone("罗加强暴"),_loc108_ == null ? Contribution.Grouped("",_loc107_) : Contribution.Grouped(_loc108_,_loc107_),_loc110_ == null ? Contribution.Grouped("",_loc109_) : Contribution.Grouped(_loc110_,_loc109_),_loc112_ == null ? Contribution.Grouped("",_loc111_) : Contribution.Grouped(_loc112_,_loc111_),Contribution.Standalone("索菲拒绝女性求欢"),_loc114_ == null ? Contribution.Grouped("",_loc113_) : Contribution.Grouped(_loc114_,_loc113_),Contribution.Standalone("特尔阿德雷图书馆帮助"),Contribution.Standalone("泰莉的玩具与零食"),Contribution.Standalone("幽会还是款待"),Contribution.Standalone("乌尔塔死后的长戟"),_loc116_ == null ? Contribution.Grouped("",_loc115_) : Contribution.Grouped(_loc116_
+            ,_loc115_),_loc118_ == null ? Contribution.Grouped("",_loc117_) : Contribution.Grouped(_loc118_,_loc117_),Contribution.Standalone("惠特尼与豺狼人战斗"),Contribution.Standalone("许多烂梗")],[ContributionType.Contributions],null);
             _loc120_ = ["爱丽丝扩展","摸头","内裤蝴蝶结与闻嗅"];
             _loc121_ = _loc120_.shift();
-            _loc122_ = new Credit("Wombat",null,[_loc121_ == null ? Contribution.Grouped("",_loc120_) : Contribution.Grouped(_loc121_,_loc120_),Contribution.Standalone("沼泽神庙"),Contribution.Standalone("妖精舒尔德拉的鸡巴幻象~"),Contribution.Standalone("冰川裂谷小木屋"),Contribution.Standalone("玛瑞斯，亡灵女裁缝"),Contribution.Standalone("雷贝克鼻烟场景 (百合)"),Contribution.Standalone("特尔阿德雷小猫遭遇战"),Contribution.Standalone("训练假人"),Contribution.Standalone("瓦普拉强迫舔舐"),Contribution.Standalone("有翼长矛")],[ContributionType.Contributions],null);
+            _loc122_ = new Credit("Wombat",null,[_loc121_ == null ? Contribution.Grouped("",_loc120_) : Contribution.Grouped(_loc121_,_loc120_),Contribution.Standalone("沼泽神庙"),Contribution.Standalone("妖精舒尔德拉的鸡巴幻象~"),Contribution.Standalone("冰川裂谷小木屋"),Contribution.Standalone("玛丽埃尔，亡灵女裁缝"),Contribution.Standalone("雷贝克鼻烟场景 (百合)"),Contribution.Standalone("特尔阿德雷小猫遭遇战"),Contribution.Standalone("训练假人"),Contribution.Standalone("瓦普拉强迫舔舐"),Contribution.Standalone("有翼长矛")],[ContributionType.Contributions],null);
             _loc123_ = ["爱子重写","对话选项","八岐后续"];
             _loc124_ = _loc123_.shift();
             _loc125_ = ["烬的附加内容","母乳喂养","孵蛋"];
@@ -1610,7 +1610,7 @@ package
             _loc122_ = new Credit("Stadler76",null,[Contribution.Standalone("蜘蛛之眼转化")],[ContributionType.Coding,ContributionType.Contributions],null);
             _loc133_ = new Credit("Stygs",null,[Contribution.Standalone("凯瑟琳的棕色、灰色、彩虹色、赤褐色和黄色染发剂")],[ContributionType.Contributions],null);
             _loc138_ = new Credit("Wedge Skyrocket",null,[Contribution.Standalone("狐妖祭司爱子")],[ContributionType.Contributions],null);
-            _loc23_ = ["16位立绘","蚂蚁守卫","浴场女孩","布鲁克","布鲁克（裸体）","木匠","克拉拉","沙漠食尸鬼","埃德琳（怀孕）","石像鬼","海克尔","海克尔（裸体）","小恶魔群","象牙魅魔","乔伊","奇哈","凯莉","凯莉（怀孕）","乳胶粘液女孩","玛布尔（奶牛）","巴勃罗","不死鸟","不死鸟（裸体）","菲拉","拉斐尔","鲨鱼女孩","瓦莱丽亚","瓦普拉","维纳斯（扶他）","泽塔兹","泽塔兹（强壮）"];
+            _loc23_ = ["16位立绘","蚂蚁守卫","浴场女孩","布鲁克","布鲁克（裸体）","木匠","克拉拉","沙漠食尸鬼","埃德琳（怀孕）","石像鬼","海克尔","海克尔（裸体）","小恶魔群","象牙魅魔","乔伊","奇哈","凯莉","凯莉（怀孕）","乳胶史莱姆娘","玛布尔（奶牛）","巴勃罗","不死鸟","不死鸟（裸体）","菲拉","拉斐尔","鲨鱼女孩","瓦莱丽亚","瓦普拉","维纳斯（扶他）","泽塔兹","泽塔兹（强壮）"];
             _loc24_ = _loc23_.shift();
             _loc26_ = ["8bit立绘","烬","菲拉"];
             _loc27_ = _loc26_.shift();
@@ -5131,7 +5131,8 @@ package
             _loc2_ = function():Either
             {
                var _loc1_:Cock = ConditionalConverters.get_player().cocks[0];
-               return OneOf_Impl_.fromB(_loc1_ != null ? _loc1_.cockLength : null);
+               var _loc2_:Object = _loc1_ != null ? _loc1_.cockLength : null;
+               return OneOf_Impl_.fromB(_loc2_ != null ? Number(_loc2_) : 0);
             };
             if("cocklength" in StringMap.reserved)
             {
@@ -5144,7 +5145,8 @@ package
             _loc2_ = function():Either
             {
                var _loc1_:Cock = ConditionalConverters.get_player().cocks[ConditionalConverters.get_player().biggestCockIndex()];
-               return OneOf_Impl_.fromB(_loc1_ != null ? _loc1_.cockLength : null);
+               var _loc2_:Object = _loc1_ != null ? _loc1_.cockLength : null;
+               return OneOf_Impl_.fromB(_loc2_ != null ? Number(_loc2_) : 0);
             };
             if("biggestcocklength" in StringMap.reserved)
             {
@@ -5157,7 +5159,8 @@ package
             _loc2_ = function():Either
             {
                var _loc1_:Cock = ConditionalConverters.get_player().cocks[0];
-               return OneOf_Impl_.fromB(_loc1_ != null ? _loc1_.cockThickness : null);
+               var _loc2_:Object = _loc1_ != null ? _loc1_.cockThickness : null;
+               return OneOf_Impl_.fromB(_loc2_ != null ? Number(_loc2_) : 0);
             };
             if("cockthickness" in StringMap.reserved)
             {
@@ -5170,7 +5173,8 @@ package
             _loc2_ = function():Either
             {
                var _loc1_:Cock = ConditionalConverters.get_player().cocks[0];
-               return OneOf_Impl_.fromB(_loc1_ != null ? _loc1_.cArea() : null);
+               var _loc2_:Object = _loc1_ != null ? _loc1_.cArea() : null;
+               return OneOf_Impl_.fromB(_loc2_ != null ? Number(_loc2_) : 0);
             };
             if("cockarea" in StringMap.reserved)
             {
@@ -5747,7 +5751,8 @@ package
             _loc2_ = function():Either
             {
                var _loc1_:Cock = ConditionalConverters.get_player().cocks[0];
-               return OneOf_Impl_.fromB(_loc1_ != null ? _loc1_.knotMultiplier : null);
+               var _loc2_:Object = _loc1_ != null ? _loc1_.knotMultiplier : null;
+               return OneOf_Impl_.fromB(_loc2_ != null ? Number(_loc2_) : 0);
             };
             if("knotmult" in StringMap.reserved)
             {
@@ -6060,7 +6065,8 @@ package
             _loc2_ = function():Either
             {
                var _loc1_:Vagina = ConditionalConverters.get_player().vaginas[0];
-               return OneOf_Impl_.fromB(Number(_loc1_ != null ? _loc1_.vaginalLooseness : null));
+               var _loc2_:Object = Number(_loc1_ != null ? _loc1_.vaginalLooseness : null);
+               return OneOf_Impl_.fromB(_loc2_ != null ? Number(_loc2_) : 0);
             };
             if("vaginallooseness" in StringMap.reserved)
             {
@@ -9223,7 +9229,7 @@ package
             }
             _loc2_ = function():String
             {
-               return SingleArgLookups.get_player().mf("father","mother");
+               return SingleArgLookups.get_player().mf("父亲","母亲");
             };
             if("father" in StringMap.reserved)
             {
@@ -9355,7 +9361,7 @@ package
             }
             _loc2_ = function():String
             {
-               return SingleArgLookups.get_player().hairOrFurColor();
+               return Utils.cnName(SingleArgLookups.get_player().hairOrFurColor());
             };
             if("hairorfurcolor" in StringMap.reserved)
             {
@@ -11112,7 +11118,7 @@ package
             }
             _loc2_ = function():String
             {
-               return KGAMECLASS.kGAMECLASS.monster.pronoun2 + (KGAMECLASS.kGAMECLASS.monster.get_plural() ? "selves" : "self");
+               return Utils.cnName(KGAMECLASS.kGAMECLASS.monster.pronoun2) + (KGAMECLASS.kGAMECLASS.monster.get_plural() ? "自己" : "自己");
             };
             if("monster.himself" in StringMap.reserved)
             {
@@ -11268,7 +11274,7 @@ package
             }
             _loc2_ = function():String
             {
-               return KGAMECLASS.kGAMECLASS.aliceScene.eyeColor;
+               return Utils.cnName(KGAMECLASS.kGAMECLASS.aliceScene.eyeColor);
             };
             if("aliceeyes" in StringMap.reserved)
             {
@@ -11280,7 +11286,7 @@ package
             }
             _loc2_ = function():String
             {
-               return KGAMECLASS.kGAMECLASS.aliceScene.panties;
+               return Utils.cnName(KGAMECLASS.kGAMECLASS.aliceScene.panties);
             };
             if("alicepanties" in StringMap.reserved)
             {
@@ -11292,7 +11298,7 @@ package
             }
             _loc2_ = function():String
             {
-               return KGAMECLASS.kGAMECLASS.aliceScene.pantiesLong;
+               return Utils.cnName(KGAMECLASS.kGAMECLASS.aliceScene.pantiesLong);
             };
             if("alicepantieslong" in StringMap.reserved)
             {
@@ -11304,7 +11310,7 @@ package
             }
             _loc2_ = function():String
             {
-               return KGAMECLASS.kGAMECLASS.aliceScene.get_hairColor();
+               return Utils.cnName(KGAMECLASS.kGAMECLASS.aliceScene.get_hairColor());
             };
             if("alicehair" in StringMap.reserved)
             {
@@ -11316,7 +11322,7 @@ package
             }
             _loc2_ = function():String
             {
-               return KGAMECLASS.kGAMECLASS.aliceScene.get_skinTone();
+               return Utils.cnName(KGAMECLASS.kGAMECLASS.aliceScene.get_skinTone());
             };
             if("aliceskin" in StringMap.reserved)
             {
@@ -11448,7 +11454,7 @@ package
                {
                   return "破布";
                }
-               return _loc1_;
+               return Utils.cnName(_loc1_);
             };
             if("amilyclothing" in StringMap.reserved)
             {

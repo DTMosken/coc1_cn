@@ -70,7 +70,7 @@ package classes.scenes.npcs
          }
          else if(get_lust100() > 50)
          {
-            outputText("老鼠的皮肤因初现的性唤起而保持潮红。");
+            outputText("老鼠的皮肤因初现的兴奋而保持潮红。");
          }
          doNext(get_game().playerMenu);
       }

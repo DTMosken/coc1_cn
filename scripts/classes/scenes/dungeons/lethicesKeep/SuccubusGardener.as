@@ -299,7 +299,7 @@ package classes.scenes.dungeons.lethicesKeep
       public function sicem() : void
       {
          var _loc3_:int = 0;
-         outputText("园丁令人愉悦地抖动着身体，转了个圈，指向你的方向。[say: 咬[himHer]，宝贝们！]根本没有时间反驳，只有一波无情的绿色植物向你猛扑过来！");
+         outputText("园丁令人愉悦地抖动着身体，转了个圈，指向你的方向。[say: 咬啊，宝贝们！]根本没有时间反驳，只有一波无情的绿色植物向你猛扑过来！");
          var _loc1_:Number = 0;
          var _loc2_:int = 0;
          while(_loc2_ < 10)

@@ -43,7 +43,7 @@ package classes.scenes.camp
          wings.type = 5;
          skin.tone = "green";
          createStatusEffect(StatusEffects.GenericRunDisabled,0,0,0,0);
-         set_long("这些小恶魔身高在两到四英尺之间，骨瘦如柴，长着小巧的恶魔翅膀。它们红色和橙色的皮肤很脏，黑色的头发看起来油腻腻的。有些是光着身子的，但大多数都穿着破烂的遮阴布，几乎遮不住它们的胯部。它们都长着一根像人类手臂一样又长又粗的" + cockDescript(0) + "，对它们的身体来说大得离谱。");
+         set_long("这些小恶魔身高在[if (metric) {半米到一米多一点|两到四英尺}]之间，骨瘦如柴，长着小巧的恶魔翅膀。它们红色和橙色的皮肤很脏，黑色的头发看起来油腻腻的。有些是光着身子的，但大多数都穿着破烂的遮阴布，几乎遮不住它们的胯部。它们都长着一根像人类手臂一样又长又粗的" + cockDescript(0) + "，对它们的身体来说大得离谱。");
          pronoun1 = "它们";
          pronoun2 = "它们";
          pronoun3 = "their";

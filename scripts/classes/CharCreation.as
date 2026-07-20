@@ -2638,7 +2638,7 @@ package classes
             }
             else
             {
-               outputText("你总觉得自己在财运不错。因此，你总能攒下宝石以备不时之需，并懂得如何让收益最大化（战斗胜利获得宝石+15%）。初始携带250颗宝石。这是你所经历的吗？");
+               outputText("你总觉得自己财运不错。因此，你总能攒下宝石以备不时之需，并懂得如何让收益最大化（战斗胜利获得宝石+15%）。初始携带250颗宝石。这是你所经历的吗？");
             }
          }
          else if(_loc2_ == PerkLib.HistoryHealer)
@@ -3260,70 +3260,70 @@ package classes
          addButton(0,"欲望",function():void
          {
             _g.ascensionPerkSelection(perk,maxLevel);
-         }).hint(PerkLib.AscensionDesires.get_longDesc() + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionDesires) + " / " + 10);
+         }).hint(Utils.cnName(PerkLib.AscensionDesires.get_longDesc()) + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionDesires) + " / " + 10);
          _g1 = this;
          perk1 = PerkLib.AscensionEndurance;
          maxLevel1 = 10;
          addButton(1,"耐力",function():void
          {
             _g1.ascensionPerkSelection(perk1,maxLevel1);
-         }).hint(PerkLib.AscensionEndurance.get_longDesc() + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionEndurance) + " / " + 10);
+         }).hint(Utils.cnName(PerkLib.AscensionEndurance.get_longDesc()) + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionEndurance) + " / " + 10);
          _g2 = this;
          perk2 = PerkLib.AscensionFertility;
          maxLevel2 = 15;
          addButton(2,"生育力",function():void
          {
             _g2.ascensionPerkSelection(perk2,maxLevel2);
-         }).hint(PerkLib.AscensionFertility.get_longDesc() + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionFertility) + " / " + 15);
+         }).hint(Utils.cnName(PerkLib.AscensionFertility.get_longDesc()) + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionFertility) + " / " + 15);
          _g3 = this;
          perk3 = PerkLib.AscensionFortune;
          maxLevel3 = -1;
          addButton(3,"幸运",function():void
          {
             _g3.ascensionPerkSelection(perk3,maxLevel3);
-         }).hint(PerkLib.AscensionFortune.get_longDesc() + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionFortune) + " (无等级上限)");
+         }).hint(Utils.cnName(PerkLib.AscensionFortune.get_longDesc()) + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionFortune) + " (无等级上限)");
          _g4 = this;
          perk4 = PerkLib.AscensionMoralShifter;
          maxLevel4 = 10;
          addButton(4,"道德转换",function():void
          {
             _g4.ascensionPerkSelection(perk4,maxLevel4);
-         }).hint(PerkLib.AscensionMoralShifter.get_longDesc() + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionMoralShifter) + " / " + 10);
+         }).hint(Utils.cnName(PerkLib.AscensionMoralShifter.get_longDesc()) + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionMoralShifter) + " / " + 10);
          _g5 = this;
          perk5 = PerkLib.AscensionMysticality;
          maxLevel5 = 10;
          addButton(5,"神秘",function():void
          {
             _g5.ascensionPerkSelection(perk5,maxLevel5);
-         }).hint(PerkLib.AscensionMysticality.get_longDesc() + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionMysticality) + " / " + 10);
+         }).hint(Utils.cnName(PerkLib.AscensionMysticality.get_longDesc()) + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionMysticality) + " / " + 10);
          _g6 = this;
          perk6 = PerkLib.AscensionTolerance;
          maxLevel6 = 20;
          addButton(6,"耐受",function():void
          {
             _g6.ascensionPerkSelection(perk6,maxLevel6);
-         }).hint(PerkLib.AscensionTolerance.get_longDesc() + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionTolerance) + " / " + 20);
+         }).hint(Utils.cnName(PerkLib.AscensionTolerance.get_longDesc()) + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionTolerance) + " / " + 20);
          _g7 = this;
          perk7 = PerkLib.AscensionVirility;
          maxLevel7 = 15;
          addButton(7,"雄风",function():void
          {
             _g7.ascensionPerkSelection(perk7,maxLevel7);
-         }).hint(PerkLib.AscensionVirility.get_longDesc() + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionVirility) + " / " + 15);
+         }).hint(Utils.cnName(PerkLib.AscensionVirility.get_longDesc()) + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionVirility) + " / " + 15);
          _g8 = this;
          perk8 = PerkLib.AscensionWisdom;
          maxLevel8 = 5;
          addButton(8,"智慧",function():void
          {
             _g8.ascensionPerkSelection(perk8,maxLevel8);
-         }).hint(PerkLib.AscensionWisdom.get_longDesc() + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionWisdom) + " / " + 5);
+         }).hint(Utils.cnName(PerkLib.AscensionWisdom.get_longDesc()) + "[pg]当前等级: " + get_player().perkv1(PerkLib.AscensionWisdom) + " / " + 5);
          _g9 = this;
          perk9 = PerkLib.AscensionMartiality;
          maxLevel9 = 10;
          addButton(9,"武道",function():void
          {
             _g9.ascensionPerkSelection(perk9,maxLevel9);
-         }).hint(PerkLib.AscensionMartiality.get_longDesc() + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionMartiality) + " / " + 10);
+         }).hint(Utils.cnName(PerkLib.AscensionMartiality.get_longDesc()) + "[pg]当前等级：" + get_player().perkv1(PerkLib.AscensionMartiality) + " / " + 10);
          addButton(14,"返回",ascensionMenu);
       }
       
@@ -3458,18 +3458,18 @@ package classes
          get_images().showImage("item-draft-lust");
          if(!get_player().isChild())
          {
-            outputText("小恶魔晃了晃空瓶，像是在强调自己的话。你因这真相惊愕不已——才踏入恶魔领域，竟然就已经被下了药！你浑身发颤，胯间传来难耐的欲求，但你强自忍住，胸中升腾的凛然正气为你注入了力量。[pg]你绝望地扑向小恶魔，眼见他脸上那抹得意的笑化作满脸的惊惧，心中好不快意。这渺小的魔物哪是你的对手，被你毫不留情地一顿狠揍。你拎起这矮小的恶魔，一脚将他踹飞向半空，而后阴沉地皱眉，看着他展开双翼，飞快朝远方逃窜而去。[pg]");
+            outputText("小恶魔晃了晃空瓶，像是在强调自己的话。你因这真相惊愕不已——才踏入恶魔领域，竟然就已经被下了药！你浑身发颤，胯间传来难耐的欲求，但你强忍了下来，正义的怒火赋予了你力量。[pg]你绝望地扑向小恶魔，高兴地看着他那得意的笑容变成了纯粹的恐惧。这个矮小的生物根本无法抵挡你的蛮力，被你毫不留情地一顿狠揍。你拎起这矮小的恶魔，一脚把他踢飞到半空中。看着他展开双翼开始向远处逃窜，你神情严峻地皱起了眉头。[pg]");
          }
          else
          {
             outputText("小恶魔晃了晃空瓶，像是在强调自己的话。你因这真相惊愕不已——才踏入恶魔领域，竟然就已经被下了药！一股诡异而令人晕眩的燥热不断席卷全身，你发着颤，却暂且稳住了心神。绝望中你扑向小恶魔，勇敢地挥起你那小小的拳头。这个不堪一击的恶魔似乎大大低估了一个体型与其相近的人类所能爆发的凶悍。他疯狂挣扎着，总算设法挣脱了你，旋即展开双翼腾空而起，逃离了你那触及不到的范围。[pg]");
          }
          outputText("小恶魔说道：[say: 蠢货！你本可以享受无尽的快感……如果我们再次相遇，我会让你因为羞辱我而后悔的！记住泽塔兹这个名字，因为你很快就会面临我主人的怒火！][pg]");
-         outputText("击败恶魔的快意荡然无存，因为你想到自己已经被药剂污染了。你暗自发誓，一定要找到那个害你和其余勇士们沦落至此的恶魔，将他和他那只小恶魔一并挫骨扬灰。");
+         outputText("击败恶魔的喜悦荡然无存，因为你想到自己已经被药剂污染了。你暗自发誓，一定要找到那个害你和其余勇士们沦落至此的恶魔，将他和他那只小恶魔一并挫骨扬灰。");
          if(get_creepingTaint())
          {
             outputText("[pg]你感到胸口有一阵奇怪的寒意。小恶魔的药剂似乎对你产生了永久性的影响。");
-            outputText("[pg-]泽塔兹的药剂正在腐蚀你的灵魂！<b>在你想出办法逆转这种影响之前，你每天都会慢慢增加腐化值。</b>");
+            outputText("[pg-]泽塔兹的药剂正在腐蚀你的灵魂！<b>在你想出办法逆转这种影响之前，你每天都会慢慢增加腐化。</b>");
          }
          doNext(arrivalPartFour);
       }

@@ -32,7 +32,7 @@ package classes.scenes.areas.bog
          set_a("");
          set_short("chameleon girl");
          imageName = "chameleongirl";
-         set_long("你面前站着一个高挑的蜥蜴人女孩，她有着光滑的" + _loc2_[0] + "皮肤，从脚踝到肩膀布满了长长的" + _loc2_[1] + "条纹。一条异常巨大的尾巴在她身后甩动，她的手相对于她的体型来说非常巨大，显然是为了轻松爬树而生的。一对小巧可爱的角从她的太阳穴长出，一对挺拔的B罩杯在暴露的衣物下呼之欲出。手指上长着巨大锋利的爪子，正充满威胁地向你比划着。");
+         set_long("你面前站着一个高挑的蜥蜴人女孩，她有着光滑的" + Utils.cnName(_loc2_[0]) + "皮肤，从脚踝到肩膀布满了长长的" + Utils.cnName(_loc2_[1]) + "条纹。一条异常巨大的尾巴在她身后甩动，她的手相对于她的体型来说非常巨大，显然是为了轻松爬树而生的。一对小巧可爱的角从她的太阳穴长出，一对挺拔的B罩杯在暴露的衣物下呼之欲出。手指上长着巨大锋利的爪子，正充满威胁地向你比划着。");
          set_race("Chameleon-Morph");
          createVagina(false,5,2);
          createBreastRow(Appearance.breastCupInverse("B"));

@@ -82,7 +82,7 @@ package classes.scenes.places.bazaar
          benoitSprite();
          if(!(get_player().hasItem(get_consumables().OVIELIX,2) && get_player().hasItem(get_consumables().REPTLUM) && get_player().hasItem(get_consumables().GOB_ALE)))
          {
-            outputText("你还没有尝试这个所需的材料。你回想起" + benoitMF("本诺瓦","本诺瓦特") + "提到过你需要雷普提鲁姆、两瓶产卵灵药和地精麦酒。");
+            outputText("你还没有尝试这个所需的材料。你回想起" + benoitMF("本诺瓦","本诺瓦特") + "提到过你需要鳞族药水、两瓶产卵灵药和地精麦酒。");
             doNext(benoitIntro);
          }
          else
@@ -91,7 +91,7 @@ package classes.scenes.places.bazaar
             get_player().consumeItem(get_consumables().REPTLUM);
             get_player().consumeItem(get_consumables().GOB_ALE);
             outputText("你翻出你收集的成分，开始把它们砰砰地放在" + benoitMF("本诺瓦","本诺瓦特") + "面前的柜台上，告诉" + benoitMF("他","她") + "你已经得到了" + benoitMF("他","她") + "需要的东西。皮埃尔听到声音兴奋地叫了起来。");
-            outputText("[pg][say: 那是什么？] 蛇怪困惑地说。你解释说你可以调制出一种能给你蛇怪子宫的东西——从而生出雌性蛇怪孩子。" + benoitMF("本诺瓦","本诺瓦特") + "张开" + benoitMF("他","她") + "的嘴，然后又闭上；" + benoitMF("他","她") + "花了一段时间才正确理解这些话。[say: 但……但这完全是不可能的，[name]！] " + benoitMF("他","她") + "最终说道，绞着" + benoitMF("他","她") + "的双手。[say: 你怎么知道你不会只是毒死自己？或者，或者把自己变成蝾螈什么的？求你了……别受伤……我真不该说……] 当你从附近的架子上拿出一个白镴碗，从装满旧餐具的容器里拿出一把木勺，开始把各种材料混合在一起时，" + benoitMF("他","她") + "陷入了沉默。你把产卵灵药倒进地精麦酒里，把它们搅拌在一起，直到一股相当难闻的硫磺味充满了狭窄的市场摊位。你小心翼翼地滴入雷普提鲁姆，同时继续搅拌，直到气味变成烹饪雪利酒的味道。你对着混合物皱起眉头。感觉好像少了点什么……你漫不经心地让" + benoitMF("本诺瓦","本诺瓦特") + "向你张开" + benoitMF("他","她") + "的手，同时从餐具容器里拔出一把菜刀。当你用刀片划过" + benoitMF("他","她") + "的手掌，然后将" + benoitMF("他","她") + "的手紧紧地握在碗上方时，" + benoitMF("他","她") + "痛得叫了起来。深红色的水滴在混合物中绽放，当你小心翼翼地搅拌时，药水变成了灰绿色：" + benoitMF("本诺瓦","本诺瓦特") + "鳞片的颜色。");
+            outputText("[pg][say: 那是什么？] 蛇怪困惑地说。你解释说你可以调制出一种能给你蛇怪子宫的东西——从而生出雌性蛇怪孩子。" + benoitMF("本诺瓦","本诺瓦特") + "张开" + benoitMF("他","她") + "的嘴，然后又闭上；" + benoitMF("他","她") + "花了一段时间才正确理解这些话。[say: 但……但这完全是不可能的，[name]！] " + benoitMF("他","她") + "最终说道，绞着" + benoitMF("他","她") + "的双手。[say: 你怎么知道你不会只是毒死自己？或者，或者把自己变成蝾螈什么的？求你了……别受伤……我真不该说……] 当你从附近的架子上拿出一个白镴碗，从装满旧餐具的容器里拿出一把木勺，开始把各种材料混合在一起时，" + benoitMF("他","她") + "陷入了沉默。你把产卵灵药倒进地精麦酒里，把它们搅拌在一起，直到一股相当难闻的硫磺味充满了狭窄的市场摊位。你小心翼翼地滴入鳞族药水，同时继续搅拌，直到气味变成烹饪雪利酒的味道。你对着混合物皱起眉头。感觉好像少了点什么……你漫不经心地让" + benoitMF("本诺瓦","本诺瓦特") + "向你张开" + benoitMF("他","她") + "的手，同时从餐具容器里拔出一把菜刀。当你用刀片划过" + benoitMF("他","她") + "的手掌，然后将" + benoitMF("他","她") + "的手紧紧地握在碗上方时，" + benoitMF("他","她") + "痛得叫了起来。深红色的水滴在混合物中绽放，当你小心翼翼地搅拌时，药水变成了灰绿色：" + benoitMF("本诺瓦","本诺瓦特") + "鳞片的颜色。");
             outputText("[pg][say: 你在太阳下待得太久了，[name]，] 蛇怪严厉地说，紧紧抓住" + benoitMF("他","她") + "的手。[say: 去躺一会儿，然后重新考虑喝下你刚刚调制的任何东西。我从未要求你尝试这个。] 你感到片刻的怀疑……但是不，你已经把好材料倒进去了，你绝对不会现在退缩。你给" + benoitMF("本诺瓦","本诺瓦特") + "未受伤的手一个令人安心的挤压，并尽可能自信地说你知道自己在做什么。说完，你端起碗，只犹豫了片刻，便大口喝了下去。");
             outputText("[pg]这种混合物有一种挥之不去的薄荷刺痛感，覆盖了酒精吞噬一切的灼烧感；你隐约想起了家里橱柜深处那些黏糊糊的利口酒。你咂咂嘴，喝完后故意大声地把碗砰地放下；当你等待时，" + benoitMF("本诺瓦","本诺瓦特") + "紧张地抓住柜台。你没有立刻死掉，所以这是个好现象……你的肚子里传来一阵巨大的咕噜声，你弯下腰，因为你的内脏在移动，肠胃里的东西在翻腾。这种感觉并不完全是痛苦，但你觉得你已经失去了对内脏的所有控制；你抓住自己的两侧，试图平稳地呼吸，因为你的胃翻江倒海，发出像气体被困住的声音。最终你感觉好像有一个气泡在你的肠道下方形成；慢慢地，随着气泡越来越大，你的内脏安定下来，直到这种感觉慢慢消退。你小心翼翼地来回走了几次，然后戳了戳你的肚子。");
             if(!get_player().hasPerk(PerkLib.Oviposition))
@@ -375,7 +375,7 @@ package classes.scenes.places.bazaar
                outputText("[pg]你发出一阵轻柔的嗡嗡声。");
                outputText("[pg][say: 蜂女，] 本诺瓦特过了一会儿说道。");
                outputText("[pg]你跺着脚，发出呼哧呼哧的喘息声。");
-               outputText("[pg][say: 牛头怪，] 本诺瓦特立刻说道。你叹了口气——" + benoitMF("他","她") + "太擅长这个游戏了，而你已经想不出什么生物了。你稍微想了想，一边拍打着柜台发出得得的马蹄声，一边还特意加上了沉重的呼吸声。");
+               outputText("[pg][say: 牛头人，] 本诺瓦特立刻说道。你叹了口气——" + benoitMF("他","她") + "太擅长这个游戏了，而你已经想不出什么生物了。你稍微想了想，一边拍打着柜台发出得得的马蹄声，一边还特意加上了沉重的呼吸声。");
                outputText("[pg][say: 见鬼，那到底是什么东西？] 本诺瓦特看起来有些惊慌。你告诉他那是");
                outputText("独角半人马。");
                outputText("[pg][say: 什么？]");
@@ -543,7 +543,7 @@ package classes.scenes.places.bazaar
          if(get_player().isTaur())
          {
             outputText("[pg]目前你什么也没做；你只是站在后面，让" + benoitMF("his","her") + "手慢慢地抚摸你的身体。" + benoitMF("his","her") + "一只手停在你的[nipples]上；当" + benoitMF("he","she") + "轻轻地挑逗和揉捏那柔软敏感的肉体时，" + benoitMF("his","her") + "另一只手向下游移，穿过你的腹部，绕过你的腰，顺着你天鹅绒般的背部滑下。虽然" + benoitMF("he","she") + "现在已经熟悉了你的身体，但" + benoitMF("Benoit","Benoite") + "似乎从未停止过对你身体的着迷；当" + benoitMF("his","her") + "光滑的手抚过你温暖的肌肤时，" + benoitMF("his","her") + "脸上带着一种下意识的专注皱眉，就好像" + benoitMF("he","she") + "正在" + benoitMF("his","her") + "脑海中描绘你的轮廓。");
-            outputText("[pg]这种缓慢、轻柔的按压固然很好，但你忍不住想，你是否能在这个胆小的蛇怪身上唤醒一些更具兽性的东西。让" + benoitMF("him","her") + "对你失去自控力的想法让你咧嘴一笑，你温柔而坚定地把手放在" + benoitMF("his","her") + "爪子上，告诉" + benoitMF("him","her") + "停下来。" + benoitMF("He","She") + "困惑地看着你。你微笑着开始以其人之道还治其人之身；你的手轻轻地滑过" + benoitMF("his","her") + "紧致光滑的肉体，顺着" + benoitMF("his","her") + "平坦的腹部向下，直到触及" + benoitMF("his","her") + "长内裤。你慢慢地解开它们，让它们掉落，释放出" + benoitMF("his","her") + "又长又细的勃起。你用一只手轻轻地在根部画圈；即使是触摸" + benoitMF("his","her") + "阴茎这个最不敏感的部位，也让" + benoitMF("him","her") + "因渴望而发出咕哝声，" + benoitMF("his","her") + "心脏的跳动在" + benoitMF("his","her") + "鳞片间回荡，" + benoitMF("he","she") + "不由自主地向前挺动，试图让你的手更多地触碰" + benoitMF("him","her") + "。你再次告诉" + benoitMF("him","her") + "保持安静。你继续几乎是在为" + benoitMF("him","her") + "手淫，你的一只手摩擦着" + benoitMF("his","her") + "肉棒的根部和它挺出的阴唇，同时你非常轻柔地摇摆着你强壮的后臀，看到蛇怪强烈的性唤起，你的[vagina]开始湿润。空气中弥漫着你性爱的气味，而你无法向后伸手做任何事情的事实只会加剧你的兴奋。" + benoitMF("Benoit","Benoite") + "咬紧" + benoitMF("his","her") + "尖牙，微微颤抖着，就像一根即将爆裂的管子，" + benoitMF("his","her") + "尾巴断断续续地抽打着，当你笨重地转身，将你的臀部引向" + benoitMF("him"
+            outputText("[pg]这种缓慢、轻柔的按压固然很好，但你忍不住想，你是否能在这个胆小的蛇怪身上唤醒一些更具兽性的东西。让" + benoitMF("him","her") + "对你失去自控力的想法让你咧嘴一笑，你温柔而坚定地把手放在" + benoitMF("his","her") + "爪子上，告诉" + benoitMF("him","her") + "停下来。" + benoitMF("He","She") + "困惑地看着你。你微笑着开始以其人之道还治其人之身；你的手轻轻地滑过" + benoitMF("his","her") + "紧致光滑的肉体，顺着" + benoitMF("his","her") + "平坦的腹部向下，直到触及" + benoitMF("his","her") + "长内裤。你慢慢地解开它们，让它们掉落，释放出" + benoitMF("his","her") + "又长又细的勃起。你用一只手轻轻地在根部画圈；即使是触摸" + benoitMF("his","her") + "阴茎这个最不敏感的部位，也让" + benoitMF("him","her") + "因渴望而发出咕哝声，" + benoitMF("his","her") + "心脏的跳动在" + benoitMF("his","her") + "鳞片间回荡，" + benoitMF("he","she") + "不由自主地向前挺动，试图让你的手更多地触碰" + benoitMF("him","her") + "。你再次告诉" + benoitMF("him","her") + "保持安静。你继续几乎是在为" + benoitMF("him","her") + "手淫，你的一只手摩擦着" + benoitMF("his","her") + "肉棒的根部和它挺出的阴唇，同时你非常轻柔地摇摆着你强壮的后臀，看到蛇怪强烈的兴奋，你的[vagina]开始湿润。空气中弥漫着你性爱的气味，而你无法向后伸手做任何事情的事实只会加剧你的兴奋。" + benoitMF("Benoit","Benoite") + "咬紧" + benoitMF("his","her") + "尖牙，微微颤抖着，就像一根即将爆裂的管子，" + benoitMF("his","her") + "尾巴断断续续地抽打着，当你笨重地转身，将你的臀部引向" + benoitMF("him"
             ,"her") + "，将你的精华涂抹在" + benoitMF("his","her") + "极其敏感的鼻孔上时。当开始沙哑地说话时，" + benoitMF("he","she") + "能闻到的只有你自己的情欲，你说你一直是个在山里玩耍的调皮女孩，你戏弄、逃跑并嘲笑你遇到的每一个生物，但现在一只大坏蛇怪把你逼到了角落，而这只大坏蛇怪现在独自拥有了这个调皮女孩，它打算做些什么呢……？");
             outputText("[pg][benoit Name]猛地向前冲去，抓住你的[butt]，转身将你按在墙上。你的笑声变成了喘息，伴随着一声几乎痛苦的低吼，" + benoitMF("Benoit","Benoite") + "将自己径直插入你湿润的小穴。当" + benoitMF("he","she") + "开始肆无忌惮地操你时，你只能紧紧抓住马车的墙壁，随着" + benoitMF("he","she") + "每一次挺进将你的[hips]向上抬起，将你人类的前半身向前推。" + benoitMF("He","She") + "因欲望而变得笨拙且盲目，除了紧紧抓住你的身体并将自己深深埋入你的深处之外，什么都不在乎，你的淫水涂满了" + benoitMF("his","her") + "鼻子，燃烧出一条无法阻挡的路径直达" + benoitMF("his","her") + "大脑，" + benoitMF("he","she") + "根本无法控制自己。" + benoitMF("His","Her") + "信息素驱使的冷酷以及木头摩擦你双手的不适感");
             if(get_player().biggestTitSize() >= 1)
@@ -941,7 +941,7 @@ package classes.scenes.places.bazaar
          if(get_player().get_inte() >= 60)
          {
             outputText("[pg]你估计，即使是有抵抗力的生物，只要有足够强效的药水，也能被变成异性，于是你向" + benoitMF("本诺瓦","本诺瓦特") + "询问了这件事。");
-            outputText("[pg][say: 嗯……如果你有双倍剂量的纯净魅魔乳液、一个大粉红蛋、一些产卵灵药和一些雷普提鲁姆，你可能就能做到……]");
+            outputText("[pg][say: 嗯……如果你有双倍剂量的纯净魅魔乳液、一个大粉红蛋、一些产卵灵药和一些鳞族药水，你可能就能做到……]");
             outputText("[pg]（[say: 雌性化]选项已添加到" + benoitMF("本诺瓦","本诺瓦特") + "的菜单中。）");
             FlagDict_Impl_.arrayWriteInt(KFLAGS.flags,1179,1);
          }
@@ -1538,7 +1538,7 @@ package classes.scenes.places.bazaar
             doNext(benoitsBuyMenu);
             return;
          }
-         outputText("[say: 给你。我不需要这个，] " + benoitMF("本诺瓦","本诺瓦特") + "说道。");
+         outputText("[say: 给你。我不需要这个。]" + benoitMF("本诺瓦","本诺瓦特") + "说道。");
          outputText("[pg]<b>你买了一张通往火山岩某个独特地点的地图！</b>");
          get_player().createKeyItem("Poorly done map to Volcanic Crag",0,0,0,0);
          var _loc1_:Player = get_player();
@@ -1571,7 +1571,7 @@ package classes.scenes.places.bazaar
             doNext(benoitsBuyMenu);
             return;
          }
-         outputText("[say: 给你。我不需要这个，] " + benoitMF("本诺瓦","本诺瓦特") + "说道。");
+         outputText("[say: 给你。我不需要这个。]" + benoitMF("本诺瓦","本诺瓦特") + "说道。");
          var _loc1_:IMap = KFLAGS.flags;
          FlagDict_Impl_.arrayWriteInt(_loc1_,2111,FlagDict_Impl_.arrayReadInt(_loc1_,2111) + 1);
          var _loc2_:Player = get_player();
@@ -1605,16 +1605,16 @@ package classes.scenes.places.bazaar
             doNext(benoitsBuyMenu);
             return;
          }
-         outputText("[say: 给你。我不需要这个，] " + benoitMF("本诺瓦","本诺瓦特") + "说道。");
+         outputText("[say: 给你。我不需要这个。]" + benoitMF("本诺瓦","本诺瓦特") + "说道。");
          if(get_player().hasKeyItem("Backpack"))
          {
-            outputText("[pg]<b>(关键物品已升级：" + param2 + "背包！你现在拥有" + Utils.num2Text(param1 - get_player().keyItemv1("Backpack")) + "个额外的物品槽");
+            outputText("[pg]<b>(关键物品已升级：" + Utils.cnName(param2) + "背包！你现在拥有" + Utils.num2Text(param1 - get_player().keyItemv1("Backpack")) + "个额外的物品槽");
             get_player().addKeyValue("Backpack",1,param1 - get_player().keyItemv1("Backpack"));
             outputText("，总共有" + Utils.num2Text(get_inventory().getMaxSlots()) + "个物品槽。)</b>");
          }
          else
          {
-            outputText("[pg]<b>(获得关键物品：" + param2 + "背包！你现在拥有" + Utils.num2Text(param1) + "个额外的物品槽");
+            outputText("[pg]<b>(获得关键物品：" + Utils.cnName(param2) + "背包！你现在拥有" + Utils.num2Text(param1) + "个额外的物品槽");
             get_player().createKeyItem("Backpack",param1,0,0,0);
             outputText("，总共有" + Utils.num2Text(get_inventory().getMaxSlots()) + "个物品槽。)</b>");
          }
@@ -1644,9 +1644,9 @@ package classes.scenes.places.bazaar
          outputText("你问" + benoitMF("本诺瓦","本诺瓦特") + "，" + benoitMF("他","她") + "有没有多余的背包。");
          outputText("[pg][say: 有的。这些有三种尺寸。你要选哪种？]" + benoitMF("他","她") + "问道。");
          outputText("[pg]<b><u>背包尺寸和价格</u></b>");
-         outputText("\n小号：200宝石，+3物品栏槽位");
-         outputText("\n中号：600宝石，+4物品栏槽位");
-         outputText("\n大号：1200宝石，+5物品栏槽位");
+         outputText("\n小号背包：200宝石，+3物品栏槽位");
+         outputText("\n中号背包：600宝石，+4物品栏槽位");
+         outputText("\n大号背包：1200宝石，+5物品栏槽位");
          menu();
          if(get_player().keyItemv1("Backpack") < 3)
          {
@@ -1654,7 +1654,7 @@ package classes.scenes.places.bazaar
             size = 3;
             sizeDesc = "Small";
             price = 200;
-            addButton(0,"小号",function():void
+            addButton(0,"小号背包",function():void
             {
                _g.buyBackpackConfirmation(size,sizeDesc,price);
             }).hint("提供额外的三个槽位。\n\n花费：200宝石");
@@ -1665,7 +1665,7 @@ package classes.scenes.places.bazaar
             size1 = 4;
             sizeDesc1 = "Medium";
             price1 = 600;
-            addButton(1,"中号",function():void
+            addButton(1,"中号背包",function():void
             {
                _g1.buyBackpackConfirmation(size1,sizeDesc1,price1);
             }).hint("提供额外的四个槽位。\n\n花费：600宝石");
@@ -1676,7 +1676,7 @@ package classes.scenes.places.bazaar
             size2 = 5;
             sizeDesc2 = "Large";
             price2 = 1200;
-            addButton(2,"大号",function():void
+            addButton(2,"大号背包",function():void
             {
                _g2.buyBackpackConfirmation(size2,sizeDesc2,price2);
             }).hint("提供额外的五个物品槽。\n\n花费：1200宝石");
@@ -1694,7 +1694,7 @@ package classes.scenes.places.bazaar
             doNext(benoitsBuyMenu);
             return;
          }
-         outputText("[say: 给你。我不需要这个，] " + benoitMF("本诺瓦","本诺瓦特") + "说道。");
+         outputText("[say: 给你。我不需要这个。]" + benoitMF("本诺瓦","本诺瓦特") + "说道。");
          outputText("[pg]<b>你现在可以设置闹钟了。去你的小屋设置闹钟。（并更改你醒来的时间。）</b>");
          var _loc1_:Player = get_player();
          _loc1_.set_gems(_loc1_.get_gems() - 500);
@@ -1756,9 +1756,9 @@ package classes.scenes.places.bazaar
             outputText("[say: 有些人可能称这些为废品，] 本诺瓦指着他最新的商品说道。[say: 我嘛……我称之为垃圾。]");
          }
          outputText("[pg]<b><u>" + benoitMF("本诺瓦","本诺瓦特") + "的价格</u></b>");
-         outputText("\n" + _loc1_.get_longName() + "：" + Math.round(_loc4_ * _loc1_.get_value()));
-         outputText("\n" + _loc2_.get_longName() + "：" + Math.round(_loc4_ * _loc2_.get_value()));
-         outputText("\n" + _loc3_.get_longName() + "：" + Math.round(_loc4_ * _loc3_.get_value()));
+         outputText("\n" + Utils.cnName(_loc1_.get_longName()) + "：" + Math.round(_loc4_ * _loc1_.get_value()));
+         outputText("\n" + Utils.cnName(_loc2_.get_longName()) + "：" + Math.round(_loc4_ * _loc2_.get_value()));
+         outputText("\n" + Utils.cnName(_loc3_.get_longName()) + "：" + Math.round(_loc4_ * _loc3_.get_value()));
          menu();
          _g = this;
          slot = 1;
@@ -2285,7 +2285,7 @@ package classes.scenes.places.bazaar
          if(!get_player().hasItem(get_consumables().P_DRAFT,2) || !get_player().hasItem(get_consumables().PSDELIT) || !get_player().hasItem(get_consumables().REPTLUM))
          {
             outputText("你还没有足够的材料来尝试这个。");
-            outputText("[pg]<b>(需要 2x 纯净男魅魔药剂，1x 纯净魅魔之悦，1x 雷普提鲁姆。)</b>");
+            outputText("[pg]<b>(需要 2x 纯净梦魇药剂，1x 纯净魅魔之悦，1x 鳞族药水。)</b>");
             get_output().flush();
          }
          else
@@ -2295,7 +2295,7 @@ package classes.scenes.places.bazaar
             get_player().destroyItems(get_consumables().REPTLUM,1);
             outputText("你告诉她，她可以像以前一样，拥有一个新的阴茎。");
             outputText("[pg]你翻出收集到的材料，开始把它们砰砰地放在本诺瓦特面前的柜台上，告诉她你已经准备好了她需要的东西。皮埃尔听到声音兴奋地叫了起来。");
-            outputText("[pg][say: 这是个好主意。]蛇怪说。[say: 这样，我仍然可以下蛋，你也可以下蛋。]当你从附近的架子上拿出一个玻璃瓶，从装满旧器具的容器里拿出一把木勺，开始将各种成分混合在一起时，她陷入了沉默。你把液体倒入玻璃瓶中。你小心翼翼地滴入雷普提鲁姆，同时继续搅拌；最终，你面前的液体呈现出一种鲜艳的青柠色。你摇晃瓶子使其充分混合。当气味变成烹饪雪利酒的味道时，你停下来退后一步，欣赏你的杰作，然后轻轻地把碗推过柜台，直到它碰到蛇怪的爪子。她慢慢地用手指握住它，盲目地盯着这种混合物。");
+            outputText("[pg][say: 这是个好主意。]蛇怪说。[say: 这样，我仍然可以下蛋，你也可以下蛋。]当你从附近的架子上拿出一个玻璃瓶，从装满旧器具的容器里拿出一把木勺，开始将各种成分混合在一起时，她陷入了沉默。你把液体倒入玻璃瓶中。你小心翼翼地滴入鳞族药水，同时继续搅拌；最终，你面前的液体呈现出一种鲜艳的青柠色。你摇晃瓶子使其充分混合。当气味变成烹饪雪利酒的味道时，你停下来退后一步，欣赏你的杰作，然后轻轻地把碗推过柜台，直到它碰到蛇怪的爪子。她慢慢地用手指握住它，盲目地盯着这种混合物。");
             outputText("[pg]你指示她喝下这种混合物。她点点头，慢慢地喝下混合物，直到瓶子空了。[say: 我能感觉到……]她慢慢地咕哝着。她的长袍下开始隆起一个鼓包。[say: 哦……它来了！]她宣布道。她敞开长袍，露出她新的爬行动物阴茎和阴道上方的一对睾丸。[say: 谢谢你。有了这个，我就可以帮你下蛋了，]她说。");
             outputText("[pg]你向她保证，当你准备好的时候，她总有一天可以这么做的。");
             FlagDict_Impl_.arrayWriteInt(KFLAGS.flags,1181,3);
@@ -2380,7 +2380,7 @@ package classes.scenes.places.bazaar
          if(!get_player().hasItem(get_consumables().P_S_MLK,2) || !get_player().hasItem(get_consumables().L_PNKEG) || !get_player().hasItem(get_consumables().OVIELIX) || !get_player().hasItem(get_consumables().REPTLUM))
          {
             outputText("你还没有足够的材料来尝试这个。");
-            outputText("[pg]<b>（需要 2 份纯净魅魔乳液、1 个大粉红蛋、1 份产卵灵药、1 份雷普提鲁姆。）</b>");
+            outputText("[pg]<b>（需要 2 份纯净魅魔乳液、1 个巨大粉蛋、1 份产卵灵药、1 份鳞族药水。）</b>");
             get_output().flush();
          }
          else
@@ -2390,7 +2390,7 @@ package classes.scenes.places.bazaar
             get_player().destroyItems(get_consumables().OVIELIX,1);
             get_player().destroyItems(get_consumables().REPTLUM,1);
             outputText("你翻出你收集的成分，开始把它们砰砰地放在" + benoitMF("本诺瓦","本诺瓦特") + "面前的柜台上，告诉" + benoitMF("他","她") + "你已经得到了" + benoitMF("他","她") + "需要的东西。皮埃尔听到声音兴奋地叫了起来。");
-            outputText("[pg][say: 我——什么？]蛇怪困惑地说。[say: 但是……[name]，那只是幻想！我没想到你会……]当你从附近的架子上拿出一个白镴碗，从一个装满旧器具的容器里拿出一把木勺，开始把各种成分混合在一起时，" + benoitMF("他","她") + "陷入了沉默。你把蛋打在碗上，然后把它打进乳液里；这种粘稠物呈现出粉红色的蛋糕糊质地，直到你倒入产卵灵药，它使粘稠物变稀，同时也让这个狭窄的市场摊位充满了相当难闻的硫磺味。你小心翼翼地滴入雷普提鲁姆，同时继续搅拌；最终你面前的液体呈现出一种青柠色。当气味变成烹饪雪利酒的气味时，你停下来，退后一步欣赏你的杰作，然后轻轻地把碗推过柜台，直到它碰到蛇怪的爪子。" + benoitMF("他","她") + "慢慢地用" + benoitMF("他","她") + "的手指握住它，盲目地盯着这种混合物。");
+            outputText("[pg][say: 我——什么？]蛇怪困惑地说。[say: 但是……[name]，那只是幻想！我没想到你会……]当你从附近的架子上拿出一个白镴碗，从一个装满旧器具的容器里拿出一把木勺，开始把各种成分混合在一起时，" + benoitMF("他","她") + "陷入了沉默。你把蛋打在碗上，然后把它打进乳液里；这种粘稠物呈现出粉红色的蛋糕糊质地，直到你倒入产卵灵药，它使粘稠物变稀，同时也让这个狭窄的市场摊位充满了相当难闻的硫磺味。你小心翼翼地滴入鳞族药水，同时继续搅拌；最终你面前的液体呈现出一种青柠色。当气味变成烹饪雪利酒的气味时，你停下来，退后一步欣赏你的杰作，然后轻轻地把碗推过柜台，直到它碰到蛇怪的爪子。" + benoitMF("他","她") + "慢慢地用" + benoitMF("他","她") + "的手指握住它，盲目地盯着这种混合物。");
             outputText("[pg][say: 你觉得这真的有用吗？]" + benoitMF("他","她") + "终于开口了。[say: 这东西……能改变我？]说实话你也不知道——而且你很庆幸" + benoitMF("本诺瓦","本诺瓦特") + "看不见这东西的颜色——但你还是尽可能自信地告诉" + benoitMF("他","她") + "这绝对有用。" + benoitMF("他","她") + "粗重地叹了口气，爪子微微颤抖着。[say: 算了，最坏的结果还能怎样——让我变聋吗？]话音刚落，" + benoitMF("他","她") + "的脸上就浮现出惊恐的神色，但" + benoitMF("他","她") + "还是努力甩掉了这个念头，把碗举到唇边。[say: 祝你健康，]" + benoitMF("他","她") + "勉强挤出一丝微笑，然后一饮而尽。");
             outputText("[pg]你看着药水滑入" + benoitMF("他","她") + "的口中，顺着" + benoitMF("他","她") + "的食道流下。当药水全部喝完后，" + benoitMF("他","她") + "放下碗，若有所思地舔了舔嘴唇。");
             outputText("[pg][say: 嗯……还不算是我尝过最难吃的东西，]" + benoitMF("他","她") + "说道。[say: 不过要是能多加点酒精就好了。呃。呃啊啊啊啊……]" + benoitMF("他","她") + "紧紧抓住桌子，肚子里传来一阵巨大的咕噜声。皮埃尔呜咽了一声，你和狗都不自觉地往后退，因为蛇怪开始抽搐痉挛。伴随着一阵摩擦声，" + benoitMF("他","她") + "的骨头开始移位；尽管" + benoitMF("他","她") + "拼命抓着柜台，但随着血肉的蠕动，还是不可避免地把瓶瓶罐罐和小玩意儿扫到了地上。" + benoitMF("他","她") + "的躯干向内收缩，大量脂肪向下转移；长衬裤接缝裂开的声音与" + benoitMF("他","她") + "肩膀向内收缩时发出的令人不适的噼啪声交织在一起。伴随着一阵萌发的声音，" + benoitMF("他","她") + "的头顶长出了闪烁着虹彩的红色羽毛；在" + benoitMF("他","她") + "紧咬的牙关和紧闭的双眼下方，" + benoitMF("他","她") + "的下颌线变得柔和并向上移动。蛇怪现在变得更加纤细的胸前微微隆起，变形到此停止了，或者至少你能直接观察到的变形停止了。但从" + benoitMF("他","她") + "肚子继续发出的呻吟声，以及" + benoitMF("他","她") + "死死抓着木头表面甚至留下更多爪痕的样子来看，在" + benoitMF("本诺瓦","本诺瓦特") + "那破烂不堪的长衬裤里，肯定正在发生着相当惊人的变化。");

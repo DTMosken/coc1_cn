@@ -417,7 +417,7 @@ package classes.scenes.areas.highMountains
          }
          if(get_player().get_armorName() == "goo armor")
          {
-            outputText("你慢慢地脱下金属板甲，直到你一丝不挂，只剩下覆盖着你的黏液女孩。");
+            outputText("你慢慢地脱下金属板甲，直到你一丝不挂，只剩下覆盖着你的史莱姆娘。");
          }
          else
          {
@@ -426,7 +426,7 @@ package classes.scenes.areas.highMountains
          outputText("你躺在米内瓦身边，把头靠在她柔软的乳房上。");
          if(get_player().get_armorName() == "goo armor")
          {
-            outputText("瓦莱丽娅，你的黏液女孩同伴，将你和米内瓦包裹起来，帮你们保暖。");
+            outputText("瓦莱丽娅，你的史莱姆娘同伴，将你和米内瓦包裹起来，帮你们保暖。");
          }
          outputText("[say: 做个好梦，亲爱的，]当你终于闭上眼睛时，她说道。");
          doNext(sleepWithMinervaProcess);

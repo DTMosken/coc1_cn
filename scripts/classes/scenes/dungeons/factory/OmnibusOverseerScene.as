@@ -111,7 +111,7 @@ package classes.scenes.dungeons.factory
          }
          else
          {
-            outputText("你的[legs]无法支撑你，你瘫倒在地。骨头断裂和重塑的声音充满了房间，但奇怪的是你没有感到疼痛，只有轻微的性唤起。你眨了眨眼，叹了口气，当你再次低头看时，<b>你长出了正常的人类双腿</b>！");
+            outputText("你的[legs]无法支撑你，你瘫倒在地。骨头断裂和重塑的声音充满了房间，但奇怪的是你没有感到疼痛，只有轻微的兴奋。你眨了眨眼，叹了口气，当你再次低头看时，<b>你长出了正常的人类双腿</b>！");
          }
          get_player().lowerBody.type = 0;
          get_player().lowerBody.legCount = 2;

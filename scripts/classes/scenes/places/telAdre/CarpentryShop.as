@@ -148,7 +148,7 @@ package classes.scenes.places.telAdre
          {
             _g = this;
             amount = 1;
-            addButton(0,"出售 1 个",function():void
+            addButton(0,"出售一份",function():void
             {
                _g.carpentryShopSellWoodAmount(amount);
             });
@@ -157,7 +157,7 @@ package classes.scenes.places.telAdre
          {
             _g1 = this;
             amount1 = 5;
-            addButton(1,"出售 5",function():void
+            addButton(1,"出售五份",function():void
             {
                _g1.carpentryShopSellWoodAmount(amount1);
             });
@@ -166,7 +166,7 @@ package classes.scenes.places.telAdre
          {
             _g2 = this;
             amount2 = 10;
-            addButton(2,"出售10个",function():void
+            addButton(2,"出售十份",function():void
             {
                _g2.carpentryShopSellWoodAmount(amount2);
             });
@@ -175,7 +175,7 @@ package classes.scenes.places.telAdre
          {
             _g3 = this;
             amount3 = 25;
-            addButton(3,"出售 25",function():void
+            addButton(3,"出售二十五份",function():void
             {
                _g3.carpentryShopSellWoodAmount(amount3);
             });
@@ -243,7 +243,7 @@ package classes.scenes.places.telAdre
          {
             _g = this;
             amount = 1;
-            addButton(0,"卖出1个",function():void
+            addButton(0,"出售一份",function():void
             {
                _g.carpentryShopSellStoneAmount(amount);
             });
@@ -252,7 +252,7 @@ package classes.scenes.places.telAdre
          {
             _g1 = this;
             amount1 = 5;
-            addButton(1,"出售 5 个",function():void
+            addButton(1,"出售五份",function():void
             {
                _g1.carpentryShopSellStoneAmount(amount1);
             });
@@ -261,7 +261,7 @@ package classes.scenes.places.telAdre
          {
             _g2 = this;
             amount2 = 10;
-            addButton(2,"出售10个",function():void
+            addButton(2,"出售十份",function():void
             {
                _g2.carpentryShopSellStoneAmount(amount2);
             });
@@ -270,7 +270,7 @@ package classes.scenes.places.telAdre
          {
             _g3 = this;
             amount3 = 25;
-            addButton(3,"出售 25",function():void
+            addButton(3,"出售二十五份",function():void
             {
                _g3.carpentryShopSellStoneAmount(amount3);
             });
@@ -338,7 +338,7 @@ package classes.scenes.places.telAdre
          {
             _g = this;
             amount = 10;
-            addButton(0,"出售 10",function():void
+            addButton(0,"出售10根",function():void
             {
                _g.carpentryShopSellNailsAmount(amount);
             });
@@ -347,7 +347,7 @@ package classes.scenes.places.telAdre
          {
             _g1 = this;
             amount1 = 25;
-            addButton(1,"出售25个",function():void
+            addButton(1,"出售25根",function():void
             {
                _g1.carpentryShopSellNailsAmount(amount1);
             });
@@ -356,7 +356,7 @@ package classes.scenes.places.telAdre
          {
             _g2 = this;
             amount2 = 50;
-            addButton(2,"出售 50",function():void
+            addButton(2,"出售50根",function():void
             {
                _g2.carpentryShopSellNailsAmount(amount2);
             });
@@ -365,7 +365,7 @@ package classes.scenes.places.telAdre
          {
             _g3 = this;
             amount3 = 75;
-            addButton(3,"出售 75",function():void
+            addButton(3,"出售75根",function():void
             {
                _g3.carpentryShopSellNailsAmount(amount3);
             });
@@ -374,7 +374,7 @@ package classes.scenes.places.telAdre
          {
             _g4 = this;
             amount4 = 100;
-            addButton(3,"出售100个",function():void
+            addButton(3,"出售100根",function():void
             {
                _g4.carpentryShopSellNailsAmount(amount4);
             });
@@ -456,31 +456,31 @@ package classes.scenes.places.telAdre
          menu();
          _g = this;
          amount = 10;
-         addButton(0,"购买 10 个",function():void
+         addButton(0,"购买十份",function():void
          {
             _g.carpentryShopBuyWoodAmount(amount);
          });
          _g1 = this;
          amount1 = 20;
-         addButton(1,"购买20",function():void
+         addButton(1,"购买二十份",function():void
          {
             _g1.carpentryShopBuyWoodAmount(amount1);
          });
          _g2 = this;
          amount2 = 30;
-         addButton(2,"购买30",function():void
+         addButton(2,"购买三十份",function():void
          {
             _g2.carpentryShopBuyWoodAmount(amount2);
          });
          _g3 = this;
          amount3 = 40;
-         addButton(3,"购买40",function():void
+         addButton(3,"购买四十份",function():void
          {
             _g3.carpentryShopBuyWoodAmount(amount3);
          });
          _g4 = this;
          amount4 = 50;
-         addButton(4,"购买50",function():void
+         addButton(4,"购买五十份",function():void
          {
             _g4.carpentryShopBuyWoodAmount(amount4);
          });
@@ -550,31 +550,31 @@ package classes.scenes.places.telAdre
          menu();
          _g = this;
          amount = 10;
-         addButton(0,"买10",function():void
+         addButton(0,"购买十份",function():void
          {
             _g.carpentryShopBuyStoneAmount(amount);
          });
          _g1 = this;
          amount1 = 20;
-         addButton(1,"购买20",function():void
+         addButton(1,"购买二十份",function():void
          {
             _g1.carpentryShopBuyStoneAmount(amount1);
          });
          _g2 = this;
          amount2 = 30;
-         addButton(2,"买30",function():void
+         addButton(2,"购买三十份",function():void
          {
             _g2.carpentryShopBuyStoneAmount(amount2);
          });
          _g3 = this;
          amount3 = 40;
-         addButton(3,"购买40",function():void
+         addButton(3,"购买四十份",function():void
          {
             _g3.carpentryShopBuyStoneAmount(amount3);
          });
          _g4 = this;
          amount4 = 50;
-         addButton(4,"购买五十个",function():void
+         addButton(4,"购买五十份",function():void
          {
             _g4.carpentryShopBuyStoneAmount(amount4);
          });
@@ -694,31 +694,31 @@ package classes.scenes.places.telAdre
          menu();
          _g = this;
          amount = 10;
-         addButton(0,"购买10个",function():void
+         addButton(0,"购买10根",function():void
          {
             _g.carpentryShopBuyNailsAmount(amount);
          });
          _g1 = this;
          amount1 = 25;
-         addButton(1,"购买25个",function():void
+         addButton(1,"购买25根",function():void
          {
             _g1.carpentryShopBuyNailsAmount(amount1);
          });
          _g2 = this;
          amount2 = 50;
-         addButton(2,"购买50个",function():void
+         addButton(2,"购买50根",function():void
          {
             _g2.carpentryShopBuyNailsAmount(amount2);
          });
          _g3 = this;
          amount3 = 75;
-         addButton(3,"购买75个",function():void
+         addButton(3,"购买75根",function():void
          {
             _g3.carpentryShopBuyNailsAmount(amount3);
          });
          _g4 = this;
          amount4 = 100;
-         addButton(4,"购买100个",function():void
+         addButton(4,"购买100根",function():void
          {
             _g4.carpentryShopBuyNailsAmount(amount4);
          });

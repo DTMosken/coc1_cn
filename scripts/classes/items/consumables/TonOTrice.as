@@ -395,7 +395,7 @@ package classes.items.consumables
          }
          if(get_player().get_tallness() < 67 && get_changes() < get_changeLimit() && Utils.rand(5) == 0)
          {
-            outputText("[pg]你不安地挪动了一下，因为你发现自己失去了平衡。低头一看，你意识到自己长高了[i:slightly]。");
+            outputText("[pg]你不安地挪动着身体，因为你意识到自己失去了平衡。低头一看，你发现自己长高了[i:一点]。");
             _loc8_ = get_player();
             _loc8_.set_tallness(_loc8_.get_tallness() + (Utils.rand(3) + 1));
             set_changes(get_changes() + 1);

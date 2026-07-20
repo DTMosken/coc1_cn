@@ -7,6 +7,7 @@ package classes.items.weapons
    import classes.globalFlags.KGAMECLASS;
    import classes.internals.Utils;
    import classes.items.Weapon;
+   import classes.scenes.combat.Combat;
    import flash.Boot;
    
    public class IceWeapon extends Weapon
@@ -47,10 +48,10 @@ package classes.items.weapons
          _type = 0;
          _type = param1;
          var _loc2_:Boolean = param1 == 6;
-         super("Ice" + Utils.capitalizeFirstLetter(typeString()),"Ice " + Utils.capitalizeFirstLetter(typeString()),"ice " + typeString(),"a frozen " + typeString(),[typeNoun(),typeVerb()],6,0,"A translucent blue " + typeString() + ", made of nothing but ice. You shouldn\'t expect it to last very long.",["Melting",typeTag()]);
+         super("Ice" + Utils.capitalizeFirstLetter(typeString()),"Ice " + Utils.capitalizeFirstLetter(typeString()),"ice " + typeString(),"a frozen " + typeString(),[typeNoun(),typeVerb()],6,0,"A translucent blue " + typeString() + ", made of nothing but ice. You shouldn\'t expect it to last very long.",["融化",typeTag()]);
          if(_loc2_)
          {
-            addTags("Magic");
+            addTags("魔法");
          }
       }
       

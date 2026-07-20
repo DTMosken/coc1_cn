@@ -336,12 +336,12 @@ package classes.scenes.explore
          clearOutput();
          if(get_player().hasKeyItem("Deluxe Onahole"))
          {
-            outputText("<b>你已经拥有一个豪华名器了！</b>");
+            outputText("<b>你已经拥有一个豪华飞机杯了！</b>");
             doNext(eroticaMenu);
             return;
          }
          outputText("贾科莫举起一块形状怪异的橡胶块。它的一端被塑造成女性生殖器的形状，而其余部分则延伸到近一英尺长。[pg]");
-         outputText("[say: 这东西简直太棒了！虽然标准的名器也能让你爽，但这东西的外观和感觉都和真的一样！如你所见，外面的孔看起来就像女人的私处，而且]——贾科莫停下来，打开里面让你看。你看到了典型的女性子宫内部的褶皱和曲线——[say: 如你所见，为了让里面的感觉尽可能像真正的阴户，我们花了很多心思。你用这东西抽插几次，你可能就再也不想要真的了！至少，它不会抱怨你一大早就跑出门。[b:50颗宝石]换取它能带来的所有满足感，这价格再合理不过了。]");
+         outputText("[say: 这东西简直太棒了！虽然标准的飞机杯也能让你爽，但这东西的外观和感觉都和真的一样！如你所见，外面的孔看起来就像女人的私处，而且]——贾科莫停下来，打开里面让你看。你看到了典型的女性子宫内部的褶皱和曲线——[say: 如你所见，为了让里面的感觉尽可能像真正的阴户，我们花了很多心思。你用这东西抽插几次，你可能就再也不想要真的了！至少，它不会抱怨你一大早就跑出门。[b:50颗宝石]换取它能带来的所有满足感，这价格再合理不过了。]");
          menu();
          if(get_player().get_gems() >= 50)
          {
@@ -758,25 +758,25 @@ package classes.scenes.explore
          {
             if(!get_player().hasKeyItem("Plain Onahole"))
             {
-               addButton(3,"名器",pitchOnahole).hint("一个简单的男性性玩具。");
+               addButton(3,"飞机杯",pitchOnahole).hint("一个简单的男性性玩具。");
             }
             else
             {
-               addButtonDisabled(3,"名器","你已经拥有一个名器了。");
+               addButtonDisabled(3,"飞机杯","你已经拥有一个飞机杯了。");
             }
             if(!get_player().hasKeyItem("Deluxe Onahole"))
             {
-               addButton(4,"豪华名器",pitchDeluxeOnahole).hint("一个简单的男性性玩具。看起来和感觉起来都非常像真实的阴道。","豪华名器");
+               addButton(4,"豪华飞机杯",pitchDeluxeOnahole).hint("一个简单的男性性玩具。看起来和感觉起来都非常像真实的阴道。","豪华飞机杯");
             }
             else
             {
-               addButtonDisabled(4,"豪华名器","你已经拥有一个豪华名器了。");
+               addButtonDisabled(4,"豪华飞机杯","你已经拥有一个豪华飞机杯了。");
             }
          }
          else
          {
-            addButtonDisabled(3,"名器","这是为男性设计的。");
-            addButtonDisabled(4,"豪华名器","这是为男性设计的。");
+            addButtonDisabled(3,"飞机杯","这是为男性设计的。");
+            addButtonDisabled(4,"豪华飞机杯","这是为男性设计的。");
          }
          if(get_player().hasCock() && get_player().hasVagina())
          {
@@ -790,17 +790,17 @@ package classes.scenes.explore
             }
             if(!get_player().hasKeyItem("All-Natural Onahole"))
             {
-               addButton(6,"纯天然名器",pitchAllNaturalOnahole).hint("一个为扶他设计的有机性玩具。","纯天然名器");
+               addButton(6,"纯天然飞机杯",pitchAllNaturalOnahole).hint("一个为扶他设计的有机性玩具。","纯天然飞机杯");
             }
             else
             {
-               addButtonDisabled(6,"纯天然名器","你已经拥有一个纯天然名器了。");
+               addButtonDisabled(6,"纯天然飞机杯","你已经拥有一个纯天然飞机杯了。");
             }
          }
          else
          {
             addButtonDisabled(5,"双重刺激带","这是为扶他设计的。");
-            addButtonDisabled(6,"纯天然名器","这是为扶他设计的。");
+            addButtonDisabled(6,"纯天然飞机杯","这是为扶他设计的。");
          }
          addButton(7,"避孕套",pitchCondom);
          addButton(14,"返回",giacomoEncounter);
@@ -950,7 +950,7 @@ package classes.scenes.explore
       {
          spriteSelect(SpriteDb.get_s_giacomo());
          clearOutput();
-         outputText("付完钱后，贾科莫把普通名器递给了你。");
+         outputText("付完钱后，贾科莫把普通飞机杯递给了你。");
          get_player().createKeyItem("Plain Onahole",0,0,0,0);
          doNext(eroticaMenu);
          var _loc1_:Player = get_player();
@@ -1000,7 +1000,7 @@ package classes.scenes.explore
       {
          spriteSelect(SpriteDb.get_s_giacomo());
          clearOutput();
-         outputText("付完钱后，贾科莫把豪华名器递给了你。");
+         outputText("付完钱后，贾科莫把豪华飞机杯递给了你。");
          get_player().createKeyItem("Deluxe Onahole",0,0,0,0);
          doNext(eroticaMenu);
          var _loc1_:Player = get_player();
@@ -1065,7 +1065,7 @@ package classes.scenes.explore
       {
          spriteSelect(SpriteDb.get_s_giacomo());
          clearOutput();
-         outputText("付款后，贾科莫将纯天然名器递给了你。");
+         outputText("付款后，贾科莫将纯天然飞机杯递给了你。");
          get_player().createKeyItem("All-Natural Onahole",0,0,0,0);
          doNext(eroticaMenu);
          var _loc1_:Player = get_player();

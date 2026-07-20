@@ -4,6 +4,7 @@ package classes.items.weapons
    import classes.internals.Utils;
    import classes.internals._ValueFunc.NumberFunc_Impl_;
    import classes.items.Weapon;
+   import classes.scenes.combat.Combat;
    import flash.Boot;
    
    public class HuntsmansCane extends Weapon

@@ -2043,7 +2043,7 @@ package classes.scenes.places.telAdre
             }
             else if(param1 == 4)
             {
-               outputText("<b>你的肌肉刺痛着，燃烧着能量；你感觉自己一拳就能打倒一头牛头怪！</b> " + "<b>(生效期间造成的所有伤害提升10%！)</b>");
+               outputText("<b>你的肌肉刺痛着，燃烧着能量；你感觉自己一拳就能打倒一头牛头人！</b> " + "<b>(生效期间造成的所有伤害提升10%！)</b>");
                _loc2_ = 1.1;
             }
             if(_loc2_ != 0)

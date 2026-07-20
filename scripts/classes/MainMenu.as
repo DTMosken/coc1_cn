@@ -139,7 +139,7 @@ package classes
          rawOutputText("   •  " + " nRage（圣诞袋鼠卡米）\n");
          rawOutputText("   •  " + " Abraxas（与各种怪物的备用娜迦场景，塔玛尼肛交，女性舒尔德拉舔舌，变色龙女孩，圣诞哈比）\n");
          rawOutputText("   •  " + " Astronomy (恋物癖邪教徒半人马足交场景)\n");
-         rawOutputText("   •  " + " Adjatha (精液成瘾的修女斯库拉、瓦拉、粘液女孩、无脑荡妇苏菲的蛋、塞拉芙与乌尔塔的角色扮演、带蛋蛋的豺狼人场景、奇哈扶他场景、地精蜘蛛网操弄场景以及69兔子场景)\n");
+         rawOutputText("   •  " + " Adjatha (精液成瘾的修女斯库拉、瓦拉、史莱姆娘、无脑荡妇苏菲的蛋、塞拉芙与乌尔塔的角色扮演、带蛋蛋的豺狼人场景、奇哈扶他场景、地精蜘蛛网操弄场景以及69兔子场景)\n");
          rawOutputText("   •  " + " ComfyCushion (阴毛牧马人)\n");
          rawOutputText("   •  " + " B (布鲁克)\n");
          rawOutputText("   •  " + " Quiet Browser (一半的妮芙、烬、老鼠女孩繁育者艾米莉、凯瑟琳、凯瑟琳雇佣扩展的一部分、乌尔塔在酒吧内的对话树、部分伊兹玛、洛珀)\n");
@@ -153,11 +153,11 @@ package classes
          rawOutputText("   •  " + " KLN (马人坏结局)\n");
          rawOutputText("   •  " + " TheDarkTemplar11111 (犬胡椒坏结局)\n");
          rawOutputText("   •  " + " Silmarion (犬胡椒坏结局)\n");
-         rawOutputText("   •  " + " Soretu (原版牛头怪强暴)\n");
+         rawOutputText("   •  " + " Soretu (原版牛头人强暴)\n");
          rawOutputText("   •  " + " NinjArt (小体型男性对地精强暴变体)\n");
          rawOutputText("   •  " + " DoubleRedd (“太大”腐化地精性交)\n");
-         rawOutputText("   •  " + " Nightshade (额外牛头怪强暴)\n");
-         rawOutputText("   •  " + " JCM (小恶魔夜间轮奸，额外牛头怪战败强暴 - 口交)\n");
+         rawOutputText("   •  " + " Nightshade (额外牛头人强暴)\n");
+         rawOutputText("   •  " + " JCM (小恶魔夜间轮奸，额外牛头人战败强暴 - 口交)\n");
          rawOutputText("   •  " + " Xodin（小恶魔轮奸的乳交段落，被巨大生殖器阻碍的探索场景，大部件奔跑阻碍，玩家获得啤酒奶，沙漠女巫地牢杂项场景）\n");
          rawOutputText("   •  " + " Blusox6（原版蜂后强暴）\n");
          rawOutputText("   •  " + " Thrext（附加自慰代码，仙女，象牙魅魔）\n");
@@ -168,7 +168,7 @@ package classes
          rawOutputText("   •  " + " Sombrero（额外的小恶魔欲望战败场景（肉棒插入啦！））\n");
          rawOutputText("   •  " + " The Dark Master（玛布尔、恋物教徒、恋物狂热者、地狱犬、露米、部分猫咪改造、拉波瓦、塞拉芙的猫奴、一个精液女巫场景、老鼠梦境、强制哺乳：小恶魔与地精、蜂女扩展）\n");
          rawOutputText("   •  " + " Mr. Fleshcage（猫咪改造/自慰）\n");
-         rawOutputText("   •  " + " Spy (猫咪自慰，强制哺乳：牛头怪、蜜蜂与邪教徒)\n");
+         rawOutputText("   •  " + " Spy (猫咪自慰，强制哺乳：牛头人、蜜蜂与邪教徒)\n");
          rawOutputText("   •  " + " PostNuclearMan (一些猫咪变形)\n");
          rawOutputText("   •  " + " MiscChaos (强制哺乳：史莱姆怪物)\n");
          rawOutputText("   •  " + " Ourakun (半人马凯尔特)\n");
@@ -176,7 +176,7 @@ package classes
          rawOutputText("   •  " + " Versesai (额外的蜜蜂强暴场景)\n");
          rawOutputText("   •  " + " Mallowman (额外的蜜蜂强暴场景)\n");
          rawOutputText("   •  " + " HypnoKitten (额外的半人马 x 小恶魔强暴场景)\n");
-         rawOutputText("   •  " + " Ari (牛头怪寻欢洞场景)\n");
+         rawOutputText("   •  " + " Ari (牛头人寻欢洞场景)\n");
          rawOutputText("   •  " + " SpectralTime (南希阿姨)\n");
          rawOutputText("   •  " + " Foxxling (阿克巴尔)\n");
          rawOutputText("   •  " + " Elfensyne (菲拉)\n");
@@ -191,7 +191,7 @@ package classes
          rawOutputText("   •  " + " Symphonie (口交者多米妮卡，塞拉芙扮演多米妮卡，特尔阿德雷图书馆)\n");
          rawOutputText("   •  " + " Soulsemmer (伊弗里斯)\n");
          rawOutputText("   •  " + " WedgeSkyrocket (绝子，纯洁艾米莉肛交，狐妖)\n");
-         rawOutputText("   •  " + " Zeikfried (阿涅莫涅，男性挤奶器坏结局，袋鼠变形，浣熊变形，牛头怪厨师对话，希拉，以及更多)\n");
+         rawOutputText("   •  " + " Zeikfried (阿涅莫涅，男性挤奶器坏结局，袋鼠变形，浣熊变形，牛头人厨师对话，希拉，以及更多)\n");
          rawOutputText("   •  " + " User21 (额外的半人马/娜迦场景)\n");
          rawOutputText("   •  " + " ~M~ (荡妇 + 小恶魔战败场景)\n");
          rawOutputText("   •  " + " Grype (强暴地狱犬)\n");
@@ -216,10 +216,10 @@ package classes
          rawOutputText("   •  " + " Oak (兄弟 + 荡妇转化，伊莎贝拉的ProBova打嗝)\n");
          rawOutputText("   •  " + " Space (战胜奇哈后的肛交)\n");
          rawOutputText("   •  " + " Venithil (与斯库拉的LippleLock & 额外的乌尔塔场景)\n");
-         rawOutputText("   •  " + " Butts McGee (牛头怪热狗式战败，塔玛尼女同骑脸，无脑荡妇苏菲的粗暴/温柔操弄)\n");
+         rawOutputText("   •  " + " Butts McGee (牛头人热狗式战败，塔玛尼女同骑脸，无脑荡妇苏菲的粗暴/温柔操弄)\n");
          rawOutputText("   •  " + " Savin (火蜥蜴海尔，瓦莱丽亚，打醉酒乌尔塔的屁股，不死鸟高塔，蛛魔肛交胜利，海尔 x 伊莎贝拉三人行，半人马性玩具，感恩节火鸡，未腐化的拉特克西招募，直接喂食拉特克西的强硬路线，斯芬克斯萨努拉)\n");
          rawOutputText("   •  " + " Gats (洛蒂，精灵与士兵圣诞活动，奇哈强制自慰，地精后入，鸡身女妖卖蛋人)\n");
-         rawOutputText("   •  " + " Aeron the Demoness (普通地精肛交，调教最年长的牛头怪)\n");
+         rawOutputText("   •  " + " Aeron the Demoness (普通地精肛交，调教最年长的牛头人)\n");
          rawOutputText("   •  " + " Gats、Shamblesworth、Symphonie 和 Fenoxo (腐化蛛化精灵)\n");
          rawOutputText("   •  " + " Bagpuss (女性感恩节活动，哈比磨豆腐，蛛化精灵捆绑操)\n");
          rawOutputText("   •  " + " Frogapus (狂野狩猎)\n");
@@ -229,9 +229,9 @@ package classes
          rawOutputText("   •  " + " Fenoxo (蜜蜂产卵管转化，蜜蜂对娜迦和乔乔的产卵，蛛化精灵对塔玛尼的产卵)\n");
          rawOutputText("   •  " + " Smokescreen (蜜蜂对蛇怪的产卵)\n");
          rawOutputText("   •  " + " Radar (沙漠女巫产卵)\n");
-         rawOutputText("   •  " + " OutlawVee (黏液女孩的蜜蜂产卵)\n");
+         rawOutputText("   •  " + " OutlawVee (史莱姆娘的蜜蜂产卵)\n");
          rawOutputText("   •  " + " Zeikfried (编辑这堆烂摊子，阿涅莫涅产卵)\n");
-         rawOutputText("   •  " + " Woodrobin (牛头怪产卵)\n");
+         rawOutputText("   •  " + " Woodrobin (牛头人产卵)\n");
          rawOutputText("   •  " + " Posthuman (塞拉芙追随者产卵)\n");
          rawOutputText("   •  " + " Slywyn (蜜蜂在玩家巨根中产卵)\n");
          rawOutputText("   •  " + " Shaxarok (蛛化精灵在巨乳乳头穴中产卵)\n");

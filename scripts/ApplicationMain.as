@@ -78,11 +78,11 @@ package
          _loc3_ = _loc2_.meta;
          if("version" in StringMap.reserved)
          {
-            _loc3_.setReserved("version","1.0.1");
+            _loc3_.setReserved("version","1.0.0");
          }
          else
          {
-            _loc3_.h["version"] = "1.0.1";
+            _loc3_.h["version"] = "1.0.0";
          }
          _loc2_.__window.context.attributes.background = 16777215;
          _loc2_.__window.__backend.setFrameRate(30);

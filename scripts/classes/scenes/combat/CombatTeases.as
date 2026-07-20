@@ -1353,7 +1353,7 @@ package classes.scenes.combat
          }
          else if(_loc16_ == 35)
          {
-            outputText("你拨开胯部的布料片刻，然后问[themonster]，" + get_player().mf("Master","Mistress") + "是否想让你用你的[cocks]伺候他们？");
+            outputText("你拨开胯部的布料片刻，然后问[themonster]，" + get_player().mf("主人","女主人") + "是否想让你用你的[cocks]伺候他们？");
             _loc7_ = true;
             _loc13_++;
             _loc14_ += 2;

@@ -552,7 +552,7 @@ package classes
             _loc4_ = _loc1_;
             if(_loc4_ == "int")
             {
-               outputText("[pg-]你在这个世界与各种生物战斗的经历磨炼了你的心智" + (_loc3_ < 3 ? " slightly" : "") + "。");
+               outputText("[pg-]你在这个世界与各种生物战斗的经历" + (_loc3_ < 3 ? "略微" : "") + "磨炼了你的心智。");
             }
             else if(_loc4_ == "spe")
             {
@@ -575,7 +575,7 @@ package classes
             _loc4_ = _loc1_;
             if(_loc4_ == "int")
             {
-               outputText("[pg-]你在这个世界与各种生物战斗的经历磨炼了你的心智" + (_loc3_ < 3 ? " slightly" : "") + "。");
+               outputText("[pg-]你在这个世界与各种生物战斗的经历" + (_loc3_ < 3 ? "略微" : "") + "磨炼了你的心智。");
             }
             else if(_loc4_ == "spe")
             {
@@ -598,7 +598,7 @@ package classes
             _loc4_ = _loc1_;
             if(_loc4_ == "int")
             {
-               outputText("[pg-]你在这个世界与各种生物战斗的经历磨炼了你的心智" + (_loc3_ < 3 ? " slightly" : "") + "。");
+               outputText("[pg-]你在这个世界与各种生物战斗的经历" + (_loc3_ < 3 ? "略微" : "") + "磨炼了你的心智。");
             }
             else if(_loc4_ == "spe")
             {
@@ -621,7 +621,7 @@ package classes
             _loc4_ = _loc1_;
             if(_loc4_ == "int")
             {
-               outputText("[pg-]你在这个世界与各种生物战斗的经历磨炼了你的心智" + (_loc3_ < 3 ? " slightly" : "") + "。");
+               outputText("[pg-]你在这个世界与各种生物战斗的经历" + (_loc3_ < 3 ? "略微" : "") + "磨炼了你的心智。");
             }
             else if(_loc4_ == "spe")
             {
@@ -1014,7 +1014,7 @@ package classes
             _loc43_ = FlagDict_Impl_.arrayReadFloat(KFLAGS.flags,711);
             if(_loc43_ == -1)
             {
-               _loc42_ = "<font color=\"#008000\">恋人+</font>";
+               _loc42_ = "<font color=\"#800000\">离开</font>";
             }
             else if(_loc43_ == 0)
             {
@@ -1022,7 +1022,7 @@ package classes
             }
             else if(_loc43_ == 1)
             {
-               _loc42_ = "<font color=\"#800000\">离开</font>";
+               _loc42_ = "<font color=\"#008000\">恋人+</font>";
             }
          }
          else if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,12) == -1)
@@ -1040,7 +1040,7 @@ package classes
          _loc40_.addStat("艾米莉的好感度",FlagDict_Impl_.arrayReadInt(KFLAGS.flags,38),FlagDict_Impl_.arrayReadInt(KFLAGS.flags,35) > 0);
          _loc40_.addStat("阿瑞安的健康值",get_game().arianScene.arianHealth(),FlagDict_Impl_.arrayReadInt(KFLAGS.flags,934) > 0);
          _loc40_.addStat("阿瑞安性交次数",FlagDict_Impl_.arrayReadInt(KFLAGS.flags,942),FlagDict_Impl_.arrayReadInt(KFLAGS.flags,942) > 0);
-         _loc40_.addStat("[Benoit Name] Affection","" + get_game().bazaar.benoit.benoitAffection() + "%",get_game().bazaar.benoit.benoitAffection() > 0);
+         _loc40_.addStat("[Benoit Name]的好感度","" + get_game().bazaar.benoit.benoitAffection() + "%",get_game().bazaar.benoit.benoitAffection() > 0);
          _loc40_.addStat("布鲁克好感度",get_game().telAdre.brooke.brookeAffection(),FlagDict_Impl_.arrayReadInt(KFLAGS.flags,920) > 0);
          _loc40_.addStat("被塞拉芙夺走的身体部位",_loc41_,_loc41_ > 0);
          _loc40_.addStat("烬的好感度","" + get_game().emberScene.emberAffection() + "%",get_game().emberScene.emberAffection() > 0);
@@ -1121,7 +1121,7 @@ package classes
          _loc44_.addStat("发情",int(Math.round(get_player().statusEffectv3(StatusEffects.Heat))) + " 小时剩余",get_player().get_inHeat());
          _loc44_.addStat("发情期",int(Math.round(get_player().statusEffectv3(StatusEffects.Rut))) + " 小时剩余",get_player().get_inRut());
          _loc44_.addStat("鳗鱼寄生虫数量","" + _loc43_ + _loc47_,get_player().hasStatusEffect(StatusEffects.ParasiteEel));
-         _loc44_.addStat("涅菲拉寄生虫感染等级","" + get_player().statusEffectv1(StatusEffects.ParasiteNephila) + "[pg-]Nephila parasites hunger for " + int(Math.round(get_player().statusEffectv3(StatusEffects.ParasiteNephilaNeedCum))) + " liters of [b:" + _loc48_ + "] cum",get_player().hasStatusEffect(StatusEffects.ParasiteNephila));
+         _loc44_.addStat("涅菲拉寄生虫感染等级","" + get_player().statusEffectv1(StatusEffects.ParasiteNephila) + "[pg-]络新妇寄生虫渴求" + int(Math.round(get_player().statusEffectv3(StatusEffects.ParasiteNephilaNeedCum))) + "升的[b:" + _loc48_ + "]精液",get_player().hasStatusEffect(StatusEffects.ParasiteNephila));
          _loc44_.addStat("催情膏",int(Math.round(get_player().statusEffectv1(StatusEffects.Luststick))) + " 小时剩余",get_player().statusEffectv1(StatusEffects.Luststick) > 0);
          _loc44_.addStat("涂抹催情膏",int(Math.round(get_player().statusEffectv1(StatusEffects.LustStickApplied))) + " 小时剩余",get_player().statusEffectv1(StatusEffects.LustStickApplied) > 0);
          _loc44_.addStat("淫荡之舌",int(Math.round(get_player().statusEffectv1(StatusEffects.LustyTongue))) + " 小时剩余",get_player().statusEffectv1(StatusEffects.LustyTongue) > 0);
@@ -1234,7 +1234,7 @@ package classes
          }
          else if(_loc2_ == "挑逗几率")
          {
-            outputText("[pg-][b:性感度:] " + (get_player().get_upperGarment().get_sexiness() + get_player().get_lowerGarment().get_sexiness()) + get_player().getBonusStatSummary("挑逗几率"));
+            outputText("[pg-][b:性感度：] " + (get_player().get_upperGarment().get_sexiness() + get_player().get_lowerGarment().get_sexiness()) + get_player().getBonusStatSummary("挑逗几率"));
          }
          else
          {

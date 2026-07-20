@@ -183,6 +183,7 @@ package classes.display
          _loc4_.name = param1;
          _loc4_.label.multiline = true;
          _loc4_.label.wordWrap = true;
+         _loc4_.label.autoSize = "left";
          _loc4_.label.defaultTextFormat = _loc3_;
          _loc4_.set_htmlText("<b>" + param1 + "：</b>\n");
          _content.addElement(_loc4_);

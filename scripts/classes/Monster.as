@@ -1066,12 +1066,12 @@ package classes
          }
          else if(param1 > 20)
          {
-            outputText(get_Themonster() + "<b>残害");
+            outputText(get_Themonster() + "用");
             if(!get_plural())
             {
                outputText("");
             }
-            outputText("</b>，用" + pronoun3 + "强力的" + Utils.cnName(get_weaponVerb()) + "击中了你！");
+            outputText("" + pronoun3 + "强力的" + Utils.cnName(get_weaponVerb()) + "<b>重创</b>了你！");
          }
          if(param1 > 0)
          {
@@ -1687,7 +1687,7 @@ package classes
             _loc2_++;
             if(_loc6_.get_ptype().get_enemyDesc() != "")
             {
-               _loc1_ += "[b:" + Utils.cnName(_loc6_.get_ptype().get_name()) + ":] " + _loc6_.get_ptype().get_enemyDesc() + "[pg-]";
+               _loc1_ += "[b:" + Utils.cnName(_loc6_.get_ptype().get_name()) + ":] " + Utils.cnName(_loc6_.get_ptype().get_enemyDesc()) + "[pg-]";
             }
          }
          return _loc1_ + getDistanceDescription();

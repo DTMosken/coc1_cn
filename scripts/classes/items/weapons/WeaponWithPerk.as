@@ -2,6 +2,8 @@ package classes.items.weapons
 {
    import classes.Perk;
    import classes.PerkType;
+   import classes.Player;
+   import classes.internals.Utils;
    import classes.items.Equippable;
    import classes.items.Weapon;
    import flash.Boot;
@@ -59,7 +61,7 @@ package classes.items.weapons
       override public function get_description() : String
       {
          var _loc1_:String = super.get_description();
-         return _loc1_ + ("\n特殊：" + playerPerk.get_name() + " - " + storedPerk.get_perkDesc());
+         return _loc1_ + ("\n特殊：" + Utils.cnName(playerPerk.get_name()) + " - " + Utils.cnName(storedPerk.get_perkDesc()));
       }
    }
 }

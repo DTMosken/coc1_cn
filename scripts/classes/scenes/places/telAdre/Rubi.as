@@ -1895,7 +1895,7 @@ package classes.scenes.places.telAdre
          menu();
          if(!rubiBimbo() && !rubiIncubus() && rubiAffection() >= 100)
          {
-            outputText("你可以给鲁比一些男魅魔药剂，让[rubi em]变得更有男子气概，但也更加腐化；或者给鲁比一份傻妞药剂，把[rubi em]变成性感火辣的女性尤物。[pg]");
+            outputText("你可以给鲁比一些梦魇药剂，让[rubi em]变得更有男子气概，但也更加腐化；或者给鲁比一份傻妞药剂，把[rubi em]变成性感火辣的女性尤物。[pg]");
          }
          outputText("你要给[rubi em]什么？");
          if(!rubiBimbo())
@@ -1909,7 +1909,7 @@ package classes.scenes.places.telAdre
          }
          _g1 = this;
          itype1 = get_consumables().INCUBID;
-         _loc1_.add("男魅魔药剂",function():void
+         _loc1_.add("梦魇药剂",function():void
          {
             _g1.giveRubiATFItem(itype1);
          },get_player().hasItem(get_consumables().INCUBID) ? "" : "你没有这个物品。","",get_player().hasItem(get_consumables().INCUBID));

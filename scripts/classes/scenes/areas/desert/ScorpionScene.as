@@ -366,7 +366,7 @@ package classes.scenes.areas.desert
       
       public function get_debugHint() : String
       {
-         return "在玛瑞斯的任务中遇到的蝎子。";
+         return "在玛丽埃尔的任务中遇到的蝎子。";
       }
       
       public function fuck() : void

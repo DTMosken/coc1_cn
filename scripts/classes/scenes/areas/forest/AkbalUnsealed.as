@@ -176,7 +176,7 @@ package classes.scenes.areas.forest
          var _loc3_:* = null as StatusEffectType;
          var _loc4_:* = null as StatusEffectType;
          outputText("大恶魔向后退了几步，感觉到自己受到的伤害正在不断累积。他愤怒地瞪着你。");
-         outputText("[say: 我是地火之神。我是最早飞升的存在之一。你<b>休想</b>挡我的路！]");
+         outputText("[say: 我是地炎之神。我是最早飞升的存在之一。你<b>休想</b>挡我的路！]");
          outputText("阿克巴尔的肉体闪烁着，仿佛你在看着海市蜃楼；很快他的伤口便消失得无影无踪，一阵绿色的火焰洗涤并净化了他的身体，让他恢复到了巅峰状态。");
          set_HP(maxHP());
          set_lust(0);

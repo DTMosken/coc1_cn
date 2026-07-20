@@ -587,7 +587,7 @@ package classes.scenes.places.bazaar
          outputText("[say: 准备！][pg]");
          if(get_player().cor > 66)
          {
-            outputText("你急切地抓住右边的肉棒；不耐烦地稍微捏了捏。一阵轻微的刺痛提醒你，你左边的邻居正用熟练的手法抓住[onecock]。你周围的每个人都迅速抓住了他们右边最近的阴茎。他们中的一些人因为压力和性唤起而颤抖着。[pg]");
+            outputText("你急切地抓住右边的肉棒；不耐烦地稍微捏了捏。一阵轻微的刺痛提醒你，你左边的邻居正用熟练的手法抓住[onecock]。你周围的每个人都迅速抓住了他们右边最近的阴茎。他们中的一些人因为压力和兴奋而颤抖着。[pg]");
          }
          else if(get_player().cor > 33)
          {

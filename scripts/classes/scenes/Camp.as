@@ -532,7 +532,7 @@ package classes.scenes
          }
          if(get_game().dungeons.checkPhoenixTowerClear())
          {
-            awardAchievement("不死鸟陨落",65);
+            awardAchievement("凤凰陨落",65);
             _loc1_++;
             if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2001) <= 0 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2066) == get_game().modSaveVersion)
             {
@@ -830,7 +830,7 @@ package classes.scenes
                break;
             case 1:
                outputText("[pg]你俯身趴在地上，静静地集中身体和精神的力量。一股压力散发到周围的泥土中，你的眼睛闪烁着翠绿色的光芒。");
-               outputText("[pg]<b>你的法术已更改为大地之火。</b>");
+               outputText("[pg]<b>你的法术已更改为地炎。</b>");
                break;
             default:
                outputText("[pg]错误：无效的魔法类型");
@@ -1541,7 +1541,7 @@ package classes.scenes
             FlagDict_Impl_.arrayWriteInt(KFLAGS.flags,2066,11);
             if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2108) > 0)
             {
-               outputText("随着莉希丝的正式发布，你现在可以再次与她战斗了！准备好先面对蛛魔梦魇和牛头怪国王吧！");
+               outputText("随着莉希丝的正式发布，你现在可以再次与她战斗了！准备好先面对蛛魔梦魇和牛头人国王吧！");
                FlagDict_Impl_.arrayWriteInt(KFLAGS.flags,2108,0);
                doNext(doCamp);
                return;
@@ -1621,7 +1621,7 @@ package classes.scenes
             doNext(doCamp);
             return;
          }
-         outputText("你想把小恶魔的头骨挂在墙上吗");
+         outputText("你想把小恶魔的头骨挂在墙上吗？");
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2180) > 0)
          {
             outputText("目前墙上挂着" + Utils.numberOfThings(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2180),"个小恶魔头骨") + "，用来威慑任何试图强暴你的小恶魔。");
@@ -2100,7 +2100,7 @@ package classes.scenes
          {
             _g1 = this;
             type1 = 1;
-            addButton(1,"大地之火",function():void
+            addButton(1,"地炎",function():void
             {
                _g1.switchMagic(type1);
             }).hint("由恶魔阿克巴尔创造的土与火之魔法。").disableIf(get_player().usingMagicTF(),"你目前正在使用这种魔法。");
@@ -3461,7 +3461,7 @@ package classes.scenes
                   }
                   else if(Utils.rand(3) == 0)
                   {
-                     outputText("当你准备上床睡觉时，你看到索菲已经比你先到了那里。她仰面躺着，双臂伸展，向着她乳沟的深谷做出微小的召唤动作。你依偎着她，她柔软如枕的乳房支撑着你的头，她那熟悉的心跳声伴你入睡，持续了" + Utils.numberOfThings(int(Math.round(get_trueTimeQ())),"hour") + "。");
+                     outputText("当你准备上床睡觉时，你看到索菲已经比你先到了那里。她仰面躺着，双臂伸展，向着她乳沟的深谷做出微小的召唤动作。你依偎着她，她柔软如枕的乳房支撑着你的头，她那熟悉的心跳声伴你入睡，持续了" + Utils.numberOfThings(int(Math.round(get_trueTimeQ())),"个小时") + "。");
                   }
                   else if(Utils.rand(2) == 0)
                   {
@@ -4606,7 +4606,7 @@ package classes.scenes
             {
                outputText("[latexyname]潜伏在一处隐蔽的岩石区，只有在被呼唤或需要从溪流中取水时才会出来。[pg]");
             }
-            _loc2_.add(get_latexGirl().gooName(),get_latexGirl().approachLatexy).hint("靠近[latexyname]，你的乳胶黏液女孩，喂她和/或找点乐子。");
+            _loc2_.add(get_latexGirl().gooName(),get_latexGirl().approachLatexy).hint("靠近[latexyname]，你的乳胶史莱姆娘，喂她和/或找点乐子。");
          }
          if(get_milkWaifu().milkSlaveAtCamp())
          {
@@ -5618,7 +5618,7 @@ package classes.scenes
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,480) == 1)
          {
             get_valeria().valeriaCampLines();
-            _loc2_.add("瓦莱丽娅",get_valeria().valeriaFollowerMenu,get_player().get_armorName() == "goo armor" ? "和你的黏液女孩保护者谈谈。" : "拜访黏液女孩瓦莱丽娅。如果你愿意，你甚至可以带上她，把她当做黏液护甲穿在身上。");
+            _loc2_.add("瓦莱丽娅",get_valeria().valeriaFollowerMenu,get_player().get_armorName() == "goo armor" ? "和你的史莱姆娘保护者谈谈。" : "拜访史莱姆娘瓦莱丽娅。如果你愿意，你甚至可以带上她，把她当做黏液护甲穿在身上。");
          }
          _loc2_.submenu(playerMenu,true);
       }
@@ -5669,7 +5669,7 @@ package classes.scenes
          }
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,598) == 0 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,596) >= 1 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,596) < 4)
          {
-            _loc1_ = FlagDict_Impl_.arrayReadInt(KFLAGS.flags,596) >= 3 ? "Tree" : "Plant";
+            _loc1_ = FlagDict_Impl_.arrayReadInt(KFLAGS.flags,596) >= 3 ? "树" : "植物";
             _g = get_game().holliScene;
             addRowButton(1,_loc1_,function():void
             {

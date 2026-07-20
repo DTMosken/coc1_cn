@@ -84,7 +84,7 @@ package classes.scenes.dungeons.manor
          }
          else if(_loc2_ == 1)
          {
-            outputText("你听到了不死小丑头饰的叮当声；<b>白骨小丑</b>被复活了！");
+            outputText("你听到了不死小丑头饰的叮当声；<b>枯骨小丑</b>被复活了！");
             get_game().monsterArray.push(new BoneJester());
          }
          else if(_loc2_ == 2)

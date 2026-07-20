@@ -14,7 +14,7 @@ package classes.items.weapons
             return;
          }
          set_weightCategory("Medium");
-         super("E.Staff","Eldritch Staff","eldritch staff","an eldritch staff",["swing","smack"],10,1000,"This eldritch staff once belonged to the Harpy Queen, who was killed after her defeat at your hands. It fairly sizzles with magical power.",["Magic","Staff"]);
+         super("E.Staff","Eldritch Staff","eldritch staff","an eldritch staff",["swing","smack"],10,1000,"This eldritch staff once belonged to the Harpy Queen, who was killed after her defeat at your hands. It fairly sizzles with magical power.",["魔法","Staff"]);
          boost("法术修正",NumberFunc_Impl_.fromInt(60),false);
       }
       

@@ -361,7 +361,7 @@ package classes.items
       
       public function isUnarmed() : Boolean
       {
-         return Boolean(perk.contains("Unarmed"));
+         return Boolean(perk.contains("徒手"));
       }
       
       public function isType(param1:MasteryType) : Boolean
@@ -380,7 +380,7 @@ package classes.items
       
       public function isSummoned() : Boolean
       {
-         return Boolean(perk.contains("Summoned"));
+         return Boolean(perk.contains("召唤"));
       }
       
       public function isStaff() : Boolean
@@ -400,13 +400,13 @@ package classes.items
             _loc4_ = _loc3_[_loc2_];
             _loc2_++;
             _loc5_ = _loc4_;
-            if(_loc5_ != "1H Sword")
+            if(_loc5_ != "Knife")
             {
-               if(_loc5_ != "Knife")
+               if(_loc5_ != "1H Sword")
                {
                   if(_loc5_ != "Spear")
                   {
-                     if(_loc5_ == "NotBladed")
+                     if(_loc5_ == "非刃器")
                      {
                         return false;
                      }
@@ -446,11 +446,11 @@ package classes.items
                      {
                         if(_loc5_ != "Axe")
                         {
-                           if(_loc5_ == "Sharp")
+                           if(_loc5_ == "锋利")
                            {
                               return true;
                            }
-                           if(_loc5_ == "NotSharp")
+                           if(_loc5_ == "非锐器")
                            {
                               return false;
                            }
@@ -498,7 +498,7 @@ package classes.items
                break;
             }
          }
-         while(_loc4_ != "Ranged");
+         while(_loc4_ != "远程");
          return true;
       }
       
@@ -539,7 +539,7 @@ package classes.items
                               {
                                  if(_loc5_ != "Claw")
                                  {
-                                    if(_loc5_ == "Large")
+                                    if(_loc5_ == "大型")
                                     {
                                        break;
                                     }
@@ -555,7 +555,7 @@ package classes.items
                                     {
                                        break;
                                     }
-                                    if(_loc5_ == "Ranged")
+                                    if(_loc5_ == "远程")
                                     {
                                        break;
                                     }
@@ -575,12 +575,12 @@ package classes.items
       
       public function isMelting() : Boolean
       {
-         return Boolean(perk.contains("Melting"));
+         return Boolean(perk.contains("融化"));
       }
       
       public function isMagicStaff() : Boolean
       {
-         return Boolean(perk.contains("Magic"));
+         return Boolean(perk.contains("魔法"));
       }
       
       public function isLarge() : Boolean
@@ -607,7 +607,7 @@ package classes.items
                break;
             }
          }
-         while(_loc4_ != "Large");
+         while(_loc4_ != "大型");
          return true;
       }
       
@@ -618,7 +618,7 @@ package classes.items
       
       public function isKatana() : Boolean
       {
-         return Boolean(perk.contains("Katana"));
+         return Boolean(perk.contains("武士刀"));
       }
       
       public function isHybrid() : Boolean
@@ -643,17 +643,17 @@ package classes.items
       
       public function isDual() : Boolean
       {
-         return Boolean(perk.contains("Dual Wield"));
+         return Boolean(perk.contains("双持"));
       }
       
       public function isCunning() : Boolean
       {
-         return Boolean(perk.contains("Cunning"));
+         return Boolean(perk.contains("狡诈"));
       }
       
       public function isCrossbow() : Boolean
       {
-         return Boolean(perk.contains("Crossbow"));
+         return Boolean(perk.contains("弩"));
       }
       
       public function isClaw() : Boolean
@@ -693,11 +693,11 @@ package classes.items
                {
                   if(_loc5_ != "2H Blunt")
                   {
-                     if(_loc5_ == "Blunt")
+                     if(_loc5_ == "钝器")
                      {
                         return true;
                      }
-                     if(_loc5_ == "NotBlunt")
+                     if(_loc5_ == "非钝器")
                      {
                         return false;
                      }
@@ -730,11 +730,11 @@ package classes.items
                   {
                      if(_loc5_ != "Axe")
                      {
-                        if(_loc5_ == "Bladed")
+                        if(_loc5_ == "带刃")
                         {
                            return true;
                         }
-                        if(_loc5_ == "NotBladed")
+                        if(_loc5_ == "非刃器")
                         {
                            return false;
                         }
@@ -775,14 +775,14 @@ package classes.items
       {
          if(!isUnarmed())
          {
-            return Boolean(perk.contains("Attached"));
+            return Boolean(perk.contains("附着"));
          }
          return true;
       }
       
       public function isAphrodisiac() : Boolean
       {
-         return Boolean(perk.contains("Aphrodisiac Weapon"));
+         return Boolean(perk.contains("催情武器"));
       }
       
       public function is2HSword() : Boolean
@@ -1054,6 +1054,11 @@ package classes.items
          var _loc2_:Array = [];
          var _loc3_:int = 0;
          var _loc4_:Array = MasteryLib.MASTERY_WEAPONS;
+         var _loc6_:int = 0;
+         while(_loc6_ < int(_loc1_.length))
+         {
+            _loc6_++;
+         }
          while(_loc3_ < int(_loc4_.length))
          {
             _loc5_ = _loc4_[_loc3_];

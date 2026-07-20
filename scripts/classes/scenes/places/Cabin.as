@@ -280,7 +280,7 @@ package classes.scenes.places
       public function mothBedding() : void
       {
          clearOutput();
-         outputText("你把旧寝具换成了从玛瑞斯那里得到的丝绸床单。完成后，你感到一种满足感，但总觉得这里似乎有什么东西和你在一起。[b: 你感到自己莫名地变得更强了。]");
+         outputText("你把旧寝具换成了从玛丽埃尔那里得到的丝绸床单。完成后，你感到一种满足感，但总觉得这里似乎有什么东西和你在一起。[b: 你感到自己莫名地变得更强了。]");
          resetBeddingPerks();
          get_player().createPerk(PerkLib.MothBedding);
          doNext(enterCabin);
@@ -300,8 +300,8 @@ package classes.scenes.places
          }
          if(get_player().hasKeyItem("Traveler\'s Guide"))
          {
-            outputText("《旅行者指南》 - 一本非常基础的玛瑞斯注意事项指南。\n");
-            addButton(2,"《旅行者指南》",readTGuide).hint("这本旅行者指南与其说是一本书，不如说是一本小册子，但它仍然包含了一些关于避免当地陷阱的有用信息。");
+            outputText("旅行者指南 - 一本非常基础的玛瑞斯注意事项指南。\n");
+            addButton(2,"旅行者指南",readTGuide).hint("这本旅行者指南与其说是一本书，不如说是一本小册子，但它仍然包含了一些关于避免当地陷阱的有用信息。");
          }
          if(get_player().hasKeyItem("Hentai Comic"))
          {
@@ -321,12 +321,12 @@ package classes.scenes.places
          if(get_player().hasKeyItem("Izma\'s Book - Combat Manual"))
          {
             outputText("战斗手册——一本你从伊兹玛那里买来的战斗指导小册子。\n");
-            addButton(6,"C.Manual",studyCombatManual);
+            addButton(6,"战斗手册",studyCombatManual);
          }
          if(get_player().hasKeyItem("Izma\'s Book - Etiquette Guide"))
          {
             outputText("礼仪指南——关于如何成为一个友善的玛瑞斯人的指导。从伊兹玛处购买\n");
-            addButton(7,"E.Guide",studyEtiquetteGuide);
+            addButton(7,"礼仪指南",studyEtiquetteGuide);
          }
          if(get_player().hasKeyItem("Izma\'s Book - Porn"))
          {
@@ -1063,7 +1063,7 @@ package classes.scenes.places
          addNextButton("普通寝具",normalBedding).hint("使用你普通的寝具。").disableIf(!get_player().hasPerk(PerkLib.MothBedding) && !get_player().hasPerk(PerkLib.SpiderBedding));
          if(get_player().hasKeyItem("Moth Bedding"))
          {
-            addNextButton("飞蛾寝具",mothBedding).hint("将你的旧寝具换成玛瑞斯制作的丝绸床单。").disableIf(get_player().hasPerk(PerkLib.MothBedding));
+            addNextButton("飞蛾寝具",mothBedding).hint("将你的旧寝具换成玛丽埃尔制作的丝绸床单。").disableIf(get_player().hasPerk(PerkLib.MothBedding));
          }
          if(get_player().hasKeyItem("Spider-Silk Bedding"))
          {

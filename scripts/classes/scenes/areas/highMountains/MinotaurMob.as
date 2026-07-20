@@ -35,7 +35,7 @@ package classes.scenes.areas.highMountains
             set_short("minotaur tribe");
          }
          imageName = "minomob";
-         set_long(Utils.Num2Text(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,326)) + "个毛茸茸的兽人松散地围成一圈站在你周围。他们的姿势并不算有威胁性。如果说有什么的话，他们似乎是在保护性地站在你周围，仿佛他们的存在能以某种方式庇护你免受山上其他东西的伤害。他们所有的特征都有着兄弟般的相似之处，尽管你的牛头怪儿子们之间仍然有相当多的差异。其中一个比其他的都要高出一个头，是一个巨大的肌肉块，大到似乎让其他的都相形见绌。形成鲜明对比的是，一个女性化的迷你牛头怪在后面保持着距离。" + (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,326) >= 20 ? " 部落不断地发出嘘声和口哨声，满心期待着很快就能操你。" : ""));
+         set_long(Utils.Num2Text(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,326)) + "个毛茸茸的兽人松散地围成一圈站在你周围。他们的姿势并不算有威胁性。如果说有什么的话，他们似乎是在保护性地站在你周围，仿佛他们的存在能以某种方式庇护你免受山上其他东西的伤害。他们所有的特征都有着兄弟般的相似之处，尽管你的牛头人儿子们之间仍然有相当多的差异。其中一个比其他的都要高出一个头，是一个巨大的肌肉块，大到似乎让其他的都相形见绌。形成鲜明对比的是，一个女性化的迷你牛头人在后面保持着距离。" + (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,326) >= 20 ? " 部落不断地发出嘘声和口哨声，满心期待着很快就能操你。" : ""));
          set_race("Minotaurs");
          set_plural(true);
          pronoun1 = "他们";
@@ -97,7 +97,7 @@ package classes.scenes.areas.highMountains
       {
          if(param2)
          {
-            outputText("[pg]在你高潮时，迷你牛头怪们哄堂大笑，但他们那跳动的勃起却没有丝毫减退。");
+            outputText("[pg]在你高潮时，迷你牛头人们哄堂大笑，但他们那跳动的勃起却没有丝毫减退。");
             doNext(get_game().combat.endLustLoss);
          }
          else
@@ -118,7 +118,7 @@ package classes.scenes.areas.highMountains
          }
          else if(HPRatio() >= 0.75)
          {
-            outputText("包围你的牛头怪太多了，根本跑不掉！");
+            outputText("包围你的牛头人太多了，根本跑不掉！");
             _g = get_game().combat;
             newRound = false;
             doNext(function():void
@@ -177,7 +177,7 @@ package classes.scenes.areas.highMountains
          }
          if(!_loc1_ || Utils.rand(3) == 0)
          {
-            outputText("[pg-]兽人中体型最小的迷你牛头怪呻吟着乞求道：[say:求你了，妈妈，我们能操你吗？我……我太需要了。]他掀起缠腰布的边缘，向你展示他到底在说什么。他的肉棒虽然疲软，但却在不断滴液。真正吸引你眼球的是那根滴水的肉棒后面的东西——一对看起来肿胀不堪、憋得难以置信的睾丸。他的生殖器和缠腰布之间挂着一张由他的分泌物粘成的网，向你展示了他一想到要操你，就流了多少水。他扇动着湿透的布料，不经意间将一股信息素吹向了你。");
+            outputText("[pg-]兽人中体型最小的迷你牛头人呻吟着乞求道：[say:求你了，妈妈，我们能操你吗？我……我太需要了。]他掀起缠腰布的边缘，向你展示他到底在说什么。他的肉棒虽然疲软，但却在不断滴液。真正吸引你眼球的是那根滴水的肉棒后面的东西——一对看起来肿胀不堪、憋得难以置信的睾丸。他的生殖器和缠腰布之间挂着一张由他的分泌物粘成的网，向你展示了他一想到要操你，就流了多少水。他扇动着湿透的布料，不经意间将一股信息素吹向了你。");
             get_player().takeLustDamage(9 + get_player().lib / 20);
          }
          get_player().takeLustDamage(_loc2_);
@@ -292,7 +292,7 @@ package classes.scenes.areas.highMountains
       public function minotaurGangGangGropeAttack() : void
       {
          get_game().spriteSelect(SpriteDb.get_s_minotaurSons());
-         outputText("还没等你反应过来，几双手从各个角度伸出，抓住了你的身体。一双手捏住你的[ass]，强有力的抓握充满爱意地按摩着你的臀瓣。另一双手在你的肚子上滑动，向下伸去，却又没有完全触碰到下方多汁的三角区。手掌环绕着你的[chest]并抚摸着，尽管抓住你的手很粗暴，但揉捏的动作却很温柔。你在众多牛头怪的集体抓握中扭动挣扎了一会儿，被这种对待弄得越来越兴奋。最后，你终于挣脱了他们的束缚，重获自由，因为用力过度和欲望而大口喘息着。");
+         outputText("还没等你反应过来，几双手从各个角度伸出，抓住了你的身体。一双手捏住你的[ass]，强有力的抓握充满爱意地按摩着你的臀瓣。另一双手在你的肚子上滑动，向下伸去，却又没有完全触碰到下方多汁的三角区。手掌环绕着你的[chest]并抚摸着，尽管抓住你的手很粗暴，但揉捏的动作却很温柔。你在众多牛头人的集体抓握中扭动挣扎了一会儿，被这种对待弄得越来越兴奋。最后，你终于挣脱了他们的束缚，重获自由，因为用力过度和欲望而大口喘息着。");
          get_player().takeLustDamage(15 + get_player().sens / 10,true);
       }
       

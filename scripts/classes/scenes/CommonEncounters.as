@@ -10,6 +10,7 @@ package classes.scenes
    import classes.PerkLib;
    import classes.Player;
    import classes.StatusEffects;
+   import classes.Time;
    import classes.Vagina;
    import classes.display.SpriteDb;
    import classes.internals.Utils;
@@ -73,58 +74,78 @@ package classes.scenes
       
       public function impMultiCombatEncounter() : void
       {
-         var impAmount6:int;
-         var lustVictory5:Boolean;
-         var _g7:ImpScene;
-         var impAmount5:int;
-         var lustVictory4:Boolean;
-         var _g6:ImpScene;
          var impAmount4:int;
          var lustVictory3:Boolean;
-         var _g5:ImpScene;
+         var _g3:ImpScene;
          var impAmount3:int;
          var lustVictory2:Boolean;
-         var _g4:ImpScene;
-         var hpVictory1:Boolean;
-         var _g3:ImpScene;
+         var _g2:ImpScene;
          var impAmount2:int;
          var lustVictory1:Boolean;
-         var _g2:ImpScene;
-         var hpVictory:Boolean;
          var _g1:ImpScene;
          var impAmount1:int;
          var lustVictory:Boolean;
          var _g:ImpScene;
-         var _loc4_:* = null;
-         var _loc5_:* = null as Array;
-         var _loc6_:* = null as Array;
-         var _loc7_:* = null as Monster;
-         var _loc8_:* = null as Monster;
-         var _loc9_:* = null as Monster;
-         var _loc10_:* = null as Monster;
-         var _loc11_:* = null as Function;
-         var _loc12_:* = null as Function;
-         var _loc13_:* = null as Function;
+         var _loc7_:int = 0;
+         var _loc8_:int = 0;
+         var _loc9_:int = 0;
+         var _loc10_:int = 0;
+         var _loc11_:* = null;
+         var _loc12_:* = null as Array;
+         var _loc13_:* = null as Array;
+         var _loc14_:* = null as Monster;
+         var _loc15_:* = null as Monster;
+         var _loc16_:* = null as Monster;
+         var _loc17_:* = null as Monster;
+         var _loc18_:* = null as Function;
+         var _loc19_:* = null as Function;
+         var _loc20_:* = null as Function;
          clearOutput();
-         var _loc1_:int = 1;
-         var _loc2_:Number = get_player().statusEffectv1(StatusEffects.BirthedImps);
-         if(get_game().dungeons.checkFactoryClear() || get_player().level >= 2 && _loc2_ >= 2)
-         {
-            _loc1_++;
-         }
+         var _loc1_:int = int(Math.floor(get_player().statusEffectv1(StatusEffects.BirthedImps)));
+         var _loc2_:int = int(Math.floor(Math.max(get_player().level,get_time().days / 6)));
          var _loc3_:int = 1;
-         if(Utils.randomChance(30 + 5 * _loc2_))
+         var _loc4_:int = 5;
+         var _loc5_:int = 0;
+         if(get_game().dungeons.checkFactoryClear())
          {
             _loc3_++;
+            _loc4_ += 10;
+            _loc5_ += 20;
          }
-         if(Utils.randomChance(5 + 5 * _loc2_))
+         if(_loc2_ >= 2 && _loc1_ > 0)
+         {
+            if(_loc1_ >= 20)
+            {
+               _loc3_++;
+            }
+            _loc4_ += _loc1_ * 2;
+            _loc5_ += _loc1_ * 3;
+         }
+         if(_loc2_ >= 5)
          {
             _loc3_++;
+            _loc4_ += Utils.boundInt(0,_loc2_ * 2,50);
+            _loc5_ += Utils.boundInt(0,_loc2_ * 3,50);
          }
-         switch(_loc3_)
+         var _loc6_:int = 1;
+         if(_loc4_ <= 90 || Utils.randomChance(90))
+         {
+            _loc7_ = 1;
+            _loc8_ = _loc3_;
+            while(_loc7_ < _loc8_)
+            {
+               _loc9_ = _loc7_++;
+               _loc10_ = _loc4_ - (_loc9_ - 1) * 25;
+               if(Utils.randomChance(_loc10_))
+               {
+                  _loc6_++;
+               }
+            }
+         }
+         switch(_loc6_)
          {
             case 1:
-               _loc4_ = {
+               _loc11_ = {
                   "text":"一只小恶魔从天而降并发起攻击！",
                   "debuff":function(param1:Array):void
                   {
@@ -132,7 +153,7 @@ package classes.scenes
                };
                break;
             case 2:
-               _loc5_ = [{
+               _loc12_ = [{
                   "text":"不远处传来两只小恶魔扭打的声音，不幸的是，它们发现了你，放弃了争吵朝你扑来。",
                   "debuff":function(param1:Array):void
                   {
@@ -155,11 +176,11 @@ package classes.scenes
                      param1[1].changeFatigue(20);
                   }
                }];
-               _loc6_ = _loc5_;
-               _loc4_ = _loc6_[Utils.rand(int(_loc6_.length))];
+               _loc13_ = _loc12_;
+               _loc11_ = _loc13_[Utils.rand(int(_loc13_.length))];
                break;
-            default:
-               _loc5_ = [{
+            case 3:
+               _loc12_ = [{
                   "text":"三只四处乱窜的小恶魔引起了你的注意，当其中一只发现你时，它吓得向后倒去。这群家伙做好了战斗的准备。",
                   "debuff":function(param1:Array):void
                   {
@@ -191,86 +212,65 @@ package classes.scenes
                      param1[1].takeDamage(10);
                   }
                }];
-               _loc6_ = _loc5_;
-               _loc4_ = _loc6_[Utils.rand(int(_loc6_.length))];
+               _loc13_ = _loc12_;
+               _loc11_ = _loc13_[Utils.rand(int(_loc13_.length))];
+               break;
+            default:
+               _loc11_ = {
+                  "text":"小恶魔们从天而降，眼中充满了恶意与欲望。",
+                  "debuff":function(param1:Array):void
+                  {
+                  }
+               };
          }
-         outputText(_loc4_.text);
+         outputText(_loc11_.text);
          unlockCodexEntry(2044);
-         _loc5_ = [];
-         _loc5_.push(_loc3_ > 0 ? new Imp(false,_loc1_) : null);
-         _loc5_.push(_loc3_ > 1 ? new Imp(false,_loc1_) : null);
-         _loc5_.push(_loc3_ > 2 ? new Imp(false,_loc1_) : null);
-         _loc5_.push(_loc3_ > 3 ? new Imp(false,_loc1_) : null);
-         _loc6_ = _loc5_;
-         if(_loc3_ == 1)
+         _loc12_ = [];
+         _loc12_.push(_loc6_ > 0 ? new Imp(false,Utils.randomChance(_loc5_) ? 2 : 1) : null);
+         _loc12_.push(_loc6_ > 1 ? new Imp(false,Utils.randomChance(_loc5_) ? 2 : 1) : null);
+         _loc12_.push(_loc6_ > 2 ? new Imp(false,Utils.randomChance(_loc5_) ? 2 : 1) : null);
+         _loc12_.push(_loc6_ > 3 ? new Imp(false,Utils.randomChance(_loc5_) ? 2 : 1) : null);
+         _loc13_ = _loc12_;
+         if(_loc6_ == 1)
          {
-            _loc7_ = _loc6_[0];
-            _loc8_ = _loc6_[1];
-            _loc9_ = _loc6_[2];
-            _loc10_ = _loc6_[3];
+            startCombat(_loc13_[0]);
+         }
+         else
+         {
+            _loc14_ = _loc13_[0];
+            _loc15_ = _loc13_[1];
+            _loc16_ = _loc13_[2];
+            _loc17_ = _loc13_[3];
             _g = get_game().impScene;
             lustVictory = false;
-            impAmount1 = _loc3_;
-            _loc11_ = function():void
+            impAmount1 = _loc6_;
+            _loc18_ = function():void
             {
                _g.impMultiVictory(lustVictory,impAmount1);
             };
             _g1 = get_game().impScene;
-            hpVictory = true;
-            _loc12_ = function():void
+            lustVictory1 = false;
+            impAmount2 = _loc6_;
+            _loc19_ = function():void
             {
-               _g1.impRapesYou(hpVictory);
+               _g1.multiImpSpitroastLoss(lustVictory1,impAmount2);
             };
             _g2 = get_game().impScene;
-            lustVictory1 = true;
-            impAmount2 = _loc3_;
-            _loc13_ = function():void
+            lustVictory2 = true;
+            impAmount3 = _loc6_;
+            _loc20_ = function():void
             {
-               _g2.impMultiVictory(lustVictory1,impAmount2);
+               _g2.impMultiVictory(lustVictory2,impAmount3);
             };
             _g3 = get_game().impScene;
-            hpVictory1 = false;
-            startCombatMultiple(_loc7_,_loc8_,_loc9_,_loc10_,_loc11_,_loc12_,_loc13_,function():void
+            lustVictory3 = true;
+            impAmount4 = _loc6_;
+            startCombatMultiple(_loc14_,_loc15_,_loc16_,_loc17_,_loc18_,_loc19_,_loc20_,function():void
             {
-               _g3.impRapesYou(hpVictory1);
+               _g3.multiImpSpitroastLoss(lustVictory3,impAmount4);
             });
          }
-         else
-         {
-            _loc7_ = _loc6_[0];
-            _loc8_ = _loc6_[1];
-            _loc9_ = _loc6_[2];
-            _loc10_ = _loc6_[3];
-            _g4 = get_game().impScene;
-            lustVictory2 = false;
-            impAmount3 = _loc3_;
-            _loc11_ = function():void
-            {
-               _g4.impMultiVictory(lustVictory2,impAmount3);
-            };
-            _g5 = get_game().impScene;
-            lustVictory3 = false;
-            impAmount4 = _loc3_;
-            _loc12_ = function():void
-            {
-               _g5.multiImpSpitroastLoss(lustVictory3,impAmount4);
-            };
-            _g6 = get_game().impScene;
-            lustVictory4 = true;
-            impAmount5 = _loc3_;
-            _loc13_ = function():void
-            {
-               _g6.impMultiVictory(lustVictory4,impAmount5);
-            };
-            _g7 = get_game().impScene;
-            lustVictory5 = true;
-            impAmount6 = _loc3_;
-            startCombatMultiple(_loc7_,_loc8_,_loc9_,_loc10_,_loc11_,_loc12_,_loc13_,function():void
-            {
-               _g7.multiImpSpitroastLoss(lustVictory5,impAmount6);
-            });
-         }
-         _loc4_.debuff(_loc6_);
+         _loc11_.debuff(_loc13_);
          spriteSelect(SpriteDb.get_s_imp());
       }
       
@@ -294,16 +294,6 @@ package classes.scenes
             _loc1_--;
          }
          return _loc1_ / 10;
-      }
-      
-      public function impCombatEncounter() : void
-      {
-         clearOutput();
-         outputText("一只小恶魔从天而降，发起了攻击！");
-         unlockCodexEntry(2044);
-         doNext(playerMenu);
-         startCombat(new Imp());
-         spriteSelect(SpriteDb.get_s_imp());
       }
       
       public function goblinCombatEncounter() : void
@@ -347,16 +337,15 @@ package classes.scenes
          fn = Encounters.fn;
          var _loc1_:Function = EncounterChance_Impl_.fromFloatConst(1);
          var _loc2_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("twoimpsclash",fn.lineByLevel(1,20,0.1,0.01),null,OneOf_Impl_.fromA(twoImpsClashing),null));
-         var _loc3_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("imp",fn.lineByLevel(1,20,1,0.5),null,OneOf_Impl_.fromA(impCombatEncounter),null));
-         var _loc4_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("multiimp",fn.lineByLevel(1,20,1,0.5),null,OneOf_Impl_.fromA(impMultiCombatEncounter),null));
-         var _loc5_:Either = OneOf_Impl_.fromB(get_game().aliceScene);
-         var _loc6_:Object = EncounterChance_Impl_.fromBoolFun(function():Boolean
+         var _loc3_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("imp",fn.lineByLevel(1,20,1,0.5),null,OneOf_Impl_.fromA(impMultiCombatEncounter),null));
+         var _loc4_:Either = OneOf_Impl_.fromB(get_game().aliceScene);
+         var _loc5_:Object = EncounterChance_Impl_.fromBoolFun(function():Boolean
          {
             return _gthis.get_allowChild();
          });
-         var _loc7_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("alice",fn.lineByLevel(1,20,0.1,0.3),_loc6_,_loc5_,null));
-         var _loc8_:Either = OneOf_Impl_.fromA(get_game().plagueRatScene.plagueEncounter);
-         var _loc9_:Object = EncounterChance_Impl_.fromBoolFun(function():Boolean
+         var _loc6_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("alice",fn.lineByLevel(1,20,0.1,0.3),_loc5_,_loc4_,null));
+         var _loc7_:Either = OneOf_Impl_.fromA(get_game().plagueRatScene.plagueEncounter);
+         var _loc8_:Object = EncounterChance_Impl_.fromBoolFun(function():Boolean
          {
             if(_gthis.get_filthEnabled())
             {
@@ -364,10 +353,10 @@ package classes.scenes
             }
             return false;
          });
-         var _loc10_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("plaguerat",fn.lineByLevel(8,16,0.5,1),_loc9_,_loc8_,null));
-         var _loc11_:Either = OneOf_Impl_.fromA(get_game().ivorySuccubusScene.encounter);
-         var _loc12_:Object = fn.ifLevelMin(12);
-         _impEncounter = Encounters.build(new EncounterDef(null,impEncounterBaseChance,null,OneOf_Impl_.fromB(Encounters.complex(_loc1_,"imps",_loc2_,_loc3_,_loc4_,_loc7_,_loc10_,EncounterOrDef_Impl_.fromDef(new EncounterDef("ivorysuccubus",fn.lineByLevel(12,20,0.25,1.5),_loc12_,_loc11_,null)))),[lethiteMod]));
+         var _loc9_:Encounter = EncounterOrDef_Impl_.fromDef(new EncounterDef("plaguerat",fn.lineByLevel(8,16,0.5,1),_loc8_,_loc7_,null));
+         var _loc10_:Either = OneOf_Impl_.fromA(get_game().ivorySuccubusScene.encounter);
+         var _loc11_:Object = fn.ifLevelMin(12);
+         _impEncounter = Encounters.build(new EncounterDef(null,impEncounterBaseChance,null,OneOf_Impl_.fromB(Encounters.complex(_loc1_,"imps",_loc2_,_loc3_,_loc6_,_loc9_,EncounterOrDef_Impl_.fromDef(new EncounterDef("ivorysuccubus",fn.lineByLevel(12,20,0.25,1.5),_loc11_,_loc10_,null)))),[lethiteMod]));
          return _impEncounter;
       }
       

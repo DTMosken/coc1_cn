@@ -314,10 +314,10 @@ package classes.scenes.npcs
          var _loc1_:int = 0;
          var _loc2_:* = null as IMap;
          clearOutput();
-         outputText("你递给玛布尔一罐缩胸膏，并告诉她你希望她能把胸部缩小一点。");
+         outputText("你递给玛布尔一罐缩形膏，并告诉她你希望她能把胸部缩小一点。");
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,1056) > 0)
          {
-            outputText("[pg][say: 好吧，既然你这么说。] 玛布尔打开缩胸膏的罐子，掀起上衣，将绿色凝胶涂抹在她的乳房上。随着药效发作，她发出一声轻柔的叹息，她那巨大的 " + get_game().marbleScene.marbleBreastSize() + " 乳房慢慢缩小，变成了一对更为适中的");
+            outputText("[pg][say: 好吧，既然你这么说。] 玛布尔打开缩形膏的罐子，掀起上衣，将绿色凝胶涂抹在她的乳房上。随着药效发作，她发出一声轻柔的叹息，她那巨大的 " + get_game().marbleScene.marbleBreastSize() + " 乳房慢慢缩小，变成了一对更为适中的");
             _loc1_ = 1056;
             FlagDict_Impl_.arrayWriteInt(KFLAGS.flags,_loc1_,FlagDict_Impl_.arrayReadInt(KFLAGS.flags,_loc1_) - 1);
             outputText(get_game().marbleScene.marbleBreastSize() + " 大小的乳房。");
@@ -343,7 +343,7 @@ package classes.scenes.npcs
          }
          else
          {
-            outputText("[pg][say: 什么？亲爱的，我已经这么小了，恐怕我无法让自己变得更小了。抱歉。] 她把缩胸膏递还给你。");
+            outputText("[pg][say: 什么？亲爱的，我已经这么小了，恐怕我无法让自己变得更小了。抱歉。] 她把缩形膏递还给你。");
          }
          doNext(get_marbleScene().giveItem);
       }
@@ -1170,7 +1170,7 @@ package classes.scenes.npcs
          }
          else if(get_player().hasCock() && get_player().hasVagina())
          {
-            outputText("此时你的性唤起在你的整个生殖器上表现得相当明显。克拉拉抚摸了你几下，但似乎并不怎么感兴趣。");
+            outputText("此时你的兴奋在你的整个生殖器上表现得相当明显。克拉拉抚摸了你几下，但似乎并不怎么感兴趣。");
          }
          else
          {

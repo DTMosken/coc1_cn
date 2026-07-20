@@ -68,7 +68,7 @@ package classes.scenes.npcs
       {
          if(param2)
          {
-            outputText("[pg]穿装甲的黏液女孩叹了口气，而你却筋疲力尽……");
+            outputText("[pg]穿装甲的史莱姆娘叹了口气，而你却筋疲力尽……");
             doNext(get_game().combat.endLustLoss);
          }
          else if(hasStatusEffect(StatusEffects.Spar))
@@ -103,7 +103,7 @@ package classes.scenes.npcs
          }
          else
          {
-            outputText("你终于把黏液从你身上扯下来，并在黏液女孩重新附着在你身上之前潜出了她的触及范围。她撅着嘴，重新填满了她的盔甲，并重新摆出了战斗姿态。");
+            outputText("你终于把黏液从你身上扯下来，并在史莱姆娘重新附着在你身上之前潜出了她的触及范围。她撅着嘴，重新填满了她的盔甲，并重新摆出了战斗姿态。");
             get_player().removeStatusEffect(StatusEffects.GooArmorBind);
          }
          tookAction = true;
@@ -116,7 +116,7 @@ package classes.scenes.npcs
             if(get_player().hasStatusEffect(StatusEffects.GooArmorBind))
             {
                clearOutput();
-               outputText("突然，黏液女孩从她厚重的装甲中漏出了一半，向你扑来。你试图躲避她的攻击，但她并没有试图打你——相反，她缠住了你，把你的手臂固定在胸前。越来越多的黏液附着在你身上——你必须战斗才能摆脱这个。");
+               outputText("突然，史莱姆娘从她厚重的装甲中漏出了一半，向你扑来。你试图躲避她的攻击，但她并没有试图打你——相反，她缠住了你，把你的手臂固定在胸前。越来越多的黏液附着在你身上——你必须战斗才能摆脱这个。");
                get_player().addStatusValue(StatusEffects.GooArmorBind,1,1);
                if(get_player().statusEffectv1(StatusEffects.GooArmorBind) >= 5)
                {
@@ -144,13 +144,13 @@ package classes.scenes.npcs
       
       public function gooSilenceAttack() : void
       {
-         outputText("黏液女孩把一只手从她的大剑上拿开，把她的左手腕射向你。你退缩了，因为一点黏液拍在你的嘴上，阻止你说话——看来在你把它扯下来之前，你被沉默了！");
+         outputText("史莱姆娘把一只手从她的大剑上拿开，把她的左手腕射向你。你退缩了，因为一点黏液拍在你的嘴上，阻止你说话——看来在你把它扯下来之前，你被沉默了！");
          get_player().createStatusEffect(StatusEffects.GooArmorSilence,0,0,0,0);
       }
       
       public function gooArmorAttackTwoGooConsume() : void
       {
-         outputText("突然，黏液女孩从她厚重的装甲中漏出了一半，向你扑来。你试图躲避她的攻击，但她并没有试图打你——相反，她缠住了你，把你的手臂固定在胸前。越来越多的黏液附着在你身上——你必须战斗才能摆脱这个。");
+         outputText("突然，史莱姆娘从她厚重的装甲中漏出了一半，向你扑来。你试图躲避她的攻击，但她并没有试图打你——相反，她缠住了你，把你的手臂固定在胸前。越来越多的黏液附着在你身上——你必须战斗才能摆脱这个。");
          get_player().createStatusEffect(StatusEffects.GooArmorBind,0,0,0,0);
       }
       

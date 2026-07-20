@@ -148,7 +148,7 @@ package classes.items.consumables
          }
          if(!get_game().get_inCombat() && Utils.rand(10) == 1 && (!purified && !get_player().hasPerk(PerkLib.MinotaurCumResistance)))
          {
-            outputText("[pg]你的眼睛闭上了一秒钟，一个幻想侵入了你的脑海。你跪在地上，在一个牛头怪面前匍匐着。它那令人迷醉的气味弥漫在你的周围，你前后摇晃着，肚子里已经装满了精液，发出晃动的声音。它那像马一样的阴茎在你的脸上摩擦，你向这只野兽屈服，张大嘴巴，将它那出汗的、闪闪发光的粗大阴茎吞入体内。你的舌头高兴地颤抖着，开始吸吮和发出啧啧声，吞下你从这根野兽般的勃起中诱出的每一滴先列腺液。你高兴地咕噜咕噜叫着，把自己交给这个非人的主人，以换取一个吞咽进入无意识的极乐的机会。");
+            outputText("[pg]你的眼睛闭上了一秒钟，一个幻想侵入了你的脑海。你跪在地上，在一个牛头人面前匍匐着。它那令人迷醉的气味弥漫在你的周围，你前后摇晃着，肚子里已经装满了精液，发出晃动的声音。它那像马一样的阴茎在你的脸上摩擦，你向这只野兽屈服，张大嘴巴，将它那出汗的、闪闪发光的粗大阴茎吞入体内。你的舌头高兴地颤抖着，开始吸吮和发出啧啧声，吞下你从这根野兽般的勃起中诱出的每一滴先列腺液。你高兴地咕噜咕噜叫着，把自己交给这个非人的主人，以换取一个吞咽进入无意识的极乐的机会。");
             dynStats(DynStat.Lib(1),DynStat.Lust(Utils.rand(5) + get_player().cor / 20 + FlagDict_Impl_.arrayReadFloat(KFLAGS.flags,18) / 5));
          }
          if(get_player().get_HP() < get_player().maxHP() && get_player().hasPerk(PerkLib.MinotaurCumAddict))
@@ -163,18 +163,18 @@ package classes.items.consumables
          }
          if(purified && (get_player().hasPerk(PerkLib.MinotaurCumAddict) || FlagDict_Impl_.arrayReadFloat(KFLAGS.flags,18) >= 40))
          {
-            outputText("[pg]仅仅是喝了纯净的牛头怪精液，你的头脑就感觉清醒了一些。也许如果你多喝一些，你就能摆脱你的瘾了？");
+            outputText("[pg]仅仅是喝了纯净的牛头人精液，你的头脑就感觉清醒了一些。也许如果你多喝一些，你就能摆脱你的瘾了？");
             if(get_player().hasPerk(PerkLib.MinotaurCumAddict) && FlagDict_Impl_.arrayReadFloat(KFLAGS.flags,18) <= 50)
             {
-               outputText("突然，你眼前一黑，脑海中闪过被牛头怪绑架的画面，以及你放弃了你的任务，最终导致莉希丝成功占领玛瑞斯。不，这不可能！你醒了过来，从昏厥中恢复，惊恐地发现如果你和牛头怪度过余生，到底会发生什么！你摇了摇头，意识到你不再依赖精液了。");
-               outputText("\n<b>(失去特质：牛头怪精液成瘾！)</b>");
+               outputText("突然，你眼前一黑，脑海中闪过被牛头人绑架的画面，以及你放弃了你的任务，最终导致莉希丝成功占领玛瑞斯。不，这不可能！你醒了过来，从昏厥中恢复，惊恐地发现如果你和牛头人度过余生，到底会发生什么！你摇了摇头，意识到你不再依赖精液了。");
+               outputText("\n<b>(失去特质：牛头人精液成瘾！)</b>");
                get_player().removePerk(PerkLib.MinotaurCumAddict);
             }
          }
          if(FlagDict_Impl_.arrayReadFloat(KFLAGS.flags,18) >= 100 && !get_player().hasPerk(PerkLib.MinotaurCumResistance) && !get_player().hasPerk(PerkLib.MinotaurCumAddict))
          {
             get_player().createPerk(PerkLib.MinotaurCumAddict,0,0,0,0);
-            outputText("<b>你现在是一个牛头怪精液成瘾者</b> (瓶装牛头怪精液现在可以恢复你25%的生命值，但会在几个小时内造成生命值伤害以提升欲望。)[pg]");
+            outputText("<b>你现在是一个牛头人精液成瘾者</b> (瓶装牛头人精液现在可以恢复你25%的生命值，但会在几个小时内造成生命值伤害以提升欲望。)[pg]");
          }
          get_player().refillHunger(25);
          return false;

@@ -11,6 +11,8 @@ package classes.scenes.places.bazaar
       
       public static var TellyComB:TellyCom = new TellyCom("TellyComB",1,null);
       
+      public static var TellyComCC:TellyCom = new TellyCom("TellyComCC",7,null);
+      
       public static var TellyComD:TellyCom = new TellyCom("TellyComD",6,null);
       
       public static var TellyComH:TellyCom = new TellyCom("TellyComH",5,null);
@@ -21,7 +23,7 @@ package classes.scenes.places.bazaar
       
       public static var TellyComP:TellyCom = new TellyCom("TellyComP",3,null);
       
-      public static var __constructs__:Array = ["TellyComL","TellyComB","TellyComK","TellyComP","TellyComA","TellyComH","TellyComD"];
+      public static var __constructs__:Array = ["TellyComL","TellyComB","TellyComK","TellyComP","TellyComA","TellyComH","TellyComD","TellyComCC"];
       
       public var tag:String;
       

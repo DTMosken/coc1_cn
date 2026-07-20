@@ -203,12 +203,12 @@ package classes.items
          _loc2_._headerName = "Warhammer";
          WARHAMR = _loc2_;
          WINGSPR = new WingedSpear();
-         _loc3_ = new Weapon("W.Staff","Wizard Staff","wizard\'s staff","a wizard\'s staff",["smack"],3,350,"This staff is made of very old wood and seems to tingle to the touch. The top has an odd zig-zag shape to it, and the wood is worn smooth from lots of use. It probably belonged to a wizard at some point and would aid magic use.",["Magic","Staff"]);
+         _loc3_ = new Weapon("W.Staff","Wizard Staff","wizard\'s staff","a wizard\'s staff",["smack"],3,350,"This staff is made of very old wood and seems to tingle to the touch. The top has an odd zig-zag shape to it, and the wood is worn smooth from lots of use. It probably belonged to a wizard at some point and would aid magic use.",["魔法","Staff"]);
          _loc3_.boost("法术修正",NumberFunc_Impl_.fromInt(40),false);
          _loc4_ = _loc3_;
          _loc4_._headerName = "Wizard Staff";
          W_STAFF = _loc4_;
-         _loc5_ = new Weapon("UrtaHlb","Urta\'s Halberd","halberd","a halberd",["slash"],11,10,"Urta\'s halberd.",["Polearm","Large"],1,null,0,25);
+         _loc5_ = new Weapon("UrtaHlb","Urta\'s Halberd","halberd","a halberd",["slash"],11,10,"Urta\'s halberd.",["Polearm","大型"],1,null,0,25);
          _loc5_._headerName = "Urta\'s Halberd";
          URTAHLB = _loc5_;
          U_SWORD = new UglySword();
@@ -234,7 +234,7 @@ package classes.items
          _loc8_ = new RaphaelsRapier();
          _loc8_._headerName = "Raphael\'s Vulpine Rapier";
          RRAPIER = _loc8_;
-         RIDINGC = new Weapon("RidingC","Riding Crop","riding crop","a riding crop",["strike"],5,50,"This riding crop appears to be made of black leather, and could be quite a painful (or exciting) weapon.",["1H Blunt","NotBlunt"]);
+         RIDINGC = new Weapon("RidingC","Riding Crop","riding crop","a riding crop",["strike"],5,50,"This riding crop appears to be made of black leather, and could be quite a painful (or exciting) weapon.",["1H Blunt","非钝器"]);
          PTCHFRK = new Weapon("PtchFrk","Pitchfork","pitchfork","a pitchfork",["stab"],10,200,"An ordinary pitchfork intended for farm work. It can also double as a stabbing weapon.",["Spear"]);
          PIPE = new Weapon("Pipe   ","Pipe","pipe","a pipe",["swing","smash"],5,25,"A simple rusted pipe of unknown origins. It\'s hefty and could probably be used as an effective bludgeoning tool.",["1H Blunt"]);
          NEPHSCEPT = new NephilaScepter();
@@ -251,24 +251,24 @@ package classes.items
          _loc9_._headerName = "Lethice\'s Whip";
          L_WHIP = _loc9_;
          L_STAFF = new LethiciteStaff();
-         _loc10_ = new Weapon("L.Avngr","Rail Avenger","Light Rail Avenger","The Light Rail Avenger",["slash"],0,0,"This beautiful katana was said to be crafted by the gods themselves, at the beginning of time. Their chosen warrior fell to the demon menace, but they have found a new one to take up the Way of the Blade. Ordinary men cannot wield the true power of this blade.",["2H Sword","Katana"],10);
+         _loc10_ = new Weapon("L.Avngr","Rail Avenger","Light Rail Avenger","The Light Rail Avenger",["slash"],0,0,"This beautiful katana was said to be crafted by the gods themselves, at the beginning of time. Their chosen warrior fell to the demon menace, but they have found a new one to take up the Way of the Blade. Ordinary men cannot wield the true power of this blade.",["2H Sword","武士刀"],10);
          _loc10_._headerName = "The Light Rail Avenger";
          LRAVENG = _loc10_;
          _loc11_ = new LargeHammer();
          _loc11_._headerName = "Marble\'s Hammer";
          L_HAMMR = _loc11_;
          _g4 = Weapon.WEAPONEFFECTS;
-         _loc12_ = new Weapon("L.Daggr","Lust Dagger","lust-enchanted dagger","an aphrodisiac-coated dagger",["stab"],3,150,"A dagger with a short blade in a wavy pattern. Its edge seems to have been enchanted to always be covered in a light aphrodisiac to arouse anything cut with it.",["Aphrodisiac Weapon","Knife"],1,[function():void
+         _loc12_ = new Weapon("L.Daggr","Lust Dagger","lust-enchanted dagger","an aphrodisiac-coated dagger",["stab"],3,150,"A dagger with a short blade in a wavy pattern. Its edge seems to have been enchanted to always be covered in a light aphrodisiac to arouse anything cut with it.",["催情武器","Knife"],1,[function():void
          {
             _g4.lustPoison();
          }]);
          _loc12_._headerName = "Lust Dagger";
          L_DAGGR = _loc12_;
-         L__AXE = new Weapon("L. Axe ","Large Axe","large axe","an axe large enough for a minotaur",["cleave"],20,100,"This massive axe once belonged to a minotaur. It\'d be hard for anyone smaller than a giant to wield effectively. The axe is double-bladed and deadly-looking. Requires height of 6\'6\" or 90 strength.",["Axe","Large"],1,null,0,-10);
-         _loc13_ = new Weapon("KihaAxe","Kiha\'s Greataxe","double-bladed axe","a double-bladed axe",["cleave"],15,1000,"The large, double-bladed axe once wielded by Kiha. It no longer radiates its former heat.",["Axe","Large"]);
+         L__AXE = new Weapon("L. Axe ","Large Axe","large axe","an axe large enough for a minotaur",["cleave"],20,100,"This massive axe once belonged to a minotaur. It\'d be hard for anyone smaller than a giant to wield effectively. The axe is double-bladed and deadly-looking. Requires height of 6\'6\" or 90 strength.",["Axe","大型"],1,null,0,-10);
+         _loc13_ = new Weapon("KihaAxe","Kiha\'s Greataxe","double-bladed axe","a double-bladed axe",["cleave"],15,1000,"The large, double-bladed axe once wielded by Kiha. It no longer radiates its former heat.",["Axe","大型"]);
          _loc13_._headerName = "Kiha\'s Greataxe";
          KIHAAXE = _loc13_;
-         KATANA = new Weapon("Katana ","Katana","katana","a katana",["cut"],10,500,"A curved bladed weapon that cuts through flesh with the greatest of ease.",["1H Sword","Katana"]);
+         KATANA = new Weapon("Katana ","Katana","katana","a katana",["cut"],10,500,"A curved bladed weapon that cuts through flesh with the greatest of ease.",["1H Sword","武士刀"]);
          JRAPIER = new JeweledRapier();
          ICESTAFF = new IceWeapon(6);
          ICESCYTHE = new IceWeapon(5);
@@ -302,19 +302,19 @@ package classes.items
          FEL_AXE = new FelAxe();
          E_STAFF = new EldritchStaff();
          _g6 = Weapon.WEAPONEFFECTS;
-         _loc17_ = new Weapon("Dullsc","Dullahan Scythe","cursed scythe","a dullahan\'s scythe",["slash"],25,2500,"A gift from the Dullahan, this scythe boasts tremendous killing potential, at a cost.",["Large","Scythe"],1,[function():void
+         _loc17_ = new Weapon("Dullsc","Dullahan Scythe","cursed scythe","a dullahan\'s scythe",["slash"],25,2500,"A gift from the Dullahan, this scythe boasts tremendous killing potential, at a cost.",["大型","Scythe"],1,[function():void
          {
             _g6.dullahanDrain();
          }]);
          _loc17_._headerName = "Dullahan\'s Scythe";
          DULLSC = _loc17_;
-         _loc18_ = new Weapon("Dagger ","Dagger","dagger","a dagger",["stab"],4,40,"A small blade. The preferred weapon for rogues.",["Cunning","Knife"]);
+         _loc18_ = new Weapon("Dagger ","Dagger","dagger","a dagger",["stab"],4,40,"A small blade. The preferred weapon for rogues.",["狡诈","Knife"]);
          _loc18_.boost("武器暴击率",NumberFunc_Impl_.fromInt(15),false);
          _loc19_ = _loc18_;
          _loc19_.boost("暴击伤害",NumberFunc_Impl_.fromFloat(0.7),true);
          DAGGER = _loc19_;
          CROSSBW = new Weapon("Crossbw","Crossbow","crossbow","a crossbow",["shot","shoot"],11,200,"This weapon fires bolts at your enemies.",["Crossbow"],0.7);
-         CTSWRD = new Weapon("CheatSword","Cheat Sword","cheat sword","a sword for cheaters",["cheat"],9999999,0,"This sword was created by a person who just wanted to kill things really fast to see if they were working properly. Most of the time, they were not.",["1H Sword","Ranged"],0,null,0,99);
+         CTSWRD = new Weapon("CheatSword","Cheat Sword","cheat sword","a sword for cheaters",["cheat"],9999999,0,"This sword was created by a person who just wanted to kill things really fast to see if they were working properly. Most of the time, they were not.",["1H Sword","远程"],0,null,0,99);
          CLAYMOR = new LargeClaymore();
          CDAGGER = new CursedDagger();
          BLUNDER = new Blunderbuss();

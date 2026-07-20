@@ -422,7 +422,7 @@ package classes.items.consumables
             }
             if(_loc2_ < 5)
             {
-               outputText("[pg]你不安地挪动着身体，因为你意识到自己失去了平衡。低头一看，你发现自己长高了[i:slightly]。");
+               outputText("[pg]你不安地挪动着身体，因为你意识到自己失去了平衡。低头一看，你发现自己长高了[i:一点]。");
             }
             if(_loc2_ >= 5 && _loc2_ < 7)
             {
@@ -592,7 +592,7 @@ package classes.items.consumables
          }
          if(get_changes() == 0)
          {
-            outputText("[pg]牛头怪般的活力涌遍你的全身，让你充满活力并唤起你的欲望！\n");
+            outputText("[pg]牛头人般的活力涌遍你的全身，让你充满活力并唤起你的欲望！\n");
             if(get_player().balls > 0)
             {
                outputText("你的蛋蛋感觉好像因为更多的精子而变得更重了。\n");

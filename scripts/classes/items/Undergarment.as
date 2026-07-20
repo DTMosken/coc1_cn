@@ -130,10 +130,10 @@ package classes.items
          }
          if(get_sexiness() > 0 || _loc2_ != 0)
          {
-            _loc1_ += "\n性感度: " + Std.string(get_sexiness());
+            _loc1_ += "\n性感度：" + Std.string(get_sexiness());
          }
          _loc1_ += appendStatsDifference(_loc2_);
-         _loc1_ += "\n基础价值: " + Std.string(get_value());
+         _loc1_ += "\n基础价值：" + Std.string(get_value());
          _loc1_ += generateStatsTooltip();
          if(get_type() == 1 && get_perk() == "TailLegWearable" && get_player().hasTailInsteadOfLegs())
          {

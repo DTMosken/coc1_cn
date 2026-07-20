@@ -236,7 +236,7 @@ package classes
          {
             _loc4_ = _loc3_[_loc2_];
             _loc2_++;
-            addNextButton(_loc4_,(function(param1:Array, param2:Array):Function
+            addNextButton(Utils.cnName2(_loc4_),(function(param1:Array, param2:Array):Function
             {
                var _g:Array = param1;
                var theme:Array = param2;
@@ -526,7 +526,7 @@ package classes
          {
             obj6[property6] = value6;
             _gthis6.setOrUpdateSettings(_gthis6.lastDisplayedPane);
-         },"玩家每小时会获得少量的腐化值。可以通过找到解药来阻止。",get_modes().taint,null);
+         },"玩家每小时会获得少量的腐化。可以通过找到解药来阻止。",get_modes().taint,null);
          obj7 = playerSettings.settingsLocal.modes;
          property7 = "taint";
          value7 = false;
@@ -535,7 +535,7 @@ package classes
          {
             obj7[property7] = value7;
             _gthis7.setOrUpdateSettings(_gthis7.lastDisplayedPane);
-         },"玩家不会随时间获得腐化值。",!get_modes().taint,null)]);
+         },"玩家不会随时间获得腐化。",!get_modes().taint,null)]);
          obj8 = playerSettings.settingsLocal.modes;
          property8 = "cooldowns";
          value8 = true;

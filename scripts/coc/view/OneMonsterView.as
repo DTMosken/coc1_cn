@@ -245,8 +245,8 @@ package coc.view
          {
             param2 = "";
          }
-         toolTipText = param1;
-         toolTipHeader = param2;
+         toolTipText = Utils.cnName(param1);
+         toolTipHeader = Utils.cnName(param2);
       }
       
       public function hide() : void

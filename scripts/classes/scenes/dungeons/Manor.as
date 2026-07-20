@@ -150,14 +150,14 @@ package classes.scenes.dungeons
             outputText("[pg]你准备战斗，但当你看到那个穿着盔甲的骷髅旁边出现了一个较小的身影时，你的注意力被分散了。<b>白骨巫师</b>也复活了！");
             if((FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 8) != 0)
             {
-               outputText("[pg]你的直觉让你检查身后，不出所料，那个亡灵小丑站在那里，手里拿着一把匕首抽搐着。<b>白骨小丑</b>也回来了！");
+               outputText("[pg]你的直觉让你检查身后，不出所料，那个亡灵小丑站在那里，手里拿着一把匕首抽搐着。<b>枯骨小丑</b>也回来了！");
             }
             else
             {
-               outputText("[pg]你的直觉让你检查身后，令你惊讶的是，那里站着另一个骷髅，穿着小丑的衣服，摆出战斗姿态不自然地抽搐着，双手挥舞着匕首。你正在与一只<b>白骨小丑</b>战斗！");
+               outputText("[pg]你的直觉让你检查身后，令你惊讶的是，那里站着另一个骷髅，穿着小丑的衣服，摆出战斗姿态不自然地抽搐着，双手挥舞着匕首。你正在与一只<b>枯骨小丑</b>战斗！");
             }
             outputText("[pg]没有退路了。你必须同时对抗这三个庄园守卫！");
-            _loc1_ = "在你面前站着一群名副其实的复活骷髅。骸骨守卫站在最前面，用它巨大的装甲身躯保护着其余的骷髅。白骨小丑在你的视线中快速穿梭，试图分散你的注意力。站在它们后面的是白骨巫师，它正在准备奥术法术来削弱你，以便它的同伴能解决你。";
+            _loc1_ = "在你面前站着一群名副其实的复活骷髅。骸骨守卫站在最前面，用它巨大的装甲身躯保护着其余的骷髅。枯骨小丑在你的视线中快速穿梭，试图分散你的注意力。站在它们后面的是白骨巫师，它正在准备奥术法术来削弱你，以便它的同伴能解决你。";
             startCombatMultiple(new BoneGeneral(),new BoneJester(),new BoneCourtier(),null,defeatCourt,loseToCourt,defeatCourt,loseToCourt,_loc1_);
          }
          else if((FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 8) == 0 && (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x10) == 0)
@@ -231,14 +231,14 @@ package classes.scenes.dungeons
          var _loc1_:String = "站在你面前的是一个高耸的怪物，一个噩梦般的存在。死灵法师披着一件红色斗篷，呼吸缓慢，对即将到来的胜利充满信心。他周围堆放着几堆骨头，骷髅正从这些骨头中组装起来攻击你。";
          if((FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x0200) != 0)
          {
-            _loc1_ += "\n\n随着忘川水晶被摧毁，他的召唤能力被削弱了。\n\n";
+            _loc1_ += "\n\n随着莱希水晶被摧毁，他的召唤能力被削弱了。\n\n";
          }
          outputText("你走近一个巨大的房间，这里的照明比你之前的隧道好得多。尸体和骷髅堆积如山，成堆的书籍、炼金台、笼子和仪式法阵散布在这个阴森的房间里。");
          if((FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x80) == 0)
          {
             outputText("在一个火炬形状的祭坛上，躺着一个高大的人形生物，全身披着红色斗篷。");
             outputText("[pg]它转过身来面对你。[say: 血肉反噬自身。就像肿瘤一样。你来到这里，是为了撤销我所创造的一切，试图延续束缚这个宇宙中所有生物的幻象，愚蠢地试图消除“邪恶”。我比你更清楚。我会让你看看。]");
-            outputText("[pg]那个人影抬起手臂，露出一只丑陋、多肉且长满爪子的手抓着一个卷轴。它尖叫一声，在你的眼前，附近一堆骨头中的几根骨头自动组装起来，变成了另一具骷髅！你正在与一个<b>死灵法师！</b>战斗");
+            outputText("[pg]那个人影抬起手臂，露出一只丑陋、多肉且长满爪子的手抓着一个卷轴。它尖叫一声，在你的眼前，附近一堆骨头中的几根骨头自动组装起来，变成了另一具骷髅！你正在与一个<b>死灵法师</b>战斗！");
             startCombatMultiple(new Necromancer(),new SkeletonHorde(),null,null,defeatNecro,loseToNecro,defeatNecro,loseToNecro,_loc1_);
          }
          else
@@ -266,6 +266,7 @@ package classes.scenes.dungeons
       
       public function testResolve(param1:Boolean = false) : void
       {
+         var _loc5_:* = null as Array;
          var _loc2_:Boolean = false;
          if(Utils.rand(10) + (get_game().shouldraFollower.followerShouldra() ? 1 : 0) + (get_player().hasPerk(PerkLib.Revelation) ? 1 : 0) >= 6)
          {
@@ -278,12 +279,14 @@ package classes.scenes.dungeons
             if(_loc2_)
             {
                get_player().createStatusEffect(StatusEffects.Resolve,1,0.9,5,0);
-               outputText("你将战胜所有挑战并生存下来！你感到精力充沛，对自己充满信心。你是<b>精力充沛的！</b>");
+               _loc5_ = ["大地为之颤动！<b>勇猛！</b>","怒火就是力量——将其释放出来！<b>勇猛！</b>","只在最绝望的黑暗中,突然的勇气才能爆发出最耀眼的光芒。<b>勇猛！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
             else
             {
                get_player().createStatusEffect(StatusEffects.Resolve,2,1.1,10,0);
-               outputText("你记得你遭受的所有打击和攻击带来的痛苦。它们把你锻造成了一个更坚强的人，一个更好的人！你需要更多！你是<b>受虐狂！</b>");
+               _loc5_ = ["耳畔鸣响，视线模糊——终结已至……<b>自虐！</b>","战斗的意志动摇不定！<b>自虐！</b>","那些垂涎于伤痛的人发现这里还有不少的供应。<b>自虐！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
          }
          else if(_loc4_ == 1)
@@ -291,12 +294,14 @@ package classes.scenes.dungeons
             if(_loc2_)
             {
                get_player().createStatusEffect(StatusEffects.Resolve,3,10,20,0);
-               outputText("在这个极度恐惧和艰难的时刻，你的头脑变得清晰。完美、不屈的清晰。你有一个目标，而成功只取决于你熟练的技能。那么，成功就会实现。你是<b>专注的！</b>");
+               _loc5_ = ["在风暴中心那突然间的清晰与明净……<b>专注！</b>","只在最绝望的黑暗中，突然的勇气才能爆发出最耀眼的光芒。<b>专注！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
             else
             {
                get_player().createStatusEffect(StatusEffects.Resolve,4,10,20,0);
-               outputText("你死了吗？你还记得你是谁吗？三颗星星，两个月亮，一匹马。你变得<b>毫无理智！</b>");
+               _loc5_ = ["三颗星，两轮月，一匹马。<b>失神！</b>","人的心智，如知更鸟的蛋般脆弱……<b>失神！</b>","疯狂，吾之旧友！<b>失神！</b>","心灵的堡垒已经沦陷了。<b>失神！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
          }
          else if(_loc4_ == 2)
@@ -304,12 +309,14 @@ package classes.scenes.dungeons
             if(_loc2_)
             {
                get_player().createStatusEffect(StatusEffects.Resolve,5,1.15,1.15,0);
-               outputText("如此巨大的恐惧只会激励你更好地、更努力地战斗。你将站起来，不惜一切代价从毁灭的巨口中夺取胜利！你变得<b>充满力量！</b>");
+               _loc5_ = ["无尽的苦难也能孕育希望，并激发活力！<b>振奋！</b>","只在最绝望的黑暗中,突然的勇气才能爆发出最耀眼的光芒。<b>振奋！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
             else
             {
                get_player().createStatusEffect(StatusEffects.Resolve,6,0.85,0.85,0);
-               outputText("你感到……虚弱。冷漠。在这里取得胜利，是为了什么？邪恶是永恒的，无止境的。你最终会失败。你变得<b>沮丧！</b>");
+               _loc5_ = ["感到困惑，感到紧张，感到恐慌！<b>沮丧！</b>","人有时能在疯狂中醍醐灌顶，不过实在太过稀少……<b>沮丧！</b>","为何会这样，英雄主义呢？<b>沮丧！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
          }
          else if(_loc4_ == 3)
@@ -317,12 +324,14 @@ package classes.scenes.dungeons
             if(_loc2_)
             {
                get_player().createStatusEffect(StatusEffects.Resolve,7,0.85,0,0);
-               outputText("这是对你体质和意志力的又一次考验。你的生活给了你严酷的教训，但这并没有影响你。你的意志坚如磐石，你的希望不屈不挠！你变得<b>坚定！</b>");
+               _loc5_ = ["心志坚如铁石，希望永不磨灭！<b>坚定！</b>","许多人或将陷入惶恐与混乱。但绝非此人，绝非此刻。<b>坚定！</b>","只在最绝望的黑暗中,突然的勇气才能爆发出最耀眼的光芒。<b>坚定！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
             else
             {
                get_player().createStatusEffect(StatusEffects.Resolve,8,0,0,0);
-               outputText("面对这些恐惧，你得出了早该得出的黑暗结论。你无法幸存。风在低语着你的失败，你听从了它的呼唤，颤抖着。你变得<b>恐惧！</b>");
+               _loc5_ = ["心灵无法被期望于禁得住如此的打击。<b>战栗！</b>","看啊，深渊的力量展现了！<b>战栗！</b>","胆怯与懦弱终于攫住了它们的猎物。<b>战栗！</b>"];
+               outputText(_loc5_[Utils.rand(int(_loc5_.length))]);
             }
          }
          if(param1)
@@ -500,7 +509,7 @@ package classes.scenes.dungeons
             outputText("你走近庄园那扇腐烂的门，准备用手头上的任何东西把它拆掉。破旧的木头勉强还能挂在铰链上，所以你知道这不需要费多大劲。");
             outputText("[pg]一阵震动让你在前进时短暂地失去了平衡。你继续靠近，警惕着附近任何可能的威胁。当你拉近与门的距离时，震动变得更强烈了，惊飞了附近的乌鸦。你做好了准备。");
             outputText("[pg]突然，门从里面被猛烈地破坏，碎片向你飞来！你及时躲开了，但当你看到破坏门的东西时，你的心沉了下去；一个巨大的，8英尺高的装甲骷髅，挥舞着一把巨大的狼牙棒！");
-            outputText("[pg]你摆出战斗姿态。你正在与一个<b>骸骨守卫！</b>战斗");
+            outputText("[pg]你摆出战斗姿态。你正在与一个<b>骸骨守卫</b>战斗！");
             startCombat(new BoneGeneral());
          }
          else
@@ -585,18 +594,30 @@ package classes.scenes.dungeons
          }
          menu();
          outputText("你走近那个奇怪的书架。大多数书都磨损得无法辨认，但你仍然能从书脊上认出其中几本的名字。");
+         if(get_player().hasPerk(PerkLib.HistoryAlchemist) || get_player().get_inte() > 60)
+         {
+            outputText("[pg]你回忆起曾经学习过的炼金知识。所谓“七政”，也即日月火水木金土这七星。");
+         }
+         else if(get_player().get_inte() > 60)
+         {
+            outputText("[pg]你回忆着曾经涉猎过的炼金知识。所谓“七政”，也即日月火水木金土这七星。");
+         }
+         else
+         {
+            outputText("[pg]你感觉谜题的解法就在谜面上，但你怎么想都想不明白。");
+         }
          _g = this;
          letter = 0;
-         addButton(0,"升起的曙光",function():void
+         addButton(0,"梦中的曙光",function():void
          {
             _g.keyword(letter);
-         }).hint("从书架上取下《升起的曙光》。");
+         }).hint("从书架上取下《梦中的曙光》。");
          _g1 = this;
          letter1 = 1;
-         addButton(1,"厄肖碎片",function():void
+         addButton(1,"日影碎片",function():void
          {
             _g1.keyword(letter1);
-         }).hint("从书架上取下《厄肖碎片》。");
+         }).hint("从书架上取下《日影碎片》。");
          _g2 = this;
          letter2 = 2;
          addButton(2,"加尔德拉之书",function():void
@@ -605,16 +626,16 @@ package classes.scenes.dungeons
          }).hint("从书架上取下《加尔德拉之书》。");
          _g3 = this;
          letter3 = 3;
-         addButton(3,"神秘七政",function():void
+         addButton(3,"灵契七政",function():void
          {
             _g3.keyword(letter3);
-         }).hint("从书架上取下《神秘七政》。");
+         }).hint("从书架上取下《灵契七政》。");
          _g4 = this;
          letter4 = 4;
          addButton(4,"金之切口",function():void
          {
             _g4.keyword(letter4);
-         }).hint("从书架上取下《金之切口》这本书。");
+         }).hint("从书架上取下《金之切口》。");
          _g5 = this;
          letter5 = 5;
          addButton(5,"伊波恩之书",function():void
@@ -623,16 +644,16 @@ package classes.scenes.dungeons
          }).hint("从书架上取下《伊波恩之书》。");
          _g6 = this;
          letter6 = 6;
-         addButton(6,"赫尔墨斯博物馆",function():void
+         addButton(6,"域内尽杀秘典",function():void
          {
             _g6.keyword(letter6);
-         }).hint("从书架上取下《赫尔墨斯博物馆》。");
+         }).hint("从书架上取下《域内尽杀秘典》。");
          _g7 = this;
          letter7 = 7;
-         addButton(7,"普纳科特手稿",function():void
+         addButton(7,"朔末万全手稿",function():void
          {
             _g7.keyword(letter7);
-         }).hint("从书架上取下《普纳科特手稿》。");
+         }).hint("从书架上取下《朔末万全手稿》。");
          _g8 = this;
          letter8 = 8;
          addButton(8,"大卡巴拉",function():void
@@ -641,10 +662,10 @@ package classes.scenes.dungeons
          }).hint("从书架上拿走《大卡巴拉》。");
          _g9 = this;
          letter9 = 9;
-         addButton(9,"格拉基启示录",function():void
+         addButton(9,"渊深启示录",function():void
          {
             _g9.keyword(letter9);
-         }).hint("从书架上拿走《格拉基启示录》。");
+         }).hint("从书架上拿走《渊深启示录》。");
          addButton(14,"返回",runFunc).hint("回到图书馆的中心。");
       }
       
@@ -727,7 +748,7 @@ package classes.scenes.dungeons
       {
          clearOutput();
          dynStats(DynStat.Lust(999),DynStat.Cor(999));
-         outputText("在你昏迷期间，一个高大的身影步履蹒跚地走进房间。它走到你身边跪下，伸出一只长满利爪的肉手，从你因疯狂的快感而留下的水洼中捡起了一样东西。那是一块忘川水晶。");
+         outputText("在你昏迷期间，一个高大的身影步履蹒跚地走进房间。它走到你身边跪下，伸出一只长满利爪的肉手，从你因疯狂的快感而留下的水洼中捡起了一样东西。那是一块莱希水晶。");
          outputText("[pg]他发出嘶嘶声，站起身来，将那块小水晶嵌在了祭坛上。");
          outputText("[pg]他离开了。不久之后，一群全副武装的骷髅走进了房间。你睁开恶魔般的双眼，失望地发现它们都没有生殖器供你操弄。当你开始自慰时，它们毫不留情地处决了你，而你已经沉醉在快感中，根本不在乎自己的死活。");
          get_game().gameOver();
@@ -738,7 +759,7 @@ package classes.scenes.dungeons
          get_combat().cleanupAfterCombat();
          clearOutput();
          outputText("你倒在地上，发情得无法继续战斗。");
-         outputText("[pg]你立刻试图自慰，但忘川水晶再次脉动。当它击中你时，你开始在自发的性高潮中抽搐");
+         outputText("[pg]你立刻试图自慰，但莱希水晶再次脉动。当它击中你时，你开始在自发的性高潮中抽搐");
          if(get_player().hasCock())
          {
             outputText("，将浓稠的精液射向空中");
@@ -749,7 +770,7 @@ package classes.scenes.dungeons
          }
          outputText("。在你还没来得及好好享受性高潮之前，另一波脉动击中了你，让你在承受着疯狂快感的同时尖叫流口水。");
          outputText("[pg]尽管你的心智被水晶彻底摧残，但不知为何，你渴望更多。不知为何，你感觉自己有十几对丰满的乳房，几根肿胀的肉棒，几十个渴望被填满的小穴。你的脑海中充斥着数百次性交的画面，在每一次中，你都在乞求更多。");
-         outputText("[pg]你站起来，因欲望而颤抖，冲向忘川水晶，企图尽可能多地吸收它那堕落的快感。又一波脉动击中了你，你晕了过去。");
+         outputText("[pg]你站起来，因欲望而颤抖，冲向莱希水晶，企图尽可能多地吸收它那堕落的快感。又一波脉动击中了你，你晕了过去。");
          doNext(loseToCrystal2);
       }
       
@@ -868,17 +889,17 @@ package classes.scenes.dungeons
          outputText("你进入了隧道尽头的一个房间。");
          if((FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x0200) == 0 && (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x80) == 0)
          {
-            outputText("[pg]房间的中央矗立着一个祭坛，上面装饰着一块巨大的、发光的忘川水晶。仔细观察，它似乎是由较小的水晶拼接而成的。");
+            outputText("[pg]房间的中央矗立着一个祭坛，上面装饰着一块巨大的、发光的莱希水晶。仔细观察，它似乎是由较小的水晶拼接而成的。");
             _g = this;
             monster1 = new LethiciteCrystal();
             addButton(0,"摧毁",function():void
             {
                _g.startCombatImmediate(monster1);
-            }).hint("尝试摧毁水晶。这块忘川水晶可能在为某种法术提供能量，但用常规手段几乎不可能摧毁原始的忘川水晶。");
+            }).hint("尝试摧毁水晶。这块莱希水晶可能在为某种法术提供能量，但用常规手段几乎不可能摧毁原始的莱希水晶。");
          }
          else
          {
-            outputText("[pg]房间的中央矗立着一个祭坛，现在上面覆盖着失去能量的忘川水晶碎片。");
+            outputText("[pg]房间的中央矗立着一个祭坛，现在上面覆盖着失去能量的莱希水晶碎片。");
             if((FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x80) != 0 && (FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2671) & 0x0200) == 0)
             {
                outputText("也许它和你击败的死灵法师有什么联系？");
@@ -906,7 +927,7 @@ package classes.scenes.dungeons
          switch(param1)
          {
             case 0:
-               outputText("你打开了《升起的曙光》。大部分书页已经破损得无法阅读，但看起来像是一本关于炼金术特性的论文。" + (get_player().hasPerk(PerkLib.HistoryAlchemist) ? " 书中明显的错误多得让你直皱眉头。" : " 你几乎看不懂。") + " 你耸了耸肩，把书放了回去。");
+               outputText("你打开了《梦中的曙光》。大部分书页已经破损得无法阅读，但看起来像是一本关于炼金术特性的论文。" + (get_player().hasPerk(PerkLib.HistoryAlchemist) ? "书中的明显错误多得让你直皱眉头。" : "你几乎看不懂。") + " 你耸了耸肩，把书放了回去。");
                if(code == 4)
                {
                   code += 1;
@@ -924,7 +945,7 @@ package classes.scenes.dungeons
                }
                break;
             case 1:
-               outputText("你打开了《厄肖碎片》。这是一本收集了某个古老玛瑞斯文明各种碎片的合集。从你能理解的内容来看，他们在几千年前就消失得无影无踪，留下的线索少之又少，以至于许多历史学家根本不相信他们曾经存在过。");
+               outputText("你打开了《日影碎片》。这是一本收集了某个古老玛瑞斯文明各种碎片的合集。从你能理解的内容来看，他们在几千年前就消失得无影无踪，留下的线索少之又少，以至于许多历史学家根本不相信他们曾经存在过。");
                if(code == 0)
                {
                   code += 1;
@@ -942,7 +963,7 @@ package classes.scenes.dungeons
                }
                break;
             case 2:
-               outputText("你打开了《加尔布拉博克》。这是一份相当详细的法术和咒语清单，尽管大部分章节已经破损得无法正常阅读。");
+               outputText("你打开了《加尔德拉之书》。这是一份相当详细的法术和咒语清单，不过大部分章节已经破损得无法正常阅读。");
                if(!get_player().hasStatusEffect(StatusEffects.KnowsWhitefire) && get_player().get_inte() > 60)
                {
                   outputText("不过，有一个章节确实包含有用的可读信息。你仔细阅读了该部分的内容，并异常轻松地吸收了其中的知识。<b>学会法术：白火</b>！");
@@ -956,10 +977,10 @@ package classes.scenes.dungeons
                code = 0;
                break;
             case 3:
-               outputText("你打开了《神秘七政》。它保存得异常完好，包含了关于魔法艺术和法术编织的几项指导和论文。");
+               outputText("你打开了《灵契七政》。这本书保存得异常完好，记载了关于魔法艺术和法术编织的几项指导和论文。");
                if(get_player().get_inte() >= 100 && !get_player().hasPerk(PerkLib.MysticLearnings))
                {
-                  outputText("尽管书中包含的教义极其复杂，但你超凡的智力让你能够阅读并理解这一切。你获得的知识非常精妙！");
+                  outputText("尽管书中包含的教义极其复杂，但你超凡的智力让你能够阅读并理解这一切。你领悟了精妙的知识！");
                   outputText("[pg]<b>获得特质：神秘学识！</b>");
                   get_player().createPerk(PerkLib.MysticLearnings,0,0,0,0);
                }
@@ -988,7 +1009,7 @@ package classes.scenes.dungeons
                }
                break;
             case 4:
-               outputText("你打开了《金之切口》。这是一篇关于魔法仪式的长篇论文，旨在召唤恶魔来帮助施法者将任何材料转化为黄金。考虑到玛瑞斯的货币，这很可能是假的，而且也没用。");
+               outputText("你打开了《金之切口》。这是一篇关于魔法仪式的长篇论文，旨在召唤恶魔来帮助施法者将任何材料转化为黄金。考虑到玛瑞斯的货币，这种仪式很可能是假的，而且也没什么用。");
                if(code == 5)
                {
                   code += 1;
@@ -1015,7 +1036,7 @@ package classes.scenes.dungeons
                codespell = "";
                break;
             case 6:
-               outputText("你翻开《赫尔墨斯博物馆》。这是一部庞大的教义汇编，内容涉及包括人类在内的几种玛瑞斯物种的解剖学和生物学，以及一些推测性的炼金术仪式，旨在让受试者死亡几分钟后短暂重启其次要身体机能。作者提供了证明其成功的有力证据，尽管她只将其应用于小型哺乳动物。");
+               outputText("你翻开《域内尽杀秘典》。这是一部庞大的教义汇编，内容涉及包括人类在内的几种玛瑞斯物种的解剖学和生物学，以及一些推测性的炼金术仪式，旨在让受试者在死亡几分钟后，短暂重启其次要身体机能。作者提供了证明其成功的有力证据，尽管她在书中只将其应用于一些小型哺乳动物。");
                if(code == 6)
                {
                   code += 1;
@@ -1033,7 +1054,7 @@ package classes.scenes.dungeons
                }
                break;
             case 7:
-               outputText("你翻开《普纳科特手稿》。这主要是一些难以辨认的胡言乱语；大部分章节都是用不同的、未知的语言写成的。你能读懂的那些章节充满了关于自然和物理的琐碎、基础的知识，比如关于重力、昼夜和季节循环以及数学的基本描述。");
+               outputText("你翻开《朔末万全手稿》。里面大多是一堆难以辨认的胡言乱语；大部分章节都由不同的未知语言写就。而在你能读懂的那些章节里，充满了关于自然和物理的琐碎而基础的知识，比如关于重力、昼夜和季节循环以及数学的基本描述。");
                if(code == 1)
                {
                   code += 1;
@@ -1060,7 +1081,7 @@ package classes.scenes.dungeons
                codespell = "";
                break;
             case 9:
-               outputText("你翻开《格拉基启示录》。这是一本杂乱无章的奥秘知识汇编，据说所有这些知识都是由一个“用无言的吟唱压倒现实”的异次元存在传授给一位学者的。随着书接近尾声，它变得越来越难以理解，尽管在书页中包含的许多长篇大论中，最终的毁灭和诅咒的主题始终如一。");
+               outputText("你翻开《渊深启示录》。这是一本杂乱无章的奥秘知识汇编，据说所有这些知识都是由一个“用无言的吟唱压倒现实”的异次元存在传授给某位学者的。随着书接近尾声，它变得越来越难以理解，在书页包含的许多长篇大论中，毁灭和诅咒的主题始终如一。");
                if(code == 3)
                {
                   code += 1;
@@ -1196,7 +1217,7 @@ package classes.scenes.dungeons
          get_dungeons().set_playerLoc(findEntrance());
          outputText("你正处于某种枢纽之中；这是这个巨大的宇宙异常的源头。它的中心有一个生物。它体型庞大，呈圆锥形，布满了漆黑的眼睛、附肢和触手。光线本身似乎都在它周围弯曲。你别无选择，只能向前靠近它。");
          outputText("[pg]那个生物转过身来面对你，尽管它似乎没有脸。几条舌头从它最顶端的肉茎中滑出，品尝着宇宙的晶格来探测你。在注意到你之后，它发出可怕的尖叫声，将你击倒并扭曲了你的心智。");
-         outputText("[pg]你不知道你在哪里，或者那是什么，但你必须保护自己！你正在与一个<b>无名恐怖！</b>战斗");
+         outputText("[pg]你不知道你在哪里，或者那是什么，但你必须保护自己！你正在与一个<b>无名恐怖</b>战斗！");
          startCombat(new NamelessHorror());
       }
       
@@ -1524,11 +1545,11 @@ package classes.scenes.dungeons
             outputText("[pg]你在房间里四处走动，试图追逐那不断在阴影中移动的声音。突然，你听到骨头断裂的声音，就在你身后！");
             if(get_player().get_spe() > 70)
             {
-               outputText("你及时转过身，挡住了向你冲来的刀刃。袭击者是另一具骷髅，穿着破烂的小丑服！你把他推开，准备反击，但那个狡猾的亡灵在你出手之前就跑开了。<b>你正在与一个白骨小丑战斗！</b>");
+               outputText("你及时转过身，挡住了向你冲来的刀刃。袭击者是另一具骷髅，穿着破烂的小丑服！你把他推开，准备反击，但那个狡猾的亡灵在你出手之前就跑开了。<b>你正在与一个枯骨小丑战斗！</b>");
             }
             else
             {
-               outputText("你没能及时转身，一把刀深深地刺入了你的背部。你痛苦地呻吟着，转过身来，绝望地发起攻击！你打偏了，但终于看清了凶手；另一具骷髅，穿着破烂的小丑服！你" + (get_player().hasPerk(PerkLib.BleedImmune) ? "流血且" : "") + "受伤了，但在你处理伤口之前，你需要对付那个亡灵。<b>你正在与一个白骨小丑战斗！</b>");
+               outputText("你没能及时转身，一把刀深深地刺入了你的背部。你痛苦地呻吟着，转过身来，绝望地发起攻击！你打偏了，但终于看清了凶手；另一具骷髅，穿着破烂的小丑服！你" + (get_player().hasPerk(PerkLib.BleedImmune) ? "流血且" : "") + "受伤了，但在你处理伤口之前，你需要对付那个亡灵。<b>你正在与一个枯骨小丑战斗！</b>");
                _loc1_ = get_player().reduceDamage(45 + Utils.rand(30),new BoneJester());
                get_player().takeDamage(_loc1_,true);
                get_player().bleed(new BoneJester());
@@ -1690,7 +1711,7 @@ package classes.scenes.dungeons
       public function courtierFight() : void
       {
          clearOutput();
-         outputText("你再次站起来，暂时摆脱了袭击你的恐惧。你转向那个靠近你的实体；一个穿着破烂贵族衣服的骷髅，手里拿着一个铜高脚杯！乍一看它并不具有威胁性，但当你走开时，它缓慢地追踪你的动作，用它空闲的手进行着神秘的动作。它试图施放某种法术！你正在与一个<b>白骨巫师！</b>战斗");
+         outputText("你再次站起来，暂时摆脱了袭击你的恐惧。你转向那个靠近你的实体；一个穿着破烂贵族衣服的骷髅，手里拿着一个铜高脚杯！乍一看它并不具有威胁性，但当你走开时，它缓慢地追踪你的动作，用它空闲的手进行着神秘的动作。它试图施放某种法术！你正在与一个<b>白骨巫师</b>战斗！");
          startCombat(new BoneCourtier());
       }
       

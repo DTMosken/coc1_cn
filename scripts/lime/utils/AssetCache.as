@@ -30,7 +30,7 @@ package lime.utils
          audio = new StringMap();
          font = new StringMap();
          image = new StringMap();
-         version = 823617;
+         version = 873222;
       }
       
       public function set(param1:String, param2:String, param3:*) : void

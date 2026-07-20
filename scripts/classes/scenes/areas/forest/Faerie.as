@@ -34,8 +34,6 @@ package classes.scenes.areas.forest
       
       public var hairColor:String;
       
-      public var cnHairColor:IMap;
-      
       public function Faerie()
       {
          if(Boot.skip_constructor)
@@ -77,136 +75,6 @@ package classes.scenes.areas.forest
          }
          outfits = _loc1_;
          outfit = "straps";
-         var _loc2_:IMap = new StringMap();
-         if("yellow" in StringMap.reserved)
-         {
-            _loc2_.setReserved("yellow","黄色");
-         }
-         else
-         {
-            _loc2_.h["yellow"] = "黄色";
-         }
-         if("red" in StringMap.reserved)
-         {
-            _loc2_.setReserved("red","红色");
-         }
-         else
-         {
-            _loc2_.h["red"] = "红色";
-         }
-         if("violet" in StringMap.reserved)
-         {
-            _loc2_.setReserved("violet","罗兰紫");
-         }
-         else
-         {
-            _loc2_.h["violet"] = "罗兰紫";
-         }
-         if("indigo" in StringMap.reserved)
-         {
-            _loc2_.setReserved("indigo","靛蓝色");
-         }
-         else
-         {
-            _loc2_.h["indigo"] = "靛蓝色";
-         }
-         if("pink" in StringMap.reserved)
-         {
-            _loc2_.setReserved("pink","粉色");
-         }
-         else
-         {
-            _loc2_.h["pink"] = "粉色";
-         }
-         if("white" in StringMap.reserved)
-         {
-            _loc2_.setReserved("white","白色");
-         }
-         else
-         {
-            _loc2_.h["white"] = "白色";
-         }
-         if("pale blue" in StringMap.reserved)
-         {
-            _loc2_.setReserved("pale blue","淡蓝色");
-         }
-         else
-         {
-            _loc2_.h["pale blue"] = "淡蓝色";
-         }
-         if("lilac" in StringMap.reserved)
-         {
-            _loc2_.setReserved("lilac","丁香紫");
-         }
-         else
-         {
-            _loc2_.h["lilac"] = "丁香紫";
-         }
-         if("orange" in StringMap.reserved)
-         {
-            _loc2_.setReserved("orange","橙色");
-         }
-         else
-         {
-            _loc2_.h["orange"] = "橙色";
-         }
-         if("purple" in StringMap.reserved)
-         {
-            _loc2_.setReserved("purple","紫色");
-         }
-         else
-         {
-            _loc2_.h["purple"] = "紫色";
-         }
-         if("green" in StringMap.reserved)
-         {
-            _loc2_.setReserved("green","绿色");
-         }
-         else
-         {
-            _loc2_.h["green"] = "绿色";
-         }
-         if("black" in StringMap.reserved)
-         {
-            _loc2_.setReserved("black","黑色");
-         }
-         else
-         {
-            _loc2_.h["black"] = "黑色";
-         }
-         if("blue" in StringMap.reserved)
-         {
-            _loc2_.setReserved("blue","蓝色");
-         }
-         else
-         {
-            _loc2_.h["blue"] = "蓝色";
-         }
-         if("lavender" in StringMap.reserved)
-         {
-            _loc2_.setReserved("lavender","薰衣紫");
-         }
-         else
-         {
-            _loc2_.h["lavender"] = "薰衣紫";
-         }
-         if("fuchsia" in StringMap.reserved)
-         {
-            _loc2_.setReserved("fuchsia","紫红色");
-         }
-         else
-         {
-            _loc2_.h["fuchsia"] = "紫红色";
-         }
-         if("saffron" in StringMap.reserved)
-         {
-            _loc2_.setReserved("saffron","藏红花色");
-         }
-         else
-         {
-            _loc2_.h["saffron"] = "藏红花色";
-         }
-         cnHairColor = _loc2_;
          hairColor = "pink";
          super();
       }
@@ -243,12 +111,10 @@ package classes.scenes.areas.forest
       
       public function registerTags() : void
       {
-         var _loc1_:String = hairColor;
-         var _loc2_:StringMap = cnHairColor;
-         registerTag("faehair",TagFun_Impl_.fromString(_loc1_ in StringMap.reserved ? _loc2_.getReserved(_loc1_) : _loc2_.h[_loc1_]));
-         var _loc3_:String = outfit;
-         var _loc4_:StringMap = outfits;
-         registerTag("faeoutfit",TagFun_Impl_.fromString(_loc3_ in StringMap.reserved ? _loc4_.getReserved(_loc3_) : _loc4_.h[_loc3_]));
+         registerTag("faehair",TagFun_Impl_.fromString(Utils.cnName(hairColor)));
+         var _loc1_:String = outfit;
+         var _loc2_:StringMap = outfits;
+         registerTag("faeoutfit",TagFun_Impl_.fromString(_loc1_ in StringMap.reserved ? _loc2_.getReserved(_loc1_) : _loc2_.h[_loc1_]));
          registerTag("faeisnude",TagFun_Impl_.fromBool(outfit == "nude"));
          registerTag("faeisstraps",TagFun_Impl_.fromBool(outfit == "straps"));
          registerTag("faeisleaf",TagFun_Impl_.fromBool(outfit == "leaf"));

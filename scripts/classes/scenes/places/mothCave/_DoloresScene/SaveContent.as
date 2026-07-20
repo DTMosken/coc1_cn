@@ -193,7 +193,7 @@ package classes.scenes.places.mothCave._DoloresScene
          })),new DebugComp("hikkiQuest","追踪她个人任务的进度",new BitflagComponent(hikkiQuest,function(param1:int):int
          {
             return _gthis.hikkiQuest = param1;
-         },"营地","玛瑞斯","集市","图书馆","喀耳刻","做爱","完成","买长袍","释放她","解开谜语","杀死恶魔")),new DebugComp("doloresSex","追踪你是否解锁了与她的性爱和/或安抚",new Combo(doloresSex,function(param1:int):int
+         },"营地","玛丽埃尔","集市","图书馆","喀耳刻","做爱","完成","买长袍","释放她","解开谜语","杀死恶魔")),new DebugComp("doloresSex","追踪你是否解锁了与她的性爱和/或安抚",new Combo(doloresSex,function(param1:int):int
          {
             return _gthis.doloresSex = param1;
          },{

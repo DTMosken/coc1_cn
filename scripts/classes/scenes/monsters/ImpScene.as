@@ -1018,13 +1018,15 @@ package classes.scenes.monsters
       
       public function impMultiVictory(param1:Boolean, param2:int) : void
       {
+         if(param2 == 1)
+         {
+            impVictory();
+            return;
+         }
          clearOutput();
          registerTag("impAmount",TagFun_Impl_.fromInt(param2));
          registerTag("lustVictory",TagFun_Impl_.fromBool(param1));
-         if(param2 > 1)
-         {
-            outputText("小恶魔们倒下了，[if (lustVictory) {色眯眯地盯着你，同时握住他们的肉棒|虚弱地瘫倒成一团}]。你可以专注于用其中一个来满足自己，尽管当你忙碌时，另一个[if (impAmount > 2) {们}]可能会设法溜走。");
-         }
+         outputText("小恶魔们倒下了，[if (lustVictory) {色眯眯地盯着你，同时握住他们的肉棒|虚弱地瘫倒成一团}]。你可以专注于用其中一个来满足自己，尽管当你忙碌时，另一个[if (impAmount > 2) {们}]可能会设法溜走。");
          generateImpSexMenu();
       }
       
@@ -1052,7 +1054,7 @@ package classes.scenes.monsters
          }
          if(!param1 && Utils.randomChance(50 + (get_player().get_inte() + get_player().get_spe()) / 4))
          {
-            outputText("这些小恶魔身高在两到四英尺之间，骨瘦如柴，长着小小的恶魔翅膀。它们红橙相间的皮肤很脏，黑色的头发看起来油腻腻的。有些是裸体的，但大多数都穿着破烂的缠腰布，几乎无法遮掩它们的腹股沟。它们都有一根像男人的手臂一样长而粗的" + get_monster().cockDescript(0) + "，对它们的身体来说太大了。看着一个小恶魔被它的" + get_monster().cockDescript(0) + "绊倒会很有趣，如果你没有被一群从四面八方逼近的色眯眯的小恶魔包围的话……[pg]");
+            outputText("这些小恶魔身高在[if (metric) {半米到一米多|两到四英尺}]之间，骨瘦如柴，长着小小的恶魔翅膀。它们红橙相间的皮肤很脏，黑色的头发看起来油腻腻的。有些是裸体的，但大多数都穿着破烂的缠腰布，几乎无法遮掩它们的腹股沟。它们都有一根像男人的手臂一样长而粗的" + get_monster().cockDescript(0) + "，对它们的身体来说太大了。看着一个小恶魔被它的" + get_monster().cockDescript(0) + "绊倒会很有趣，如果你没有被一群从四面八方逼近的色眯眯的小恶魔包围的话……[pg]");
             outputText("你迅速起身，及时准备好你的[weapon]！战斗开始了！");
             _g = this;
             loss1 = true;
@@ -1080,7 +1082,7 @@ package classes.scenes.monsters
             {
                if(!get_player().hasStatusEffect(StatusEffects.ImpGangBang))
                {
-                  outputText("这些小恶魔身高在两到四英尺之间，骨瘦如柴，长着小小的恶魔翅膀。他们红色和橙色的皮肤很脏，深色的头发看起来油腻腻的。有些是裸体的，但大多数都穿着破烂的缠腰布，几乎遮不住他们的下体。他们都有一根像男人的手臂一样长而粗的" + get_monster().cockDescriptShort(0) + "，对他们的身体来说太大了。如果不是被一群从四面八方逼近的色眯眯的小恶魔包围，看着一个小恶魔被自己的" + get_monster().cockDescriptShort(0) + "绊倒会很有趣……[pg]");
+                  outputText("这些小恶魔身高在[if (metric) {半米到一米多|两到四英尺}]英尺之间，骨瘦如柴，长着小小的恶魔翅膀。它们红橙相间的皮肤很脏，黑色的头发看起来油腻腻的。有些是裸体的，但大多数都穿着破烂的缠腰布，几乎无法遮掩它们的腹股沟。它们都有一根像男人的手臂一样长而粗的" + get_monster().cockDescriptShort(0) + "，对它们的身体来说太大了。看着一个小恶魔被它的" + get_monster().cockDescriptShort(0) + "绊倒会很有趣，如果你没有被一群从四面八方逼近的色眯眯的小恶魔包围的话……[pg]");
                   get_player().createStatusEffect(StatusEffects.ImpGangBang,0,0,0,0);
                   outputText("就在你准备好你的[weapon]时，小恶魔们向前扑来，一个满身是汗的小恶魔紧紧抓住你的手臂");
                   if(!get_player().get_weapon().isAttached())
@@ -1143,7 +1145,7 @@ package classes.scenes.monsters
                   _loc2_ = true;
                }
                get_images().showImage("gangbang-loss-centaur");
-               outputText("在欲望和痛苦的迷雾中，你隐约看到一只巨大的小恶魔从暴徒中走出来。他有四英尺高，看起来比你见过的任何小恶魔都要宽阔强壮，脸长得既像牛又像小恶魔，这只新的小恶魔有着斑驳的灰色皮肤，宽大的紫色恶魔翅膀，头上长着两根弯曲的牛角，还有一根大到足以让牛头怪窒息的" + Appearance.cockNoun(CockTypesEnum.HORSE) + "。它那蘑菇状的头部在他的嘴下晃动，他蛇一般的舌头伸出来，从龟头上舔下一点先列腺液弹到你的脸上。当滚烫的液体刺痛你嘴唇敏感的皮肤时，你颤抖了一下。他的" + get_monster().ballsDescriptLight() + "每一个都有你的拳头那么大，上面满是汗水。他把汗津津的龟头拍在你的脸颊上，那热度几乎要把你烫伤。");
+               outputText("在欲望和痛苦的迷雾中，你隐约看到一只巨大的小恶魔从暴徒中走出来。他有四英尺高，看起来比你见过的任何小恶魔都要宽阔强壮，脸长得既像牛又像小恶魔，这只新的小恶魔有着斑驳的灰色皮肤，宽大的紫色恶魔翅膀，头上长着两根弯曲的牛角，还有一根大到足以让牛头人窒息的" + Appearance.cockNoun(CockTypesEnum.HORSE) + "。它那蘑菇状的头部在他的嘴下晃动，他蛇一般的舌头伸出来，从龟头上舔下一点先列腺液弹到你的脸上。当滚烫的液体刺痛你嘴唇敏感的皮肤时，你颤抖了一下。他的" + get_monster().ballsDescriptLight() + "每一个都有你的拳头那么大，上面满是汗水。他把汗津津的龟头拍在你的脸颊上，那热度几乎要把你烫伤。");
                if(get_player().cor < 50)
                {
                   outputText("你大叫一声，扭过头去躲避那热度。");
@@ -1630,7 +1632,7 @@ package classes.scenes.monsters
          {
             if(!get_player().hasStatusEffect(StatusEffects.ImpGangBang))
             {
-               outputText("这些小恶魔身高在两到四英尺之间，骨瘦如柴，长着小小的恶魔翅膀。他们红色和橙色的皮肤很脏，深色的头发看起来油腻腻的。有些是裸体的，但大多数都穿着破烂的缠腰布，几乎遮不住他们的下体。他们都有一根像男人的手臂一样长而粗的" + get_monster().cockDescriptShort(0) + "，对他们的身体来说太大了。如果不是被一群从四面八方逼近的色眯眯的小恶魔包围，看着一个小恶魔被自己的" + get_monster().cockDescriptShort(0) + "绊倒会很有趣……[pg]");
+               outputText("这些小恶魔身高在[if (metric) {半米到一米多|两到四英尺}]英尺之间，骨瘦如柴，长着小小的恶魔翅膀。它们红橙相间的皮肤很脏，黑色的头发看起来油腻腻的。有些是裸体的，但大多数都穿着破烂的缠腰布，几乎无法遮掩它们的腹股沟。它们都有一根像男人的手臂一样长而粗的" + get_monster().cockDescriptShort(0) + "，对它们的身体来说太大了。看着一个小恶魔被它的" + get_monster().cockDescriptShort(0) + "绊倒会很有趣，如果你没有被一群从四面八方逼近的色眯眯的小恶魔包围的话……[pg]");
                get_player().createStatusEffect(StatusEffects.ImpGangBang,0,0,0,0);
             }
             outputText("就在你准备好你的[weapon]时，小恶魔们向前扑来，一个满身是汗的小恶魔紧紧抓住你的手臂");

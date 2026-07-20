@@ -2,6 +2,7 @@ package coc.view
 {
    import classes.ItemType;
    import classes.globalFlags.KGAMECLASS;
+   import classes.internals.Utils;
    import flash.Boot;
    import flash.display.Bitmap;
    import flash.events.Event;
@@ -86,8 +87,8 @@ package coc.view
          visible = param8;
          set_labelText(param1);
          callback = param2;
-         toolTipText = param3;
-         toolTipHeader = param4;
+         toolTipText = Utils.cnName(param3);
+         toolTipHeader = Utils.cnName(param4);
          position = param5;
          dummy = param6;
          set_enabled(param7);
@@ -214,7 +215,7 @@ package coc.view
          if(_loc4_ != "")
          {
             set_enabled(false);
-            toolTipText = _loc4_;
+            toolTipText = Utils.cnName(_loc4_);
          }
          if(!param3)
          {
@@ -410,10 +411,10 @@ package coc.view
          {
             param2 = "";
          }
-         toolTipText = param1 != null ? param1 : "";
+         toolTipText = param1 != null ? Utils.cnName(param1) : "";
          if(param2 != null && param2 != "")
          {
-            toolTipHeader = param2;
+            toolTipHeader = Utils.cnName(param2);
          }
          else
          {
@@ -422,7 +423,7 @@ package coc.view
             {
                _loc4_ = _loc4_.split(" x")[0];
             }
-            toolTipHeader = _loc4_;
+            toolTipHeader = Utils.cnName(_loc4_);
          }
          if(!param3)
          {
@@ -479,7 +480,7 @@ package coc.view
          set_enabled(true);
          if(param1 != null)
          {
-            toolTipText = param1;
+            toolTipText = Utils.cnName(param1);
          }
          if(!param2)
          {
@@ -495,7 +496,7 @@ package coc.view
             set_enabled(false);
             if(param2 != null)
             {
-               toolTipText = param2;
+               toolTipText = Utils.cnName(param2);
             }
          }
          if(!param3)
@@ -510,7 +511,7 @@ package coc.view
          set_enabled(!param1);
          if(param2 != null)
          {
-            toolTipText = param1 ? param2 : toolTipText;
+            toolTipText = param1 ? Utils.cnName(param2) : Utils.cnName(toolTipText);
          }
          if(!param3)
          {
@@ -524,7 +525,7 @@ package coc.view
          set_enabled(false);
          if(param1 != null)
          {
-            toolTipText = param1;
+            toolTipText = Utils.cnName(param1);
          }
          if(!param2)
          {

@@ -220,7 +220,7 @@ package classes.items.consumables
             _loc2_ = Utils.rand(5) + 3;
             if(_loc2_ < 5)
             {
-               outputText("[pg]你感到有些不舒服，因为你发现自己失去了平衡。低头一看，你发现自己长高了[i:slightly]。");
+               outputText("[pg]你不安地挪动着身体，因为你意识到自己失去了平衡。低头一看，你发现自己长高了[i:一点]。");
             }
             if(_loc2_ >= 5 && _loc2_ < 7)
             {

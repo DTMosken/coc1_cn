@@ -119,9 +119,9 @@ package classes.scenes.dungeons.lethicesKeep
             _loc2_.nipplesPerBreast = _loc3_.nipplesPerBreast;
             _loc1_++;
          }
-         pronoun1 = get_player().mf("he","she");
-         pronoun2 = get_player().mf("him","her");
-         pronoun3 = get_player().mf("his","her");
+         pronoun1 = get_player().mf("他","她");
+         pronoun2 = get_player().mf("他","她");
+         pronoun3 = get_player().mf("他的","她的");
          set_drop(NO_DROP);
          checkMonster();
       }
@@ -160,7 +160,7 @@ package classes.scenes.dungeons.lethicesKeep
       public function mirrorTease(param1:Number, param2:Boolean) : void
       {
          clearOutput();
-         outputText("你诱惑地在自己身上抚摸着，然后——你停了下来。分身也停了下来，带着邪恶的娇羞盯着你，[his]的手停在[his]身上，位置和你的完全一样。你回瞪着，再次开始你缓慢、充满情欲的动作，而你的倒影也做着完全一样的事情。这是一场情欲的较量！");
+         outputText("你诱惑地在自己身上抚摸着，然后——你停了下来。分身也停了下来，带着邪恶的娇羞盯着你，[his]手停在[his]身上，位置和你的完全一样。你回瞪着，再次开始你缓慢、充满情欲的动作，而你的倒影也做着完全一样的事情。这是一场情欲的较量！");
          if(param1 > 0 && param2)
          {
             outputText("[pg]你坚定地展示并扭动你的肉体，展现你所知道的它的最大优势，无视分身在做什么——毕竟，你对它非常熟悉。几秒钟缓慢地过去后，你的倒影脸上泛起了一丝红晕，[his]手开始颤抖，无法再跟上你的动作，[he]只是盯着你在做什么。");
@@ -182,7 +182,7 @@ package classes.scenes.dungeons.lethicesKeep
          outputText("当你挥舞着你的[weapon]砍向分身时，[he]嘲弄地笑了笑，完全模仿了你的动作，挥舞着[his]复制的[weapon]向前猛冲。");
          if(param1 > 0 && get_player().get_inte() > Utils.rand(140))
          {
-            outputText("在最后关头，你向下扭动身体，击中了对手的躯干，引得[him]痛苦地喘息了一声，同时[he]笨拙地挥舞着[his]的[weapon]从你头顶掠过。现在轮到你模仿[him]了，你嘲弄地微笑着，看着[he]在狂暴的咆哮中重新站稳脚跟，[his]的声音在努力维持控制时冒着泡、闪烁不定。<b>(<font color=\"" + get_game().mainViewManager.colorHpMinus() + "\">" + param1 + "</font>)</b>");
+            outputText("在最后关头，你向下扭动身体，击中了对手的躯干，引得[him]痛苦地喘息了一声，同时[he]笨拙地挥舞着[his][weapon]从你头顶掠过。现在轮到你模仿[him]了，你嘲弄地微笑着，看着[he]在狂暴的咆哮中重新站稳脚跟，[his]声音在努力维持控制时冒着泡、闪烁不定。<b>(<font color=\"" + get_game().mainViewManager.colorHpMinus() + "\">" + param1 + "</font>)</b>");
             set_HP(get_HP() - param1);
          }
          else
@@ -205,7 +205,7 @@ package classes.scenes.dungeons.lethicesKeep
       public function handleSpellResistance(param1:String) : void
       {
          outputText("当你猛烈而强大的火焰席卷[him]时，镜魔甚至连眉头都没皱一下。");
-         outputText("[pg][say:你来这里之后学到了几招，是吗？][he]打了个哈欠。火焰的闪烁附着在[his]的手指上，它的光芒噼啪作响并燃烧殆尽，取而代之的是一种铁青的黑色。[say:农奴魔法。容易上手，容易使用，但很难让人印象深刻。让我给你展示一下真正的魔法是怎么用的！][He]伸出[his]的双手，向你直接投掷了一个无情的黑色火球，这是你刚刚向[him]发射的火球的负面复制品。");
+         outputText("[pg][say:你来这里之后学到了几招，是吗？][he]打了个哈欠。火焰的闪烁附着在[his]手指上，它的光芒噼啪作响并燃烧殆尽，取而代之的是一种铁青的黑色。[say:农奴魔法。容易上手，容易使用，但很难让人印象深刻。让我给你展示一下真正的魔法是怎么用的！][He]伸出[his]双手，向你直接投掷了一个无情的黑色火球，这是你刚刚向[him]发射的火球的负面复制品。");
          if(param1 == "fireball")
          {
             get_player().takeDamage(get_player().level * 10 + 45 + Utils.rand(10),true);
@@ -323,20 +323,20 @@ package classes.scenes.dungeons.lethicesKeep
                outputText("[pg][say: 你知道吗，我甚至都不记得我被困在那面镜子里之前是什么性别了？] 分身说道，同时[he]若有所思地将一只手滑入你大腿的镜像对应物之间。[say: 我喜欢一直改变。当从一种形状转变为另一种形状的工具总是存在时，被困在一种性别里似乎太无聊了。这就是为什么这是对我的惩罚。被迫一直改变，在任何碰巧看向这个被诅咒的东西的人的无意识命令下。你不得不承认莉希丝的厉害，她不仅残忍，而且还有想象力。这真是一个可怕的组合。我不想看到她为你准备了什么。]");
                break;
             case 2:
-               outputText("[pg][say: 不过这个……我喜欢这个，[name]。] [He]闭上[his]的眼睛，并且");
+               outputText("[pg][say: 不过这个……我喜欢这个，[name]。] [He]闭上[his]眼睛，");
                if(get_player().hasCock())
                {
-                  outputText("抚摸着[his][cock]");
+                  outputText("在[his]" + Utils.cnName(get_armorName()) + "下抚摸着[his][cock]");
                }
                else if(get_player().hasVagina())
                {
-                  outputText("将两根手指滑入[his]的[vagina]中，轻轻地抚弄着[himself]");
+                  outputText("将两根手指滑入[his][vagina]中，在[his]" + Utils.cnName(get_armorName()) + "下轻轻地抚弄着[himself]");
                }
                else
                {
-                  outputText("将一只手滑入");
+                  outputText("将一只手滑入[his]" + Utils.cnName(get_armorName()) + "下");
                }
-               outputText("在[his]" + get_armorName() + "下面。看着自己自慰的极度怪异感让你停顿了一下；不真实感再次加剧，你感到自己不安地闪烁着。[say: 等我离开这里，我要一直保持这个样子。为了纪念那个好心给我这个身体的人，我要好好享受一次不改变形态的乐趣！]");
+               outputText("。看着自己自慰的极度怪异感让你停顿了一下；不真实感再次加剧，你感到自己不安地闪烁着。[say: 等我离开这里，我要一直保持这个样子。为了纪念那个好心给我这个身体的人，我要好好享受一次不改变形态的乐趣！]");
                outputText("[pg]你的身体在边缘闪烁并失去对比度，而你的倒影却变得越来越清晰，这种现象越来越难以忽视。");
                outputText("[pg]<b>你带着越来越强烈的恐惧意识到，如果你不阻止它，这真的会发生。</b>");
                break;
@@ -345,7 +345,7 @@ package classes.scenes.dungeons.lethicesKeep
                outputText("[pg][say:不错，不错。对于一个英格纳姆的乡巴佬来说，你的生活相当有趣，不是吗？到处跑。不过性生活不够。远远不够。别担心——我会在适当的时候纠正这个错误。]");
                break;
             case 4:
-               outputText("[pg][say:你真的以为你能打败莉希丝吗，乡巴佬？]分身咆哮道。[He]现在行动和说话都充满自信，[his]以前的抽搐消失了，陶醉于并成长为[his]的新形态。");
+               outputText("[pg][say:你真的以为你能打败莉希丝吗，乡巴佬？]分身咆哮道。[He]现在行动和说话都充满自信，[his]以前的抽搐消失了，陶醉于并成长为[his]新形态。");
                outputText("[pg]你不敢张嘴，生怕听到那声音的拙劣模仿。[say: 哦，靠着勇气、狡诈和运气，你走到了这一步，但打败恶魔女王？你，一个仍然紧紧抓住自己懦弱、简单灵魂的人，因此对恶魔的本质、它的力量、它的牺牲一无所知？我是在帮你和这个世界一个忙，曾经的[name]，因为我不仅要拿走这具完美的身体，还要拿走它如此笨拙地承载着的责任。凭借我的知识和你的蛮力，我将向莉希丝复仇，世界将摆脱她和她的残忍！] [He]狂笑着。那刺耳的疯狂笑声在你听来却越来越沉闷，仿佛是隔着一层玻璃传来的。");
                outputText("[pg]<b>你还有时间和力气进行最后一次孤注一掷……</b>");
                break;

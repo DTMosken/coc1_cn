@@ -787,7 +787,7 @@ package classes.scenes.combat
       {
          clearOutput();
          get_combat().damageType = "MagicalR";
-         outputText("你双脚稳稳地踩在地上，将能量导入大地，翡翠色的火焰在你的脚边翻滚，地面开始隆隆作响。下一刻，整个战场都在颤抖，地狱之火的炼狱从地下汹涌而出！");
+         outputText("你双脚稳稳地踩在地上，将能量导入大地，翡翠色的火焰在你的脚边翻滚，地面开始隆隆作响。下一刻，整个战场都在颤抖，地炎的炼狱从地下汹涌而出！");
          infernoDisplay();
          allMonsters(tfTerraFlamesExec);
          boostInferno();
@@ -856,7 +856,7 @@ package classes.scenes.combat
          clearOutput();
          get_combat().damageType = "PhysicalR";
          currDamage = tfTerraCoreCalc();
-         outputText("翠绿色的地狱之火从你的手中盘旋而上。你身体的核心以不屈的岩石形态被召唤出来，并融入了精神。你双臂用力一挥，将这块巨大的地核抛了出去");
+         outputText("翠绿色的地炎从你的手中盘旋而上。你身体的核心以不屈的岩石形态被召唤出来，并融入了精神。你双臂用力一挥，将这块巨大的地核抛了出去");
          if(Boolean(combatAvoidDamage(new AvoidDamageParameters(true,false,false,null,null,tfTerraCoreAccuracy(),null,null)).attackFailed))
          {
             outputText("飞向[themonster]，但未能击中目标。它继续飞行，划出一道大弧线，准备再次尝试。");
@@ -1501,7 +1501,7 @@ package classes.scenes.combat
       public function tfEruption() : void
       {
          clearOutput();
-         outputText("召唤出巨大的翠绿光芒，大地上的裂缝闪烁着光芒，整个战场沐浴在地狱之火中！");
+         outputText("召唤出巨大的翠绿光芒，大地上的裂缝闪烁着光芒，整个战场沐浴在地炎中！");
          infernoDisplay();
          allMonsters(tfEruptionExec);
          boostInferno();
@@ -1762,7 +1762,7 @@ package classes.scenes.combat
       {
          clearOutput();
          outputText("你拿起护身符，深深地凝视着它。你短暂地瞥见了一些可怕的真相，关于即将到来的末日和超出你理解的启示。当你试图应对你刚刚目睹的恐怖时，你的心智被扭曲了，你踉跄着向后退去。[pg]");
-         outputText("你的信念正在经受考验……\n");
+         outputText("[name]的信念正在经受考验……\n\n");
          doNext(testResolve2);
       }
       
@@ -3184,7 +3184,7 @@ package classes.scenes.combat
          var _loc156_:Object = NumberFunc_Impl_.fromInt(0);
          var _loc157_:Function = function():String
          {
-            return "特殊连击：地核 + 地火 + " + (_gthis.get_achievements().h[283] ? "地震 + 焦土 + 熔岩护甲" : "???") + "[pg-]土与火的完美融合，召唤一颗微型恒星持续攻击你的敌人。这是你魔法的巅峰，极其消耗体力，无法频繁使用。";
+            return "特殊连击：地核 + 地炎 + " + (_gthis.get_achievements().h[283] ? "地震 + 焦土 + 熔岩护甲" : "???") + "[pg-]土与火的完美融合，召唤一颗微型恒星持续攻击你的敌人。这是你魔法的巅峰，极其消耗体力，无法频繁使用。";
          };
          var _loc158_:Function = function():Boolean
          {
@@ -3227,7 +3227,7 @@ package classes.scenes.combat
             var _loc1_:String = "在你的星辰中聚集能量，然后以一场巨大的力量爆炸释放出来，消灭所有挡在你面前的人，完全不顾你自己的安全。[pg-]需要多个回合来充能，在此期间你无法做任何其他事情。";
             if(_gthis.getUseCount("Supernova") > 0 && !_gthis.get_achievements().h[283])
             {
-               _loc1_ += "[pg]为了完全掌握地火，请用超新星击败一个更强的敌人来展示你的精通。";
+               _loc1_ += "[pg]为了完全掌握地炎，请用超新星击败一个更强的敌人来展示你的精通。";
             }
             return _loc1_;
          };
@@ -3252,7 +3252,7 @@ package classes.scenes.combat
          };
          var _loc171_:Object = function():String
          {
-            var _loc1_:String = "你觉得关于地火还有更多需要学习的地方。";
+            var _loc1_:String = "你觉得关于地炎还有更多需要学习的地方。";
             if(_gthis.get_player().masteryLevel(MasteryLib.TerrestrialFire) >= 5)
             {
                if(_gthis.getUseCount("Terrestrial Star") > 0)
@@ -3440,7 +3440,7 @@ package classes.scenes.combat
          var _loc256_:Object = NumberFunc_Impl_.fromInt(20);
          var _loc257_:Function = function():String
          {
-            return "从口中喷出地火。" + _gthis.get_combat().fancifyDamageRange(_gthis.fireballCalc(true),_gthis.fireballCalc(true,true),_gthis.fireballChance());
+            return "从口中喷出地炎。" + _gthis.get_combat().fancifyDamageRange(_gthis.fireballCalc(true),_gthis.fireballCalc(true,true),_gthis.fireballChance());
          };
          var _loc258_:Function = function():Boolean
          {
@@ -6404,7 +6404,7 @@ package classes.scenes.combat
          }
          if(get_monster() is AkbalUnsealed)
          {
-            outputText("你深吸一口气，从体内深处释放出一波堕落的红色火焰。阿克巴尔则以他的地狱之火作为回应，将你的猩红火焰完全吞没。");
+            outputText("你深吸一口气，从体内深处释放出一波堕落的红色火焰。阿克巴尔则以他的地炎作为回应，将你的猩红火焰完全吞没。");
             outputText("[pg-]阿克巴尔轻笑一声，[say: 你用这种比我低级的领主的火焰来侮辱我。]");
             get_combat().startMonsterTurn();
             return;
@@ -6823,16 +6823,16 @@ package classes.scenes.combat
          {
             if(get_player().hasStatusEffect(StatusEffects.WebSilence))
             {
-               outputText("你试图引导地狱之火，但当你准备释放出火焰洪流时，它却在你的喉咙里倒流，被封住你嘴巴的蛛网挡住了。突然爆发的炽热力量在你自己的喉咙里炸开，让你痛呼出声。");
+               outputText("你试图引导地炎，但当你准备释放出火焰洪流时，它却在你的喉咙里倒流，被封住你嘴巴的蛛网挡住了。突然爆发的炽热力量在你自己的喉咙里炸开，让你痛呼出声。");
             }
             else if(get_player().hasStatusEffect(StatusEffects.GooArmorSilence))
             {
-               outputText("你试图引导地狱之火，但当你准备释放洪流时，它却提前爆发了，突然爆发的炽热力量在你自己的喉咙里炸开，让你痛呼出声。覆盖在你嘴上的黏液冒出气泡并破裂，在逃逸的火焰撕开的小裂口处沸腾蒸发。虽然效果没有你希望的那么好，但你至少现在可以说话了。");
+               outputText("你试图引导地炎，但当你准备释放洪流时，它却提前爆发了，突然爆发的炽热力量在你自己的喉咙里炸开，让你痛呼出声。覆盖在你嘴上的黏液冒出气泡并破裂，在逃逸的火焰撕开的小裂口处沸腾蒸发。虽然效果没有你希望的那么好，但你至少现在可以说话了。");
                get_player().removeStatusEffect(StatusEffects.GooArmorSilence);
             }
             else
             {
-               outputText("你试图引导地狱之火，但当你准备释放出火焰洪流时，体内的火焰却提前爆发了，突然爆发的炽热力量在你自己的喉咙里炸开，让你痛呼出声。");
+               outputText("你试图引导地炎，但当你准备释放出火焰洪流时，体内的火焰却提前爆发了，突然爆发的炽热力量在你自己的喉咙里炸开，让你痛呼出声。");
             }
             get_player().changeFatigue(10);
             get_player().takeDamage(10 + Utils.rand(20),true);
@@ -6867,12 +6867,12 @@ package classes.scenes.combat
          }
          if(get_player().hasStatusEffect(StatusEffects.GooArmorSilence))
          {
-            outputText("[b:当你积蓄地狱之火时，一声低吼从你体内深处传出，你将火焰从胸腔逼出，注入黏液中。黏液在蒸发时冒出气泡并散发出蒸汽，这引起了你敌人的好奇，她停下了攻击，凑近观看。当嘴巴周围的紧绷感减轻，你的对手越来越忘乎所以时，你等待着时机。当你终于能活动下巴张开嘴时，你喷出了绝大部分的火焰，吹起了一个由火焰和蒸发的黏液组成的巨大气泡，气泡变薄并最终破裂，释放出一团超高温的云雾。那个穿戴盔甲的女孩被云雾吞没，尖叫着退缩，挥舞着她的手臂。]");
+            outputText("[b:当你积蓄地炎时，一声低吼从你体内深处传出，你将火焰从胸腔逼出，注入黏液中。黏液在蒸发时冒出气泡并散发出蒸汽，这引起了你敌人的好奇，她停下了攻击，凑近观看。当嘴巴周围的紧绷感减轻，你的对手越来越忘乎所以时，你等待着时机。当你终于能活动下巴张开嘴时，你喷出了绝大部分的火焰，吹起了一个由火焰和蒸发的黏液组成的巨大气泡，气泡变薄并最终破裂，释放出一团超高温的云雾。那个穿戴盔甲的女孩被云雾吞没，尖叫着退缩，挥舞着她的手臂。]");
             get_player().removeStatusEffect(StatusEffects.GooArmorSilence);
          }
          else
          {
-            outputText("当你积蓄地狱之火时，一声低吼从你的胸腔深处传出。当你再也无法忍受时，你发出一声震耳欲聋的咆哮，向你的敌人投掷出一团巨大的绿色烈焰。");
+            outputText("当你积蓄地炎时，一声低吼从你的胸腔深处传出。当你再也无法忍受时，你发出一声震耳欲聋的咆哮，向你的敌人投掷出一团巨大的绿色烈焰。");
          }
          if(get_monster().get_short() == "Isabella" && !get_monster().hasStatusEffect(StatusEffects.Stunned))
          {

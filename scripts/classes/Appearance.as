@@ -1298,7 +1298,7 @@ package classes
          _loc11_ = param3 <= 2;
          if(_loc11_ == true)
          {
-            _loc9_ = ["宽大","肉感","粗硕"];
+            _loc9_ = ["粗大","肉感","粗硕"];
             return _loc9_[Utils.rand(int(_loc9_.length))];
          }
          _loc10_ = param3 <= 3.5;
@@ -2482,7 +2482,7 @@ package classes
          {
             return "眼睛";
          }
-         return Appearance.DEFAULT_EYES_NAMES.h[param1.eyes.type] + "眼睛";
+         return Utils.cnName(Appearance.DEFAULT_EYES_NAMES.h[param1.eyes.type]) + "眼";
       }
       
       public static function extraEyesDescript(param1:Creature) : String
@@ -2492,7 +2492,7 @@ package classes
       
       public static function extraEyesDescriptShort(param1:Creature) : String
       {
-         return Utils.num2Text(param1.eyes.count - 2) + (param1.eyes.count == 3 ? " 只眼睛" : " 只眼睛");
+         return Utils.num2Text(param1.eyes.count - 2) + (param1.eyes.count == 3 ? "只眼睛" : "只眼睛");
       }
       
       public static function nagaLowerBodyColor2(param1:Creature) : String

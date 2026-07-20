@@ -133,314 +133,314 @@ package classes
       
       public static var FACE_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 人类"
+         "label":"(0) HUMAN"
       },{
          "value":1,
-         "label":"(1) 马"
+         "label":"(1) HORSE"
       },{
          "value":2,
-         "label":"(2) 狗"
+         "label":"(2) DOG"
       },{
          "value":3,
-         "label":"(3) 牛/牛头人"
+         "label":"(3) COW_MINOTAUR"
       },{
          "value":4,
-         "label":"(4) 鲨鱼牙"
+         "label":"(4) SHARK_TEETH"
       },{
          "value":5,
-         "label":"(5) 蛇牙"
+         "label":"(5) SNAKE_FANGS"
       },{
          "value":6,
-         "label":"(6) 猫娘"
+         "label":"(6) CATGIRL"
       },{
          "value":7,
-         "label":"(7) 蜥蜴"
+         "label":"(7) LIZARD"
       },{
          "value":8,
-         "label":"(8) 兔子"
+         "label":"(8) BUNNY"
       },{
          "value":9,
-         "label":"(9) 袋鼠"
+         "label":"(9) KANGAROO"
       },{
          "value":10,
-         "label":"(10) 蜘蛛牙"
+         "label":"(10) SPIDER_FANGS"
       },{
          "value":11,
-         "label":"(11) 狐狸"
+         "label":"(11) FOX"
       },{
          "value":12,
-         "label":"(12) 龙"
+         "label":"(12) DRAGON"
       },{
          "value":13,
-         "label":"(13) 浣熊面纹"
+         "label":"(13) RACCOON_MASK"
       },{
          "value":14,
-         "label":"(14) 浣熊"
+         "label":"(14) RACCOON"
       },{
          "value":15,
-         "label":"(15) 龅牙"
+         "label":"(15) BUCKTEETH"
       },{
          "value":16,
-         "label":"(16) 老鼠"
+         "label":"(16) MOUSE"
       },{
          "value":17,
-         "label":"(17) 雪貂面纹"
+         "label":"(17) FERRET_MASK"
       },{
          "value":18,
-         "label":"(18) 雪貂"
+         "label":"(18) FERRET"
       },{
          "value":19,
-         "label":"(19) 猪"
+         "label":"(19) PIG"
       },{
          "value":20,
-         "label":"(20) 野猪"
+         "label":"(20) BOAR"
       },{
          "value":21,
-         "label":"(21) 犀牛"
+         "label":"(21) RHINO"
       },{
          "value":22,
-         "label":"(22) 针鼹"
+         "label":"(22) ECHIDNA"
       },{
          "value":23,
-         "label":"(23) 鹿"
+         "label":"(23) DEER"
       },{
          "value":24,
-         "label":"(24) 狼"
+         "label":"(24) WOLF"
       },{
          "value":25,
-         "label":"(25) 鸡蛇"
+         "label":"(25) COCKATRICE"
       },{
          "value":27,
-         "label":"(27) 小熊猫"
+         "label":"(27) RED_PANDA"
       },{
          "value":28,
-         "label":"(28) 猫"
+         "label":"(28) CAT"
       }];
       
       public static var TONGUE_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 人类"
+         "label":"(0) HUMAN"
       },{
          "value":1,
-         "label":"(1) 蛇"
+         "label":"(1) SNAKE"
       },{
          "value":2,
-         "label":"(2) 恶魔"
+         "label":"(2) DEMONIC"
       },{
          "value":3,
-         "label":"(3) 龙"
+         "label":"(3) DRACONIC"
       },{
          "value":4,
-         "label":"(4) 针鼹"
+         "label":"(4) ECHIDNA"
       },{
          "value":5,
-         "label":"(5) 蜥蜴"
+         "label":"(5) LIZARD"
       },{
          "value":6,
-         "label":"(6) 猫"
+         "label":"(6) CAT"
       }];
       
       public static var EYE_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 人类"
+         "label":"(0) HUMAN"
       },{
          "value":2,
-         "label":"(2) 蚁狮黑眼"
+         "label":"(2) BLACK_EYES_SAND_TRAP"
       },{
          "value":3,
-         "label":"(3) 蜥蜴"
+         "label":"(3) LIZARD"
       },{
          "value":4,
-         "label":"(4) 龙"
+         "label":"(4) DRAGON"
       },{
          "value":5,
-         "label":"(5) 蛇怪"
+         "label":"(5) BASILISK"
       },{
          "value":6,
-         "label":"(6) 狼"
+         "label":"(6) WOLF"
       },{
          "value":7,
-         "label":"(7) 蜘蛛"
+         "label":"(7) SPIDER"
       },{
          "value":8,
-         "label":"(8) 鸡蛇"
+         "label":"(8) COCKATRICE"
       },{
          "value":9,
-         "label":"(9) 猫"
+         "label":"(9) CAT"
       }];
       
       public static var EAR_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 人类"
+         "label":"(0) HUMAN"
       },{
          "value":1,
-         "label":"(1) 马"
+         "label":"(1) HORSE"
       },{
          "value":2,
-         "label":"(2) 狗"
+         "label":"(2) DOG"
       },{
          "value":3,
-         "label":"(3) 牛"
+         "label":"(3) COW"
       },{
          "value":4,
-         "label":"(4) 精灵"
+         "label":"(4) ELFIN"
       },{
          "value":5,
-         "label":"(5) 猫"
+         "label":"(5) CAT"
       },{
          "value":6,
-         "label":"(6) 蜥蜴"
+         "label":"(6) LIZARD"
       },{
          "value":7,
-         "label":"(7) 兔子"
+         "label":"(7) BUNNY"
       },{
          "value":8,
-         "label":"(8) 袋鼠"
+         "label":"(8) KANGAROO"
       },{
          "value":9,
-         "label":"(9) 狐狸"
+         "label":"(9) FOX"
       },{
          "value":10,
-         "label":"(10) 龙"
+         "label":"(10) DRAGON"
       },{
          "value":11,
-         "label":"(11) 浣熊"
+         "label":"(11) RACCOON"
       },{
          "value":12,
-         "label":"(12) 老鼠"
+         "label":"(12) MOUSE"
       },{
          "value":13,
-         "label":"(13) 雪貂"
+         "label":"(13) FERRET"
       },{
          "value":14,
-         "label":"(14) 猪"
+         "label":"(14) PIG"
       },{
          "value":15,
-         "label":"(15) 犀牛"
+         "label":"(15) RHINO"
       },{
          "value":16,
-         "label":"(16) 针鼹"
+         "label":"(16) ECHIDNA"
       },{
          "value":17,
-         "label":"(17) 鹿"
+         "label":"(17) DEER"
       },{
          "value":18,
-         "label":"(18) 狼"
+         "label":"(18) WOLF"
       },{
          "value":19,
-         "label":"(19) 绵羊"
+         "label":"(19) SHEEP"
       },{
          "value":20,
-         "label":"(20) 小恶魔"
+         "label":"(20) IMP"
       },{
          "value":21,
-         "label":"(21) 鸡蛇"
+         "label":"(21) COCKATRICE"
       },{
          "value":22,
-         "label":"(22) 小熊猫"
+         "label":"(22) RED_PANDA"
       }];
       
       public static var HORN_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 无"
+         "label":"(0) NONE"
       },{
          "value":1,
-         "label":"(1) 恶魔"
+         "label":"(1) DEMON"
       },{
          "value":2,
-         "label":"(2) 牛头怪"
+         "label":"(2) COW_MINOTAUR"
       },{
          "value":3,
-         "label":"(3) 龙角x2"
+         "label":"(3) DRACONIC_X2"
       },{
          "value":4,
-         "label":"(4) 龙角x4(12英寸长)"
+         "label":"(4) DRACONIC_X4_12_INCH_LONG"
       },{
          "value":5,
-         "label":"(5) 鹿角"
+         "label":"(5) ANTLERS"
       },{
          "value":6,
-         "label":"(6) 山羊"
+         "label":"(6) GOAT"
       },{
          "value":7,
-         "label":"(7) 独角兽"
+         "label":"(7) UNICORN"
       },{
          "value":8,
-         "label":"(8) 犀牛"
+         "label":"(8) RHINO"
       },{
          "value":9,
-         "label":"(9) 绵羊"
+         "label":"(9) SHEEP"
       },{
          "value":10,
-         "label":"(10) 公羊"
+         "label":"(10) RAM"
       },{
          "value":11,
-         "label":"(11) 小恶魔"
+         "label":"(11) IMP"
       },{
          "value":12,
-         "label":"(12) 木头"
+         "label":"(12) WOODEN"
       },{
          "value":13,
-         "label":"(13) 羚羊"
+         "label":"(13) ANTELOPE"
       }];
       
       public static var ANTENNA_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 无"
+         "label":"(0) NONE"
       },{
          "value":2,
-         "label":"(2) 蜜蜂"
+         "label":"(2) BEE"
       },{
          "value":3,
-         "label":"(3) 鸡蛇"
+         "label":"(3) COCKATRICE"
       }];
       
       public static var GILLS_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 无"
+         "label":"(0) NONE"
       },{
          "value":1,
-         "label":"(1) 海葵"
+         "label":"(1) ANEMONE"
       },{
          "value":2,
-         "label":"(2) 鱼"
+         "label":"(2) FISH"
       },{
          "value":3,
-         "label":"(3) 人鱼"
+         "label":"(3) MERMAID"
       }];
       
       public static var BEARD_STYLE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 正常"
+         "label":"(0) NORMAL"
       },{
          "value":1,
-         "label":"(1) 山羊胡"
+         "label":"(1) GOATEE"
       },{
          "value":2,
-         "label":"(2) 干净"
+         "label":"(2) CLEANCUT"
       },{
          "value":3,
-         "label":"(3) 粗犷"
+         "label":"(3) MOUNTAINMAN"
       }];
       
       public static var ARM_TYPE_CONSTANTS:Array = [{
          "value":0,
-         "label":"(0) 人类"
+         "label":"(0) HUMAN"
       },{
          "value":1,
-         "label":"(1) 哈比"
+         "label":"(1) HARPY"
       },{
          "value":2,
-         "label":"(2) 蜘蛛"
+         "label":"(2) SPIDER"
       },{
          "value":3,
-         "label":"(3) 蜜蜂"
+         "label":"(3) BEE"
       },{
          "value":5,
-         "label":"(5) 蝾螈"
+         "label":"(5) SALAMANDER"
       },{
          "value":6,
-         "label":"(6) 狼"
+         "label":"(6) WOLF"
       }];
       
       public static var CLAW_TYPE_CONSTANTS:Array = [{

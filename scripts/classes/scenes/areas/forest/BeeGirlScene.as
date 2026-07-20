@@ -1416,7 +1416,7 @@ package classes.scenes.areas.forest
                {
                   outputText("你被欲望吞噬，抬头看着蜂女靠近。");
                }
-               outputText("你感到疲惫虚弱，你的身体开始背叛你，屈服于敌人的信息素。当她压在你身上时，你试图挣扎，她把你的双手按在地上，胸部压在你的脸上，挡住了阳光和空气，无视你的抗议。当蜂女骑在你身上时，你的[armor]被从你身上扒了下来。[pg]");
+               outputText("你感到疲惫虚弱，你的身体开始背叛你，屈服于敌人的信息素。当她压在你身上时，你试图挣扎，她把你的双手按在地上，胸部压在你的脸上，挡住了[sun]光和空气，无视你的抗议。当蜂女骑在你身上时，你的[armor]被从你身上扒了下来。[pg]");
                outputText("当蜂女的毒刺刺穿你的肉体时，你的胃部传来一阵剧痛。还没等你叫出声，一股令人作呕的暖流从伤口涌出，冲刷掉疼痛，渗入你的全身。你的" + get_player().vaginaDescript(0) + "的汁液在你的");
                if(get_player().isTaur())
                {
@@ -1801,7 +1801,7 @@ package classes.scenes.areas.forest
          addButtonDisabled(4,"假阳具强暴","这个场景需要你有豪华假阳具。");
          addButtonDisabled(5,"母乳喂养","这个场景需要你有足够的乳汁。");
          addButtonDisabled(6,"娜迦","这个场景需要你有毒牙和娜迦身体。");
-         addButtonDisabled(7,"自我注卵","这个场景需要你有足够的体能和腐化值，以及一些可以用来找乐子的部位。");
+         addButtonDisabled(7,"自我注卵","这个场景需要你有足够的体能和腐化，以及一些可以用来找乐子的部位。");
          addButtonDisabled(8,"产卵","这个场景需要你有蜘蛛产卵管和毒牙。","产卵");
          if(get_player().hasCock())
          {

@@ -1151,7 +1151,7 @@ package classes.scenes.combat
          _loc1_[StatusEffects.NagaBind] = "";
          _loc1_[StatusEffects.HolliConstrict] = "";
          _loc1_[StatusEffects.GooArmorBind] = "";
-         _loc1_[StatusEffects.MinotaurEntangled] = "\n<b>你被牛头怪领主的锁链绑住了！你现在唯一能做的就是努力挣脱！</b>";
+         _loc1_[StatusEffects.MinotaurEntangled] = "\n<b>你被牛头人领主的锁链绑住了！你现在唯一能做的就是努力挣脱！</b>";
          _loc1_[StatusEffects.YamataEntwine] = "你被八岐蛇一般的头发缠住了。你现在唯一能做的就是努力挣脱！[pg]";
          _loc1_[StatusEffects.UBERWEB] = "";
          _loc1_[StatusEffects.Bound] = "";
@@ -2775,13 +2775,13 @@ package classes.scenes.combat
          }
          if(get_player().hasStatusEffect(StatusEffects.MinotaurKingMusk))
          {
-            outputText("<b>牛头怪信息素的气味非常浓烈，让你兴奋不已。你应该尽快解决他。</b>");
+            outputText("<b>牛头人信息素的气味非常浓烈，让你兴奋不已。你应该尽快解决他。</b>");
             get_player().takeLustDamage(2,true);
             outputText("[pg]");
          }
          if(get_player().hasStatusEffect(StatusEffects.MinotaurKingsTouch))
          {
-            outputText("<b>牛头怪国王残留的精液继续让你兴奋。</b>");
+            outputText("<b>牛头人国王残留的精液继续让你兴奋。</b>");
             get_player().takeLustDamage(1,true);
             outputText("[pg]");
          }

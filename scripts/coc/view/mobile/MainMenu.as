@@ -173,7 +173,7 @@ package coc.view.mobile
          _disclaimerText.multiline = true;
          _disclaimerText.wordWrap = true;
          _disclaimerText.width = 490;
-         _disclaimerText.defaultTextFormat = new TextFormat("Palatino Linotype, serif",16,Theme.current.get_textColor(),null,null,null,null,null,"left",null,null,null,-2);
+         _disclaimerText.defaultTextFormat = new TextFormat("Alibaba PuHuiTi 3 85 Bold, serif",16,Theme.current.get_textColor(),null,null,null,null,null,"left",null,null,null,-2);
          _disclaimerText.htmlText = "<font face=\'Alibaba PuHuiTi 3 85 Bold\'>这是一款成人游戏，只适合成年人游玩。\n" + "如果你未满18岁或厌恶非常规的恋物癖，请不要游玩。如果你是在某处花钱得到这个免费游戏，说明你上当了。\n" + "<b>提醒过你了的说！</b>";
          _disclaimer.addElement(_disclaimerBackground,new LayoutHint(true,null,null,null,null,null,null));
          _disclaimer.addElement(_disclaimerIcon);
@@ -181,7 +181,7 @@ package coc.view.mobile
          _miniCredit = new TextField();
          _miniCredit.multiline = true;
          _miniCredit.autoSize = "center";
-         _miniCredit.defaultTextFormat = new TextFormat("Palatino Linotype, serif",16,Theme.current.get_menuTextColor(),null,null,null,null,null,"center",null,null,null,-2);
+         _miniCredit.defaultTextFormat = new TextFormat("Alibaba PuHuiTi 3 85 Bold, serif",16,Theme.current.get_menuTextColor(),null,null,null,null,null,"center",null,null,null,-2);
          _miniCredit.htmlText = "<font face=\'Alibaba PuHuiTi 3 85 Bold\'><b>代码编写：</b>OtherCoCAnon，Koraeli，Mothman，Anonymous\n" + "<b>贡献者：</b> Satan，Chronicler，Anonymous";
          _logo = new BitmapDataSprite(null,null,true,0,0,0,0,true,"",0,false,1,true);
          _logo.x = 15;

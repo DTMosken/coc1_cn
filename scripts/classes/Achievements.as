@@ -56,7 +56,7 @@ package classes
          }
          if(param5)
          {
-            _loc7_ += " - <font color=\"" + (get_mainViewManager().isDarkTheme() ? "#ff00ff" : "#660066") + "\">暗影成就</font>";
+            _loc7_ += " - <font color=\"" + (get_mainViewManager().isDarkTheme() ? "#ff00ff" : "#660066") + "\">隐藏成就</font>";
          }
          _loc7_ += "</li>";
          outputText(_loc7_);

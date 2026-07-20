@@ -63,7 +63,7 @@ package classes.scenes.areas.bog
                {
                   outputText(get_player().cockDescriptShort() + "不停地渗出先列腺液。[pg]");
                }
-               outputText("先列腺液散发着淡淡的、有些甜美的气味，充满了你的鼻腔，只会加剧你的性唤起。你发现自己喘着粗气，轻声呻吟，因为你在走路时忍不住会有小高潮。无论你高潮多少次，这种感觉都不会消退，也不会变成痛苦。[pg]");
+               outputText("先列腺液散发着淡淡的、有些甜美的气味，充满了你的鼻腔，只会加剧你的兴奋。你发现自己喘着粗气，轻声呻吟，因为你在走路时忍不住会有小高潮。无论你高潮多少次，这种感觉都不会消退，也不会变成痛苦。[pg]");
                if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,2645) == 0)
                {
                   if(get_player().cor <= 33)

@@ -453,7 +453,7 @@ package classes.items.consumables
                   }
                   else
                   {
-                     outputText("[pg]一种令人不适的拉伸感在你的 " + get_player().breastDescript(_loc4_) + " 的曲线上蔓延，一丝丝热量在你的肉体中刺痛。感觉就像你的心跳在膨胀的肉丘中被放大了十倍，你的[skin]因性唤起而泛红，你的 " + get_player().nippleDescript(_loc4_) + " 充满了温暖。随着刺痛的热量逐渐消退，又多出了几英寸摇晃的乳房。你试探性地捧起它们，确认它们确实长得更接近上方那对的大小了。");
+                     outputText("[pg]一种令人不适的拉伸感在你的 " + get_player().breastDescript(_loc4_) + " 的曲线上蔓延，一丝丝热量在你的肉体中刺痛。感觉就像你的心跳在膨胀的肉丘中被放大了十倍，你的[skin]因兴奋而泛红，你的 " + get_player().nippleDescript(_loc4_) + " 充满了温暖。随着刺痛的热量逐渐消退，又多出了几英寸摇晃的乳房。你试探性地捧起它们，确认它们确实长得更接近上方那对的大小了。");
                   }
                }
                if(get_player().breastRows[_loc4_].breastRating <= get_player().breastRows[_loc4_ - 1].breastRating - 3)

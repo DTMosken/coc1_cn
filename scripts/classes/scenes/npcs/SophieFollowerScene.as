@@ -1052,7 +1052,7 @@ package classes.scenes.npcs
                outputText("，涌出一波柔软、可挤压的丰满；那种可以蜷缩起来当枕头用的乳房。");
             }
          }
-         outputText("[pg]在你的双腿之间，[eachCock]自由地垂下，你的" + get_player().cockDescript(_loc3_) + "硬得发痛，为你渴望被操的女儿准备好了。这团充满男子气概的肉体随着你的性唤起而跳动，这个贪得无厌的器官渴望被插入你女儿湿透的阴道的深处，她紧致、天鹅绒般的褶皱准备好接受你强大、充满活力的精华。");
+         outputText("[pg]在你的双腿之间，[eachCock]自由地垂下，你的" + get_player().cockDescript(_loc3_) + "硬得发痛，为你渴望被操的女儿准备好了。这团充满男子气概的肉体随着你的兴奋而跳动，这个贪得无厌的器官渴望被插入你女儿湿透的阴道的深处，她紧致、天鹅绒般的褶皱准备好接受你强大、充满活力的精华。");
          if(FlagDict_Impl_.arrayReadInt(KFLAGS.flags,753) > 0 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,746) == 0)
          {
             _loc2_ = (param1 == 4 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,753) > 0 || param1 == 3 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,752) > 0 || param1 == 2 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,751) > 0 || param1 == 1 && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,750) > 0) && FlagDict_Impl_.arrayReadInt(KFLAGS.flags,746) == 0;

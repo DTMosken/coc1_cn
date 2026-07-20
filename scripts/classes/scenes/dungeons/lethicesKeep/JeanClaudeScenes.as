@@ -57,7 +57,7 @@ package classes.scenes.dungeons.lethicesKeep
          outputText("[pg][say:把你献给莉希丝，她一定会重用我们的，闯入者，]他喃喃自语道。[say:但这还不够，嗯，少了一点私人接触，不是吗？]");
          if(get_player().skin.adj == "latex" || get_player().skin.adj == "rubber")
          {
-            outputText("[pg]他的手顺着你的侧腹滑下，绕过你的[butt]，然后突然残忍地将爪子刺入你橡胶般的肉体。这一次你确实退缩了，当痛苦与你强烈的性唤起交织时，你无法控制地喘息着。");
+            outputText("[pg]他的手顺着你的侧腹滑下，绕过你的[butt]，然后突然残忍地将爪子刺入你橡胶般的肉体。这一次你确实退缩了，当痛苦与你强烈的兴奋交织时，你无法控制地喘息着。");
          }
          else
          {

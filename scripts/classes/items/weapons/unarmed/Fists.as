@@ -14,7 +14,7 @@ package classes.items.weapons.unarmed
             return;
          }
          set_weightCategory("Light");
-         super("Fists  ","Fists","fists","your fists",["punch"],0,0,null,["Fist","Unarmed"]);
+         super("Fists  ","Fists","fists","your fists",["punch"],0,0,null,["Fist","徒手"]);
          _plural = true;
          _singular = "拳头";
       }

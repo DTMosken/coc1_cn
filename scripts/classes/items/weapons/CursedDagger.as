@@ -13,7 +13,7 @@ package classes.items.weapons
          {
             return;
          }
-         super("Cursed Dagger ","Cursed Dagger","cursed dagger","a cursed dagger",["stab"],10,2500,"A thin, dark blade, rather long for a dagger. It is one solid piece of metal, with small intricate runic carvings along the flat of the blade and others on the hilt to make it easier to grip. It is unusually cold to the touch. ",["Cunning","Knife"],1);
+         super("Cursed Dagger ","Cursed Dagger","cursed dagger","a cursed dagger",["stab"],10,2500,"A thin, dark blade, rather long for a dagger. It is one solid piece of metal, with small intricate runic carvings along the flat of the blade and others on the hilt to make it easier to grip. It is unusually cold to the touch. ",["狡诈","Knife"],1);
          boost("暴击伤害",NumberFunc_Impl_.fromFloat(1.2),true);
          boost("武器暴击率",NumberFunc_Impl_.fromInt(25),false);
          boost("最大生命值",NumberFunc_Impl_.fromFloat(0.8),true);

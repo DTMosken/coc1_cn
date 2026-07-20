@@ -185,7 +185,7 @@ package classes.scenes.places.telAdre
             {
                outputText("你的[cock]在几秒钟内就充血了，变得坚硬如石，甚至因为渴望而隐隐作痛。");
             }
-            outputText("你完全被这巨大的性唤起惊呆了，并且");
+            outputText("你完全被这巨大的兴奋惊呆了，并且");
             if(get_player().cor + get_player().lib < 100 || get_player().cockTotal() < 1)
             {
                outputText("你努力克制自己不去把手伸进[armor]里抚摸自己。");
@@ -1091,7 +1091,7 @@ package classes.scenes.places.telAdre
          clearOutput();
          var _loc1_:int = edrynGetKid();
          outputText("你正[walking]在特尔阿德雷繁忙的街道上，突然身后传来一声尖锐的喊叫，引起了你的注意。转过身，你看到埃德琳在马路对面朝你挥手。但这很奇怪，那声音听起来比——");
-         outputText("[pg]你感到一阵突如其来的冲击，一只年轻的半人马兴奋地冲向你，差点撞到你，[kid.his]前腿抓住了你的[if (tallness > 48) {hips|shoulders}]。起初这相当令人震惊，但当你看到[kid.he]有着你的眼睛时，一切都说得通了。你的[kid.son]开始用尖锐的声音兴奋地叽叽喳喳，虽然语速太快听不清什么，但背后的情感却很清楚——[kid.he]见到你欣喜若狂，兴奋得完全无法掩饰。");
+         outputText("[pg]你感到一阵突如其来的冲击，一只年轻的半人马兴奋地冲向你，差点撞到你，[kid.his]前腿抓住了你的[if (tallness > 48) {臀部|肩膀}]。起初这相当令人震惊，但当你看到[kid.he]有着你的眼睛时，一切都说得通了。你的[kid.son]开始用尖锐的声音兴奋地叽叽喳喳，虽然语速太快听不清什么，但背后的情感却很清楚——[kid.he]见到你欣喜若狂，兴奋得完全无法掩饰。");
          outputText("[pg]埃德琳凑到你身边，绕过你那高兴的孩子，设法亲了你一下。[say:只是带孩子散散步，]她说道，[say:不过能碰见你总是件好事。]");
          outputText("[pg]能看到你的孩子[if (cor < 50) {逐渐长大，这[i:很]好|偶尔出现，这并不讨厌}]。你仔细打量了[kid.him]一番。[Kid.his]头发还是很短，眼睛大得让你几乎不敢相信它们能长在[kid.him]脸上，但这只会让[kid.him]显得更加可爱。少许白点覆盖着[kid.his]侧腹，一件小小的" + (_loc1_ == 1 ? "背心" : "裙子") + "点缀着[kid.his]幼小的身躯。总的来说，[kid.he]看起来很像埃德琳，但在你的孩子身上认出你自己熟悉的特征，还是让人感到欣慰。");
          outputText("[pg]然而，当你的小天使伸长脖子在你的嘴唇上印下一个吻时，你完全猝不及防。这是一个足够天真的举动，但你的头还是[if (cor < 50) {惊讶地|条件反射般地}]往后缩了一下，当这只小半人马困惑地看着你时，埃德琳轻笑了一声。");
@@ -1130,10 +1130,10 @@ package classes.scenes.places.telAdre
          {
             _loc1_ = Utils.rand(saveContent.girls + saveContent.herms) <= saveContent.girls ? 2 : 3;
          }
-         registerTag("kid.he",_loc1_ == 1 ? TagFun_Impl_.fromString("he") : TagFun_Impl_.fromString("she"));
-         registerTag("kid.him",_loc1_ == 1 ? TagFun_Impl_.fromString("him") : TagFun_Impl_.fromString("her"));
-         registerTag("kid.his",_loc1_ == 1 ? TagFun_Impl_.fromString("his") : TagFun_Impl_.fromString("her"));
-         registerTag("kid.son",_loc1_ == 1 ? TagFun_Impl_.fromString("son") : TagFun_Impl_.fromString("daughter"));
+         registerTag("kid.he",_loc1_ == 1 ? TagFun_Impl_.fromString("他") : TagFun_Impl_.fromString("她"));
+         registerTag("kid.him",_loc1_ == 1 ? TagFun_Impl_.fromString("他") : TagFun_Impl_.fromString("她"));
+         registerTag("kid.his",_loc1_ == 1 ? TagFun_Impl_.fromString("他的") : TagFun_Impl_.fromString("她的"));
+         registerTag("kid.son",_loc1_ == 1 ? TagFun_Impl_.fromString("儿子") : TagFun_Impl_.fromString("女儿"));
          return _loc1_;
       }
       

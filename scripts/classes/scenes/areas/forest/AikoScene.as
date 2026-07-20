@@ -2307,7 +2307,7 @@ package classes.scenes.areas.forest
          var _loc1_:int = Utils.rand(4);
          if(_loc1_ == 0)
          {
-            outputText("你觉得你可以和牛头怪掰手腕，你的肌肉因新的力量储备而起伏！");
+            outputText("你觉得你可以和牛头人掰手腕，你的肌肉因新的力量储备而起伏！");
             get_player().dynStats(DynStat.Str(Utils.rand(4) + 1));
          }
          if(_loc1_ == 1)

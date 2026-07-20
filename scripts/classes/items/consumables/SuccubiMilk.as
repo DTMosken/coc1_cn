@@ -108,7 +108,7 @@ package classes.items.consumables
             }
             else if(get_player().hasCock())
             {
-               outputText("你感觉到一阵强烈的性唤起，但这并没有影响到你的肉棒。");
+               outputText("你感觉到一阵强烈的兴奋，但这并没有影响到你的肉棒。");
             }
          }
          if(get_player().cor >= 70)
@@ -335,17 +335,17 @@ package classes.items.consumables
                }
                if(get_player().vaginas[0].vaginalWetness == 2)
                {
-                  outputText("当你意识到你的阴唇变得多么湿润时，你因为性唤起而涨红了脸。当你稍微平静下来后，你意识到它们仍然很滑，随时准备好做爱，而且永远都会这样。");
+                  outputText("当你意识到你的阴唇变得多么湿润时，你因为兴奋而涨红了脸。当你稍微平静下来后，你意识到它们仍然很滑，随时准备好做爱，而且永远都会这样。");
                }
                if(get_player().vaginas[0].vaginalWetness == 1)
                {
                   if(int(get_player().vaginas.length) == 1)
                   {
-                     outputText("一种强烈的性唤起感传遍全身，让你疯狂地自慰起来。事后你意识到你的" + get_player().vaginaDescript(0) + "感觉比平时湿润得多。");
+                     outputText("一种强烈的兴奋感传遍全身，让你疯狂地自慰起来。事后你意识到你的" + get_player().vaginaDescript(0) + "感觉比平时湿润得多。");
                   }
                   else
                   {
-                     outputText("一种强烈的性唤起感传遍全身，让你疯狂地自慰起来。事后你意识到你的" + get_player().vaginaDescript(0) + "比平时湿润得多。");
+                     outputText("一种强烈的兴奋感传遍全身，让你疯狂地自慰起来。事后你意识到你的" + get_player().vaginaDescript(0) + "比平时湿润得多。");
                   }
                }
                if(get_player().vaginas[0].vaginalWetness == 0)

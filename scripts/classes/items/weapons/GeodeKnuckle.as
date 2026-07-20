@@ -16,7 +16,7 @@ package classes.items.weapons
          {
             return;
          }
-         super("Geode Knuckle","Geode Knuckle","geode knuckles","a crystalline fist",["punch"],15,0,"Your fists are coated in a thick, but somehow flexible layer of stone and crystal, with jagged shards of colorful gemstones jutting out of the knuckles.",["Fist","Attached","Summoned"]);
+         super("Geode Knuckle","Geode Knuckle","geode knuckles","a crystalline fist",["punch"],15,0,"Your fists are coated in a thick, but somehow flexible layer of stone and crystal, with jagged shards of colorful gemstones jutting out of the knuckles.",["Fist","附着","召唤"]);
       }
       
       override public function useText() : void
